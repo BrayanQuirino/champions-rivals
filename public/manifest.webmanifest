@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Champions Rivals",
+  "short_name": "Rivals",
+  "description": "Tu historia de partidos, estadísticas y directores técnicos de FIFA.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070b25",
+  "theme_color": "#070b25",
+  "icons": [
+    {
+      "src": "./icons/rivals-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
