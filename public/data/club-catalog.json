@@ -3022,8 +3022,8 @@
       "country": "Dinamarca",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/Br%C3%B8ndby_IF.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
     },
@@ -3108,8 +3108,8 @@
       "country": "Dinamarca",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/Sonderjyske.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
     },
@@ -4782,8 +4782,8 @@
       "country": "Israel",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Maccabi_Petah_Tikva.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
     },
