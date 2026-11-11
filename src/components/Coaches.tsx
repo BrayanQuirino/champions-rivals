@@ -1,0 +1,56 @@
+import type { Player } from '../domain/schema';
+
+const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
+  brayan: {
+    image: 'brayan-dt.png',
+    club: 'RIVALS FC',
+    role: 'DIRECTOR TÉCNICO',
+    quote: 'Cada partido es una nueva oportunidad de cambiar la historia.',
+    accent: 'cyan',
+  },
+  hermano: {
+    image: 'joni-dt.png',
+    club: 'MANCHESTER CITY',
+    role: 'DIRECTOR TÉCNICO',
+    quote: 'Posesión, paciencia y una idea clara de juego.',
+    accent: 'sky',
+  },
+};
+
+export function Coaches({ players }: { players: Player[] }) {
+  return (
+    <section id="directores-tecnicos" className="coaches-section" aria-labelledby="coaches-title">
+      <div className="coaches-heading">
+        <span className="eyebrow">LOS CEREBROS DETRÁS DEL PARTIDO</span>
+        <h2 id="coaches-title">Nuestros directores técnicos</h2>
+        <p>Dos estilos. Una rivalidad. La estrategia comienza antes del silbatazo.</p>
+      </div>
+      <div className="coaches-grid">
+        {players.map((player, index) => {
+          const coach = coaches[player.id];
+          return (
+            <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id}>
+              <div className="coach-photo">
+                {coach && (
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/coaches/${coach.image}`}
+                    alt={`Retrato de ${player.name} como director técnico`}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <span className="coach-number">DT / {String(index + 1).padStart(2, '0')}</span>
+              </div>
+              <div className="coach-content">
+                <span className="coach-role">{coach?.role ?? 'DIRECTOR TÉCNICO'}</span>
+                <h3>{player.name}</h3>
+                <div className="coach-club">{coach?.club ?? 'RIVALS FC'}</div>
+                <p>“{coach?.quote ?? 'La pasión se demuestra en la cancha.'}”</p>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
