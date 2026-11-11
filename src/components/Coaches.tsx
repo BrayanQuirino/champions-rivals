@@ -4,7 +4,7 @@ import type { Player } from '../domain/schema';
 const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
   brayan: {
     image: 'brayan-dt.png',
-    club: 'RIVALS FC',
+    club: 'PARIS',
     role: 'DIRECTOR TÉCNICO',
     quote: 'Cada partido es una nueva oportunidad de cambiar la historia.',
     accent: 'cyan',
@@ -44,7 +44,7 @@ export function Coaches({ players }: { players: Player[] }) {
               <div className="coach-content">
                 <span className="coach-role">{coach?.role ?? 'DIRECTOR TÉCNICO'}</span>
                 <h3>{player.name}</h3>
-                <div className="coach-club">{coach?.club ?? 'RIVALS FC'}</div>
+                <div className="coach-club">{coach?.club ?? 'CLUB POR DEFINIR'}</div>
                 <p>“{coach?.quote ?? 'La pasión se demuestra en la cancha.'}”</p>
               </div>
             </article>

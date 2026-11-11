@@ -1,6 +1,6 @@
 # RIVALS — The Brothers League
 
-Portal de FIFA / EA Sports FC entre hermanos. React + TypeScript + Vite. Frontend estático para GitHub Pages, con JSON versionado como fuente de verdad. Diseño original inspirado en las noches europeas: azul profundo, cian y tipografía condensada; sin fuentes o marcas propietarias de UEFA.
+Portal independiente de encuentros virtuales entre hermanos. React + TypeScript + Vite. Frontend estático para GitHub Pages, con JSON versionado como fuente de verdad. Diseño original inspirado en las noches europeas: azul profundo, cian y tipografía condensada; sin afiliación ni representación oficial de ligas, fabricantes o clubes.
 
 ## Desarrollo
 
