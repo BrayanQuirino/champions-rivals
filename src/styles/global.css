@@ -190,3 +190,15 @@
 .generator-level-picker .generator-level-value{font-variant-numeric:tabular-nums;white-space:nowrap}
 @media(max-width:760px){.generator-five-stars{justify-content:space-around;gap:5px}.generator-five-star{flex-basis:46px;font-size:39px}}
 @media(prefers-reduced-motion:reduce){.generator-five-star,.generator-five-star-fill{transition:none}}
+
+
+/* Vector-accurate star fill. Glow and color are confined to the star path. */
+.generator-five-star{font-size:initial;line-height:normal;filter:none;transition:none;overflow:visible}
+.generator-star-svg{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
+.generator-five-star:hover,.generator-five-star:focus-within{transform:none;filter:none}
+.generator-five-star-empty,.generator-five-star-fill{display:none}
+.generator-star-svg path{transition:fill .16s ease}
+.generator-stars{align-items:center}
+.generator-result-star-svg{display:block;width:21px;height:21px;flex:none;overflow:visible}
+@media(max-width:760px){.generator-five-star{font-size:initial}.generator-result-star-svg{width:17px;height:17px}}
+@media(prefers-reduced-motion:reduce){.generator-star-svg path{transition:none}}

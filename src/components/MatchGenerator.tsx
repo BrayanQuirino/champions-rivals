@@ -11,14 +11,21 @@ function ClubLogo({club}:{club:Club}){
     ? <img key={urls[imageIndex]} src={urls[imageIndex]} alt={`Escudo de ${club.name}`} loading="lazy" decoding="async" onError={()=>setImageIndex(i=>i+1)}/>
     : club.flag ? <span className="draw-flag" role="img" aria-label={`Bandera de ${club.name}`}>{club.flag}</span> : <Shield size={39} aria-label="Escudo no disponible" />}</div>;
 }
+function StarShape({coverage,index,variant='filter'}:{coverage:number;index:number;variant?:'filter'|'result'}){
+  // SVG clipping is based on the actual vector bounds, not text glyph width or the containing div.
+  const clipId=`star-${variant}-${index}`;
+  return <svg className={variant==='filter'?'generator-star-svg':'generator-result-star-svg'} viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+    <defs><clipPath id={clipId}><rect x="0" y="0" width={Math.max(0,Math.min(48,coverage*0.48))} height="48"/></clipPath></defs>
+    <path d="M24 3L30.8 16.7L46 18.9L35 29.6L37.7 44.7L24 37.5L10.3 44.7L13 29.6L2 18.9L17.2 16.7Z" fill="#344d70" stroke="#6e92ad" strokeWidth="1.2" strokeLinejoin="round"/>
+    <path d="M24 3L30.8 16.7L46 18.9L35 29.6L37.7 44.7L24 37.5L10.3 44.7L13 29.6L2 18.9L17.2 16.7Z" fill={variant==='filter'?'#68dff4':'#ffd274'} clipPath={`url(#${clipId})`}/>
+  </svg>;
+}
 function StarRating({rating}:{rating:number}){
   return <div className="generator-stars" aria-label={`${rating} de 5 estrellas`} role="img">
-    {[0,1,2,3,4].map(index=><span className="generator-star-unit" key={index} aria-hidden="true">
-      <span className="generator-star-empty">★</span>
-      <span className="generator-star-filled" style={{width:`${Math.max(0,Math.min(100,(rating-index)*100))}%`}}>★</span>
-    </span>)}
+    {[0,1,2,3,4].map(index=><StarShape key={index} index={index} variant="result" coverage={Math.max(0,Math.min(100,(rating-index)*100))}/>)}
   </div>;
 }
+
 export function MatchGenerator(){
   const [catalog,setCatalog]=useState<ClubCatalog|null>(null);
   const [error,setError]=useState('');
@@ -78,8 +85,7 @@ export function MatchGenerator(){
               const shown=previewRating ?? minRating;
               const coverage=Math.max(0,Math.min(100,(shown-index)*100));
               return <div className="generator-five-star" key={star}>
-                <span className="generator-five-star-empty" aria-hidden="true">★</span>
-                <span className="generator-five-star-fill" style={{width:`${coverage}%`}} aria-hidden="true">★</span>
+                <StarShape coverage={coverage} index={index}/>
                 <button type="button" className="generator-star-hit generator-star-hit--left"
                   aria-label={star===1?'Desde 1 estrella':`Desde ${star-0.5} estrellas`}
                   aria-pressed={minRating===(star===1?1:star-0.5)}
