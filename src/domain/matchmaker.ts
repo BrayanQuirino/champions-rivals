@@ -6,6 +6,7 @@ export interface Club {
   rating: number;
   elo: number | null;
   logoUrl: string | null;
+  logoFallbackUrl?: string | null;
   flag?: string | null;
 }
 export interface League { id: string; name: string; country: string; clubCount: number }
@@ -55,7 +56,7 @@ export function parseClubCatalog(value: unknown): ClubCatalog {
   }
   const seen=new Set<string>();
   for(const club of data.clubs) {
-    if(!club || typeof club.id!=='string' || !club.id || seen.has(club.id) || typeof club.name!=='string' || !leagueIds.has(club.leagueId) || !Number.isInteger(club.rating) || club.rating<1 || club.rating>5 || (club.elo!==null && (typeof club.elo!=='number' || !Number.isFinite(club.elo))) || (club.logoUrl!==null && (typeof club.logoUrl!=='string' || !club.logoUrl.startsWith('https://')))) throw Error('Equipo inválido en el catálogo.');
+    if(!club || typeof club.id!=='string' || !club.id || seen.has(club.id) || typeof club.name!=='string' || !leagueIds.has(club.leagueId) || !Number.isInteger(club.rating) || club.rating<1 || club.rating>5 || (club.elo!==null && (typeof club.elo!=='number' || !Number.isFinite(club.elo))) || (club.logoUrl!==null && (typeof club.logoUrl!=='string' || !club.logoUrl.startsWith('https://'))) || (club.logoFallbackUrl!=null && (typeof club.logoFallbackUrl!=='string' || !club.logoFallbackUrl.startsWith('https://')))) throw Error('Equipo inválido en el catálogo.');
     seen.add(club.id);
   }
   return data as ClubCatalog;
