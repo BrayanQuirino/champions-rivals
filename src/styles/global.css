@@ -29,3 +29,21 @@
 @media(prefers-reduced-motion:reduce){.coach-card,.coach-photo img{transition:none}}
 
 .coach-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:radial-gradient(circle at 50% 32%,#30436b,#0b1029 72%)}.coach-fallback span{font:700 108px 'Barlow Condensed',Impact,sans-serif;color:#bce5ff;text-shadow:0 10px 48px #4e93dc55}.coach-fallback small{font-size:10px;letter-spacing:3px;color:#97acce}
+
+/* Sedes: visual de cancha propio, sin recursos ni emblemas de terceros. */
+.venues-section{margin:30px 0;scroll-margin-top:90px}
+.venues-title{font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(30px,4vw,44px);margin:10px 0 19px}
+.venue-card{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,1fr);overflow:hidden;border:1px solid #83a9ef45;border-radius:15px;background:linear-gradient(115deg,#14203d,#0c152e)}
+.venue-visual{min-height:270px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 50% 65%,#214365,#080f25 75%)}
+.venue-visual::before{content:'';position:absolute;inset:16px;border:4px solid #a9c9ef36;border-radius:50%;box-shadow:0 0 0 18px #223f6633,0 0 0 36px #3c5c8430;transform:rotate(-11deg)}
+.venue-pitch{position:relative;width:min(72%,310px);aspect-ratio:1.55;background:repeating-linear-gradient(90deg,#27674c 0 30px,#307b58 30px 60px);border:2px solid #d8efe2;transform:perspective(500px) rotateX(12deg) rotate(-9deg);box-shadow:0 22px 65px #000b}
+.venue-pitch::before{content:'';position:absolute;inset:0;border-left:1px solid transparent;background:linear-gradient(90deg,transparent calc(50% - 1px),#d8efe2 calc(50% - 1px),#d8efe2 calc(50% + 1px),transparent calc(50% + 1px))}
+.venue-pitch::after{content:'';position:absolute;left:calc(50% - 16px);top:calc(50% - 16px);width:32px;height:32px;border:2px solid #d8efe2;border-radius:50%}
+.venue-visual-label{position:absolute;left:24px;bottom:18px;color:#dcefff;font-size:10px;letter-spacing:2px;text-shadow:0 2px 8px #000}
+.venue-details{padding:38px 32px;display:flex;flex-direction:column;justify-content:center}
+.venue-details h3{font:700 clamp(34px,4vw,53px) 'Barlow Condensed',Impact,sans-serif;line-height:1;margin:12px 0}
+.venue-details p{color:#a5b8d5;font-size:13px;line-height:1.7;max-width:440px}
+.venue-info{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.venue-info span{font-size:11px;color:#a8e9ff;background:#153350;border:1px solid #65e6fc35;border-radius:6px;padding:9px 11px}
+.match-venue{display:flex!important;align-items:center;gap:4px;color:#8fdaf0!important}
+@media(max-width:760px){.venue-card{grid-template-columns:1fr}.venue-visual{min-height:240px}.venue-details{padding:25px}.venue-details h3{font-size:38px}}

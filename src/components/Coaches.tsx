@@ -4,7 +4,7 @@ import type { Player } from '../domain/schema';
 const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
   brayan: {
     image: 'brayan-dt.png',
-    club: 'PARIS',
+    club: 'PARIS SAINT-GERMAIN',
     role: 'DIRECTOR TÉCNICO',
     quote: 'Cada partido es una nueva oportunidad de cambiar la historia.',
     accent: 'cyan',

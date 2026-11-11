@@ -34,7 +34,8 @@
         "type": "manual",
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha asignada al día del registro. "
-      }
+      },
+      "venueId": "winterfell-arena"
     },
     {
       "id": "2026-11-10-002",
@@ -57,7 +58,8 @@
         "type": "manual",
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha asignada al día del registro. Equipo Chelsea confirmado por Brayan."
-      }
+      },
+      "venueId": "winterfell-arena"
     },
     {
       "id": "2026-11-10-003",
@@ -80,7 +82,15 @@
         "type": "manual",
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha asignada al día del registro. "
-      }
+      },
+      "venueId": "winterfell-arena"
+    }
+  ],
+  "venues": [
+    {
+      "id": "winterfell-arena",
+      "name": "Winterfell Arena",
+      "description": "Nuestra sede de encuentros: una arena ficticia con identidad invernal y espíritu de gran estadio urbano."
     }
   ]
 }
