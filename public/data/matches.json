@@ -8,9 +8,79 @@
     },
     {
       "id": "hermano",
-      "name": "Hermano",
-      "initials": "H"
+      "name": "Joni",
+      "initials": "J"
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "id": "2026-11-10-001",
+      "date": "2026-11-10",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Ajax",
+        "goals": 1
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Brujas",
+        "goals": 0
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": null,
+      "source": {
+        "type": "manual",
+        "reference": "Resultados proporcionados por Brayan en el chat",
+        "notes": "Fecha asignada al día del registro. "
+      }
+    },
+    {
+      "id": "2026-11-10-002",
+      "date": "2026-11-10",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Cheese",
+        "goals": 1
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Barça",
+        "goals": 2
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": null,
+      "source": {
+        "type": "manual",
+        "reference": "Resultados proporcionados por Brayan en el chat",
+        "notes": "Fecha asignada al día del registro. Nombre Cheese conservado tal como fue proporcionado."
+      }
+    },
+    {
+      "id": "2026-11-10-003",
+      "date": "2026-11-10",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Atlético de Madrid",
+        "goals": 0
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Tottenham",
+        "goals": 3
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": null,
+      "source": {
+        "type": "manual",
+        "reference": "Resultados proporcionados por Brayan en el chat",
+        "notes": "Fecha asignada al día del registro. "
+      }
+    }
+  ]
 }
