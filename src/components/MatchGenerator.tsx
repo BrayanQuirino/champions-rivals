@@ -73,7 +73,7 @@ export function MatchGenerator(){
         {pair&&<button className="generator-secondary" onClick={()=>setPair({...pair,home:pair.away,away:pair.home})}><ArrowLeftRight size={17}/>Intercambiar</button>}
         <button className="generator-secondary" onClick={()=>{changeLeague('all');changeRating('all');setPair(null)}}><RotateCcw size={16}/>Restablecer</button>
       </div>
-      <p className="generator-disclaimer">{catalog.clubs.length} clubes · {catalog.leagues.length} ligas · Estrellas estimadas a partir de Elo, no oficiales. Los escudos se muestran desde una fuente externa y pueden no cargar. No se guardan resultados.</p>
+      <p className="generator-disclaimer">{catalog.clubs.length} clubes · {catalog.leagues.length} ligas · Estrellas orientativas no oficiales: basadas en Elo en las cinco grandes ligas y estimaciones provisionales en las demás. Los escudos aparecen solo cuando existe una URL verificada. No se guardan resultados.</p>
     </>}
   </section>;
 }
