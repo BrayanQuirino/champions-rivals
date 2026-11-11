@@ -4,7 +4,7 @@ export interface Club {
   leagueId: string;
   country: string;
   rating: number;
-  elo: number;
+  elo: number | null;
   logoUrl: string | null;
 }
 export interface League { id: string; name: string; country: string; clubCount: number }
@@ -32,7 +32,7 @@ export function pickBalancedMatch(clubs: Club[], random: () => number = Math.ran
       if (clubs[i].id === clubs[j].id) continue;
       const starDifference = Math.abs(clubs[i].rating - clubs[j].rating);
       if (starDifference !== 0) continue;
-      const eloDifference = Math.abs(clubs[i].elo - clubs[j].elo);
+      const eloDifference = clubs[i].elo !== null && clubs[j].elo !== null ? Math.abs(clubs[i].elo - clubs[j].elo) : 0;
       pairs.push({home:clubs[i],away:clubs[j],starDifference,eloDifference});
     }
   }
@@ -52,7 +52,7 @@ export function parseClubCatalog(value: unknown): ClubCatalog {
   }
   const seen=new Set<string>();
   for(const club of data.clubs) {
-    if(!club || typeof club.id!=='string' || !club.id || seen.has(club.id) || typeof club.name!=='string' || !leagueIds.has(club.leagueId) || !Number.isInteger(club.rating) || club.rating<1 || club.rating>5 || typeof club.elo!=='number' || !Number.isFinite(club.elo) || (club.logoUrl!==null && (typeof club.logoUrl!=='string' || !club.logoUrl.startsWith('https://')))) throw Error('Equipo inválido en el catálogo.');
+    if(!club || typeof club.id!=='string' || !club.id || seen.has(club.id) || typeof club.name!=='string' || !leagueIds.has(club.leagueId) || !Number.isInteger(club.rating) || club.rating<1 || club.rating>5 || (club.elo!==null && (typeof club.elo!=='number' || !Number.isFinite(club.elo))) || (club.logoUrl!==null && (typeof club.logoUrl!=='string' || !club.logoUrl.startsWith('https://')))) throw Error('Equipo inválido en el catálogo.');
     seen.add(club.id);
   }
   return data as ClubCatalog;
