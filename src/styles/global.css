@@ -97,3 +97,10 @@
 .venue-image-error{min-height:270px;display:grid;place-items:center;color:#afc4e5;font-size:13px}
 .draw-flag{font-size:54px;line-height:1}
 @media(max-width:760px){.venue-visual img{min-height:0}.venue-details{padding:22px}.draw-flag{font-size:44px}}
+
+/* Tres directores técnicos, sin alterar el esquema del historial. */
+.coaches-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.coach-card--gold .coach-role{color:#ffdc65}
+.coach-card--gold{border-color:#f9c84535}
+@media(max-width:940px){.coaches-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.coaches-grid{grid-template-columns:1fr}}
