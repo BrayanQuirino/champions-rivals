@@ -1117,8 +1117,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Blackburn_Rovers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1129,8 +1129,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bristol_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1144,7 +1144,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/england/burnley-fc.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Burnley.svg"
     },
     {
       "id": "championship-cardiff-city",
@@ -1153,8 +1154,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Cardiff_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1165,8 +1166,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Birmingham_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1177,8 +1178,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Derby_County.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1189,8 +1190,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Wrexham_AFC.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1213,8 +1214,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Southampton.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1225,8 +1226,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Middlesbrough.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1237,8 +1238,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Millwall.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1249,8 +1250,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Norwich_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1261,8 +1262,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Lincoln_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1273,8 +1274,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Charlton_Athletic.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1285,8 +1286,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Portsmouth.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1297,8 +1298,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Preston_North_End.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1309,8 +1310,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Queens_Park_Rangers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1321,8 +1322,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Sheffield_United.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1333,8 +1334,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bolton_Wanderers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1345,8 +1346,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Stoke_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1357,8 +1358,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/West_Bromwich_Albion.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1369,8 +1370,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Swansea_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1381,8 +1382,8 @@
       "country": "Inglaterra",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Watford.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
     },
@@ -1396,7 +1397,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/england/wolverhampton-wanderers.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_Championship.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Wolverhampton_Wanderers.svg"
     },
     {
       "id": "league-one-cambridge-united",
@@ -1405,8 +1407,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Cambridge_United.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1417,8 +1419,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bradford_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1429,8 +1431,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Blackpool.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1441,8 +1443,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/AFC_Wimbledon.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1453,8 +1455,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Burton_Albion.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1465,8 +1467,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Doncaster_Rovers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1477,8 +1479,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bromley.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1489,8 +1491,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Oxford_United.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1501,8 +1503,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Barnsley.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1525,8 +1527,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Peterborough_United.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1537,8 +1539,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Wigan_Athletic.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1549,8 +1551,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Wycombe_Wanderers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1561,8 +1563,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Huddersfield_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1573,8 +1575,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Milton_Keynes_Dons.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1585,8 +1587,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Sheffield_Wednesday.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1597,8 +1599,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Stockport_County.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1609,8 +1611,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Mansfield_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1621,8 +1623,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Reading.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1633,8 +1635,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Plymouth_Argyle.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1645,8 +1647,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Stevenage.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1657,8 +1659,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Leyton_Orient.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1669,8 +1671,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Luton_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1681,8 +1683,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Notts_County.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueOne.json"
     },
@@ -1693,8 +1695,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Accrington_Stanley.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1705,8 +1707,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Barnet.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1717,8 +1719,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bristol_Rovers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1729,8 +1731,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Cheltenham_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1741,8 +1743,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Chesterfield.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1753,8 +1755,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Colchester_United.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1765,8 +1767,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Crawley_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1777,8 +1779,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Crewe_Alexandra.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1789,8 +1791,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Exeter_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1801,8 +1803,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Fleetwood_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1813,8 +1815,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Gillingham.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1825,8 +1827,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Grimsby_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1837,8 +1839,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Newport_County.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1849,8 +1851,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Northampton_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1861,8 +1863,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Oldham_Athletic.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1873,8 +1875,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Port_Vale_FC.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1885,8 +1887,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Rochdale.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1897,8 +1899,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Rotherham_United.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1909,8 +1911,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Salford_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1921,8 +1923,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Shrewsbury_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1933,8 +1935,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Swindon_Town.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1945,8 +1947,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Tranmere_Rovers.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1957,8 +1959,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Walsall.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1969,8 +1971,8 @@
       "country": "Inglaterra",
       "rating": 1,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/York_City.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/England_LeagueTwo.json"
     },
@@ -1993,8 +1995,8 @@
       "country": "Países Bajos",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/ADO_Den_Haag.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
     },
@@ -2008,7 +2010,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/az-alkmaar.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/AZ_Alkmaar.svg"
     },
     {
       "id": "eredivisie-excelsior",
@@ -2044,7 +2047,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/fortuna-sittard.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Fortuna_Sittard.svg"
     },
     {
       "id": "eredivisie-go-ahead-eagles",
@@ -2056,7 +2060,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/go-ahead-eagles.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Go_Ahead_Eagles.svg"
     },
     {
       "id": "eredivisie-fc-twente",
@@ -2065,8 +2070,8 @@
       "country": "Países Bajos",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Twente.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
     },
@@ -2080,7 +2085,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/fc-utrecht.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/FC_Utrecht.svg"
     },
     {
       "id": "eredivisie-fc-groningen",
@@ -2092,7 +2098,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/fc-groningen.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/FC_Groningen.svg"
     },
     {
       "id": "eredivisie-heerenveen",
@@ -2104,7 +2111,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/sc-heerenveen.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/sc_Heerenveen.svg"
     },
     {
       "id": "eredivisie-nec-nijmegen",
@@ -2128,7 +2136,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/pec-zwolle.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/PEC_Zwolle.svg"
     },
     {
       "id": "eredivisie-psv-eindhoven",
@@ -2140,7 +2149,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/psv-eindhoven.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/PSV_Eindhoven.svg"
     },
     {
       "id": "eredivisie-sparta-rotterdam",
@@ -2152,7 +2162,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/sparta-rotterdam.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Sparta_Rotterdam.svg"
     },
     {
       "id": "eredivisie-sc-cambuur",
@@ -2161,8 +2172,8 @@
       "country": "Países Bajos",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/SC_Cambuur.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
     },
@@ -2176,7 +2187,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/sc-telstar.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Telstar.svg"
     },
     {
       "id": "eredivisie-willem-ii",
@@ -2185,8 +2197,8 @@
       "country": "Países Bajos",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Willem_II.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Netherlands_Eredivisie.json"
     },
@@ -2200,7 +2212,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/fc-arouca.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Arouca.svg"
     },
     {
       "id": "liga-portugal-benfica",
@@ -2209,8 +2222,8 @@
       "country": "Portugal",
       "rating": 4,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Benfica.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
     },
@@ -2221,8 +2234,8 @@
       "country": "Portugal",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Académico_de_Viseu.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
     },
@@ -2236,7 +2249,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/sc-braga.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/SC_Braga.svg"
     },
     {
       "id": "liga-portugal-casa-pia",
@@ -2248,7 +2262,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/casa-pia-ac.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Casa_Pia_AC.svg"
     },
     {
       "id": "liga-portugal-estoril",
@@ -2257,8 +2272,8 @@
       "country": "Portugal",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Estoril.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
     },
@@ -2284,7 +2299,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/fc-famalicao.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Famalicao.svg"
     },
     {
       "id": "liga-portugal-fc-porto",
@@ -2296,7 +2312,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/fc-porto.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/FC_Porto.svg"
     },
     {
       "id": "liga-portugal-maritimo",
@@ -2305,8 +2322,8 @@
       "country": "Portugal",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Marítimo.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
     },
@@ -2320,7 +2337,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/gil-vicente-fc.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Gil_Vicente.svg"
     },
     {
       "id": "liga-portugal-vitoria-guimaraes",
@@ -2344,7 +2362,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/moreirense-fc.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Moreirense.svg"
     },
     {
       "id": "liga-portugal-c-d-nacional",
@@ -2368,7 +2387,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/rio-ave-fc.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Rio_Ave.svg"
     },
     {
       "id": "liga-portugal-santa-clara",
@@ -2380,7 +2400,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/cd-santa-clara.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Santa_Clara.svg"
     },
     {
       "id": "liga-portugal-sporting-cp",
@@ -2392,7 +2413,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/sporting-cp.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Sporting_CP.svg"
     },
     {
       "id": "liga-portugal-alverca",
@@ -2404,7 +2426,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/portugal/fc-alverca.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Portugal_LigaPortugal.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Alverca.svg"
     },
     {
       "id": "brasileirao-vitoria",
@@ -2653,8 +2676,8 @@
       "country": "Bélgica",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/RSC_Anderlecht.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
     },
@@ -2716,7 +2739,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/kaa-gent.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KAA_Gent.svg"
     },
     {
       "id": "belgian-pro-kv-kortrijk",
@@ -2740,7 +2764,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/kv-mechelen.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KV_Mechelen.svg"
     },
     {
       "id": "belgian-pro-kvc-westerlo",
@@ -2752,7 +2777,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/kvc-westerlo.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KVC_Westerlo.svg"
     },
     {
       "id": "belgian-pro-oud-heverlee-leuven",
@@ -2764,7 +2790,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/oud-heverlee-leuven.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Oud-Heverlee_Leuven.svg"
     },
     {
       "id": "belgian-pro-racing-genk",
@@ -2824,7 +2851,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/standard-liege.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Standard_Liège.svg"
     },
     {
       "id": "belgian-pro-union-st-gilloise",
@@ -2848,7 +2876,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/raal-la-louviere.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/RAAL_La_Louvière.svg"
     },
     {
       "id": "belgian-pro-zulte-waregem",
@@ -2860,7 +2889,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/belgium/zulte-waregem.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Belgium_BelgianProLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Zulte_Waregem.svg"
     },
     {
       "id": "danish-superliga-fc-copenhagen",
@@ -2884,7 +2914,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/denmark/fc-midtjylland.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/FC_Midtjylland.svg"
     },
     {
       "id": "danish-superliga-viborg-ff",
@@ -2896,7 +2927,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/denmark/viborg-ff.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/Viborg_FF.svg"
     },
     {
       "id": "danish-superliga-br-ndby",
@@ -2929,8 +2961,8 @@
       "country": "Dinamarca",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/AGF.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
     },
@@ -2941,8 +2973,8 @@
       "country": "Dinamarca",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/Horsens.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
     },
@@ -2956,7 +2988,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/denmark/randers-fc.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/Randers_FC.svg"
     },
     {
       "id": "danish-superliga-silkeborg-if",
@@ -2968,7 +3001,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/denmark/silkeborg-if.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Denmark_DanishSuperliga.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/denmark/Silkeborg_IF.svg"
     },
     {
       "id": "danish-superliga-lyngby-boldklub",
@@ -3160,7 +3194,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/czech-republic/fc-banik-ostrava.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Baník_Ostrava.svg"
     },
     {
       "id": "czech-first-bohemians",
@@ -3196,7 +3231,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/czech-republic/fc-hradec-kralove.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Hradec_Králové.svg"
     },
     {
       "id": "czech-first-jablonec",
@@ -3205,8 +3241,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Jablonec.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3217,8 +3253,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Karviná.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3229,8 +3265,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Mladá_Boleslav.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3241,8 +3277,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Pardubice.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3253,8 +3289,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Sigma_Olomouc.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3280,7 +3316,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/czech-republic/fc-slovan-liberec.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Slovan_Liberec.svg"
     },
     {
       "id": "czech-first-slavia-praha",
@@ -3289,8 +3326,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/SK_Slavia_Praha.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3301,8 +3338,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/AC_Sparta_Praha.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3313,8 +3350,8 @@
       "country": "Chequia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Teplice.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
     },
@@ -3328,7 +3365,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/czech-republic/fc-viktoria-plzen.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Viktoria_Plzeň.svg"
     },
     {
       "id": "czech-first-zlin",
@@ -3340,7 +3378,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/czech-republic/fc-zlin.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/CzechRepublic_CzechFirstLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/czech-republic/Zlín.svg"
     },
     {
       "id": "super-lig-alanyaspor",
@@ -3568,7 +3607,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/sweden/aik.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Sweden_Allsvenskan.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Sweden_Allsvenskan.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/sweden/AIK.svg"
     },
     {
       "id": "allsvenskan-bk-hacken",
@@ -3688,7 +3728,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/sweden/gais.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Sweden_Allsvenskan.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Sweden_Allsvenskan.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/sweden/GAIS.svg"
     },
     {
       "id": "allsvenskan-if-brommapojkarna",
@@ -3712,7 +3753,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/sweden/ifk-goteborg.png",
       "logoSource": "leoratzlaff/football-badges/verified-file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Sweden_Allsvenskan.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Sweden_Allsvenskan.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/sweden/IFK_Göteborg.svg"
     },
     {
       "id": "allsvenskan-degerfors-if",
@@ -3757,8 +3799,8 @@
       "country": "Croacia",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/croatia/GNK_Dinamo_Zagreb.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Croatia_CroatianFootballLeague.json"
     },
@@ -3769,8 +3811,8 @@
       "country": "Croacia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/croatia/HNK_Gorica.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Croatia_CroatianFootballLeague.json"
     },
@@ -3880,7 +3922,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/greece/aek-athens.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/AEK_Athens.svg"
     },
     {
       "id": "greek-super-aris",
@@ -3913,8 +3956,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Atromitos.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -3925,8 +3968,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/A.E._Kifisia.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -3961,8 +4004,8 @@
       "country": "Grecia",
       "rating": 3,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Olympiacos.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -3973,8 +4016,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/PAOK.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -3988,7 +4031,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/greece/panathinaikos-fc.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Panathinaikos.svg"
     },
     {
       "id": "greek-super-panetolikos",
@@ -3997,8 +4041,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Panetolikos.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -4009,8 +4053,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Kalamata.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -4021,8 +4065,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Levadiakos.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -4033,8 +4077,8 @@
       "country": "Grecia",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Volos_NFC.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Greece_GreekSuperLeague.json"
     },
@@ -4516,7 +4560,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/beitar-jerusalem.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Beitar_Jerusalem.svg"
     },
     {
       "id": "ligat-al-bnei-sakhnin",
@@ -4525,8 +4570,8 @@
       "country": "Israel",
       "rating": 2,
       "elo": null,
-      "logoUrl": null,
-      "logoSource": null,
+      "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Bnei_Sakhnin.svg",
+      "logoSource": "JoseArroyave/football-logos",
       "ratingSource": "estimación editorial provisional",
       "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
     },
@@ -4564,7 +4609,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/hapoel-haifa.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Hapoel_Haifa.svg"
     },
     {
       "id": "ligat-al-hapoel-jerusalem",
@@ -4576,7 +4622,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/hapoel-jerusalem.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Hapoel_Jerusalem.svg"
     },
     {
       "id": "ligat-al-hapoel-petah-tikva",
@@ -4588,7 +4635,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/hapoel-petah-tikva.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Hapoel_Petah_Tikva.svg"
     },
     {
       "id": "ligat-al-hapoel-tel-aviv",
@@ -4600,7 +4648,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/hapoel-tel-aviv.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Hapoel_Tel_Aviv.svg"
     },
     {
       "id": "ligat-al-ironi-tiberias",
@@ -4612,7 +4661,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/ironi-tiberias.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Ironi_Tiberias.svg"
     },
     {
       "id": "ligat-al-maccabi-haifa",
@@ -4624,7 +4674,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/maccabi-haifa.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Maccabi_Haifa.svg"
     },
     {
       "id": "ligat-al-maccabi-netanya",
@@ -4636,7 +4687,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/maccabi-netanya.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Maccabi_Netanya.svg"
     },
     {
       "id": "ligat-al-maccabi-petach-tikva",
@@ -4660,7 +4712,8 @@
       "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/israel/maccabi-tel-aviv.png",
       "logoSource": "repository verified file",
       "ratingSource": "estimación editorial provisional",
-      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json"
+      "sourceUrl": "https://github.com/oritzio/football-database/blob/master/Israel_LigatAl.json",
+      "logoFallbackUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/israel/Maccabi_Tel-Aviv.svg"
     },
     {
       "id": "mls-atlanta-united-fc",
