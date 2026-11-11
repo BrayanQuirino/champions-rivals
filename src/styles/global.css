@@ -53,3 +53,8 @@
 .venue-visual::before{display:none}
 .venue-visual-label{z-index:1;padding:8px 10px;background:#08152cbb;border:1px solid #ffffff30;border-radius:4px}
 @media(max-width:760px){.venue-visual img{min-height:240px}}
+
+/* Fotografía de estadio: reservar una proporción panorámica y evitar recortes exagerados. */
+.venue-visual{aspect-ratio:16/9;min-height:0}
+.venue-visual img{min-height:0;object-fit:cover;object-position:50% 52%}
+@media(max-width:760px){.venue-visual{min-height:0}.venue-visual img{min-height:0}}
