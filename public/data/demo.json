@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "players": [
+    {
+      "id": "brayan",
+      "name": "Brayan",
+      "initials": "BQ"
+    },
+    {
+      "id": "hermano",
+      "name": "Hermano",
+      "initials": "H"
+    }
+  ],
+  "matches": [
+    {
+      "id": "demo-001",
+      "date": "2026-11-01",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Real Madrid",
+        "goals": 3
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Manchester City",
+        "goals": 1
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 54,
+          "shots": 12,
+          "shotsOnTarget": 7
+        },
+        "away": {
+          "possession": 46,
+          "shots": 9,
+          "shotsOnTarget": 4
+        }
+      },
+      "source": {
+        "type": "demo",
+        "reference": null,
+        "notes": "Ejemplo visual, no es un resultado real."
+      }
+    },
+    {
+      "id": "demo-002",
+      "date": "2026-11-02",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Barcelona",
+        "goals": 2
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Liverpool",
+        "goals": 2
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 54,
+          "shots": 12,
+          "shotsOnTarget": 7
+        },
+        "away": {
+          "possession": 46,
+          "shots": 9,
+          "shotsOnTarget": 4
+        }
+      },
+      "source": {
+        "type": "demo",
+        "reference": null,
+        "notes": "Ejemplo visual, no es un resultado real."
+      }
+    },
+    {
+      "id": "demo-003",
+      "date": "2026-11-03",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Bayern München",
+        "goals": 1
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Paris SG",
+        "goals": 3
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 54,
+          "shots": 12,
+          "shotsOnTarget": 7
+        },
+        "away": {
+          "possession": 46,
+          "shots": 9,
+          "shotsOnTarget": 4
+        }
+      },
+      "source": {
+        "type": "demo",
+        "reference": null,
+        "notes": "Ejemplo visual, no es un resultado real."
+      }
+    },
+    {
+      "id": "demo-004",
+      "date": "2026-11-04",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Real Madrid",
+        "goals": 4
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Liverpool",
+        "goals": 2
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 54,
+          "shots": 12,
+          "shotsOnTarget": 7
+        },
+        "away": {
+          "possession": 46,
+          "shots": 9,
+          "shotsOnTarget": 4
+        }
+      },
+      "source": {
+        "type": "demo",
+        "reference": null,
+        "notes": "Ejemplo visual, no es un resultado real."
+      }
+    },
+    {
+      "id": "demo-005",
+      "date": "2026-11-05",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Inter",
+        "goals": 0
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Barcelona",
+        "goals": 1
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 54,
+          "shots": 12,
+          "shotsOnTarget": 7
+        },
+        "away": {
+          "possession": 46,
+          "shots": 9,
+          "shotsOnTarget": 4
+        }
+      },
+      "source": {
+        "type": "demo",
+        "reference": null,
+        "notes": "Ejemplo visual, no es un resultado real."
+      }
+    },
+    {
+      "id": "demo-006",
+      "date": "2026-11-06",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "brayan",
+        "team": "Real Madrid",
+        "goals": 3
+      },
+      "away": {
+        "playerId": "hermano",
+        "team": "Manchester City",
+        "goals": 2
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 54,
+          "shots": 12,
+          "shotsOnTarget": 7
+        },
+        "away": {
+          "possession": 46,
+          "shots": 9,
+          "shotsOnTarget": 4
+        }
+      },
+      "source": {
+        "type": "demo",
+        "reference": null,
+        "notes": "Ejemplo visual, no es un resultado real."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "players": [
+    {
+      "id": "brayan",
+      "name": "Brayan",
+      "initials": "BQ"
+    },
+    {
+      "id": "hermano",
+      "name": "Hermano",
+      "initials": "H"
+    }
+  ],
+  "matches": []
+}

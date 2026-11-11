@@ -1,0 +1,32 @@
+{
+  "name": "champions-rivals",
+  "version": "1.0.0",
+  "description": "Portal FIFA entre hermanos con React, TypeScript y JSON para GitHub Pages",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "npm run validate:data && tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "tsc --noEmit && npm run validate:data",
+    "validate:data": "node --import tsx scripts/validate-data.ts",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "dependencies": {
+    "lucide-react": "^1.71.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7"
+  },
+  "private": true
+}
