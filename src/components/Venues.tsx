@@ -3,7 +3,7 @@ import type { Database, Match } from '../domain/schema';
 function VenuePhoto() {
   const [useFallback, setUseFallback] = useState(false);
   return <img
-    src={`${import.meta.env.BASE_URL}images/venues/${useFallback ? 'winterfell-arena.webp' : 'winterfell-arena-hd.webp'}`}
+    src={`${import.meta.env.BASE_URL}images/venues/${useFallback ? 'winterfell-arena.webp' : 'winterfell-arena-hd.png'}`}
     alt="Winterfell Arena: gran cúpula acristalada iluminada y fachada de piedra, en una ciudad al anochecer"
     loading="lazy"
     decoding="async"
