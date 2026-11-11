@@ -9,13 +9,6 @@ const coaches: Record<string, { image: string; club: string; role: string; quote
     quote: 'Cada partido es una nueva oportunidad de cambiar la historia.',
     accent: 'cyan',
   },
-  peter: {
-    image: 'peter-dt.png',
-    club: 'BORUSSIA DORTMUND (BVB)',
-    role: 'DIRECTOR TÉCNICO',
-    quote: 'La intensidad no se negocia. Cada encuentro se juega para ganar.',
-    accent: 'gold',
-  },
   hermano: {
     image: 'joni-dt.png',
     club: 'MANCHESTER CITY',
@@ -37,7 +30,7 @@ export function Coaches({ players }: { players: Player[] }) {
       <div className="coaches-heading">
         <span className="eyebrow">LOS CEREBROS DETRÁS DEL PARTIDO</span>
         <h2 id="coaches-title">Nuestros directores técnicos</h2>
-        <p>Tres directores técnicos, diferentes estilos y una rivalidad que sigue creciendo.</p>
+        <p>Dos estilos. Una rivalidad. La estrategia comienza antes del silbatazo.</p>
       </div>
       <div className="coaches-grid">
         {players.map((player, index) => {

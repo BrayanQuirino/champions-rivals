@@ -21,12 +21,12 @@ export const matchSchema = z.object({
 });
 export const databaseSchema = z.object({
   schemaVersion: z.literal(1),
-  players: z.array(z.object({ id, name: z.string().min(1).max(40), initials: z.string().min(1).max(3) })).min(2),
+  players: z.array(z.object({ id, name: z.string().min(1).max(40), initials: z.string().min(1).max(3) })).length(2),
   matches: z.array(matchSchema),
   venues: z.array(z.object({ id, name: z.string().min(1).max(100), description: z.string().max(400) })).optional(),
 }).superRefine((db, ctx) => {
   const ids = new Set(db.players.map(p=>p.id));
-  if(ids.size!==db.players.length) ctx.addIssue({code:'custom',message:'IDs de jugadores duplicados.'});
+  if(ids.size!==2) ctx.addIssue({code:'custom',message:'IDs de jugadores duplicados.'});
   const venues = new Set((db.venues ?? []).map(v => v.id));
   if (venues.size !== (db.venues ?? []).length) ctx.addIssue({code:'custom',message:'Sedes duplicadas.'});
   const matches = new Set<string>();
