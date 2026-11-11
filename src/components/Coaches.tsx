@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Player } from '../domain/schema';
 
 const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
@@ -17,6 +18,12 @@ const coaches: Record<string, { image: string; club: string; role: string; quote
   },
 };
 
+function CoachPortrait({ image, name, initials }: { image?: string; name: string; initials: string }) {
+  const [failed, setFailed] = useState(false);
+  return image && !failed
+    ? <img src={`${import.meta.env.BASE_URL}images/coaches/${image}`} alt={`Retrato de ${name} como director técnico`} loading="lazy" decoding="async" onError={() => setFailed(true)} />
+    : <div className="coach-fallback" role="img" aria-label={`Fotografía de ${name} pendiente de publicación`}><span>{initials}</span><small>DIRECTOR TÉCNICO</small></div>;
+}
 export function Coaches({ players }: { players: Player[] }) {
   return (
     <section id="directores-tecnicos" className="coaches-section" aria-labelledby="coaches-title">
@@ -31,14 +38,7 @@ export function Coaches({ players }: { players: Player[] }) {
           return (
             <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id}>
               <div className="coach-photo">
-                {coach && (
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/coaches/${coach.image}`}
-                    alt={`Retrato de ${player.name} como director técnico`}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                )}
+                <CoachPortrait image={coach?.image} name={player.name} initials={player.initials} />
                 <span className="coach-number">DT / {String(index + 1).padStart(2, '0')}</span>
               </div>
               <div className="coach-content">
