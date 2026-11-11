@@ -175,3 +175,18 @@
 @keyframes generator-star-cyan-pop{0%{transform:scale(.7)}65%{transform:scale(1.2)}100%{transform:scale(1)}}
 @media(max-width:760px){.generator-filters{grid-template-columns:1fr;gap:10px}.generator-league-field,.generator-level-picker{min-height:91px}.generator-star-step{font-size:11px}.generator-stars{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.generator-star-step,.generator-star-step span{transition:none;animation:none!important}}
+
+
+/* Five-star selector: same outer dimensions and cian/blue palette as league filter. */
+.generator-five-stars{display:flex;align-items:center;justify-content:space-between;gap:7px;min-height:44px;width:100%}
+.generator-five-star{position:relative;flex:0 1 44px;aspect-ratio:1;min-width:0;display:block;font-size:clamp(29px,3vw,39px);line-height:1;isolation:isolate;transition:transform .22s ease,filter .22s ease}
+.generator-five-star-empty{display:block;color:#425c7e;line-height:1}
+.generator-five-star-fill{position:absolute;inset:0 auto auto 0;overflow:hidden;white-space:nowrap;color:#73e0f5;line-height:1;text-shadow:0 0 15px #4bdcff89;transition:width .2s ease}
+.generator-five-star:hover,.generator-five-star:focus-within{transform:scale(1.13);filter:drop-shadow(0 0 6px #62daf777)}
+.generator-star-hit{position:absolute;z-index:2;top:0;bottom:0;width:50%;border:0;cursor:pointer;background:transparent;padding:0;touch-action:manipulation}
+.generator-star-hit--left{left:0}
+.generator-star-hit--right{right:0}
+.generator-star-hit:focus-visible{outline:2px solid #a8f3ff;outline-offset:2px;border-radius:3px}
+.generator-level-picker .generator-level-value{font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){.generator-five-stars{justify-content:space-around;gap:5px}.generator-five-star{flex-basis:46px;font-size:39px}}
+@media(prefers-reduced-motion:reduce){.generator-five-star,.generator-five-star-fill{transition:none}}

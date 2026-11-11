@@ -24,6 +24,7 @@ export function MatchGenerator(){
   const [error,setError]=useState('');
   const [leagueId,setLeagueId]=useState('all');
   const [minRating,setMinRating]=useState(1);
+  const [previewRating,setPreviewRating]=useState<number|null>(null);
   const [pair,setPair]=useState<Pair|null>(null);
   const [previous,setPrevious]=useState('');
   useEffect(()=>{
@@ -67,21 +68,34 @@ export function MatchGenerator(){
             {catalog.leagues.map(l=><option key={l.id} value={l.id}>{l.name} · {l.country}</option>)}
           </select>
         </label>
-        <div className="generator-level-picker" role="group" aria-label="Nivel mínimo de estrellas">
+        <div className="generator-level-picker" role="group" aria-label="Seleccionar estrellas mínimas">
           <div className="generator-level-header">
             <span className="generator-filter-label">ESTRELLAS MÍNIMAS</span>
-            <span className="generator-level-value" aria-live="polite">{minRating === 1 ? 'Todos' : `${minRating}★+`}</span>
+            <span className="generator-level-value" aria-live="polite">{previewRating===null?'': 'Vista previa · '}{previewRating ?? minRating}★+</span>
           </div>
-          <div className="generator-star-track">
-            {[1,1.5,2,2.5,3,3.5,4,4.5,5].map(star=>(
-              <button type="button" key={star}
-                className={`generator-star-step ${star>=minRating?'generator-star-step--included':''} ${star===minRating?'generator-star-step--selected':''}`}
-                aria-pressed={star===minRating}
-                aria-label={star===1?'Desde 1 estrella, todos los niveles':`Desde ${star} estrellas en adelante`}
-                onClick={()=>changeRating(star)}>
-                <span aria-hidden="true">{star}</span>
-              </button>
-            ))}
+          <div className="generator-five-stars" onMouseLeave={()=>setPreviewRating(null)}>
+            {[1,2,3,4,5].map((star,index)=>{
+              const shown=previewRating ?? minRating;
+              const coverage=Math.max(0,Math.min(100,(shown-index)*100));
+              return <div className="generator-five-star" key={star}>
+                <span className="generator-five-star-empty" aria-hidden="true">★</span>
+                <span className="generator-five-star-fill" style={{width:`${coverage}%`}} aria-hidden="true">★</span>
+                <button type="button" className="generator-star-hit generator-star-hit--left"
+                  aria-label={star===1?'Desde 1 estrella':`Desde ${star-0.5} estrellas`}
+                  aria-pressed={minRating===(star===1?1:star-0.5)}
+                  onMouseEnter={()=>setPreviewRating(star===1?1:star-0.5)}
+                  onFocus={()=>setPreviewRating(star===1?1:star-0.5)}
+                  onBlur={()=>setPreviewRating(null)}
+                  onClick={()=>{changeRating(star===1?1:star-0.5);setPreviewRating(null)}}/>
+                <button type="button" className="generator-star-hit generator-star-hit--right"
+                  aria-label={`Desde ${star} estrellas`}
+                  aria-pressed={minRating===star}
+                  onMouseEnter={()=>setPreviewRating(star)}
+                  onFocus={()=>setPreviewRating(star)}
+                  onBlur={()=>setPreviewRating(null)}
+                  onClick={()=>{changeRating(star);setPreviewRating(null)}}/>
+              </div>;
+            })}
           </div>
         </div>
       </div>
