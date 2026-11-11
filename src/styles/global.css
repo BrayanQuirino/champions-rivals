@@ -27,3 +27,5 @@
 .coach-content p{font-size:12px;color:#98a8c9;line-height:1.7;margin:17px 0 0}
 @media(max-width:640px){.coaches-grid{grid-template-columns:1fr;gap:16px}.coach-photo{height:340px}.coach-content{padding:19px 22px 23px}.coach-content h3{font-size:36px}}
 @media(prefers-reduced-motion:reduce){.coach-card,.coach-photo img{transition:none}}
+
+.coach-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:radial-gradient(circle at 50% 32%,#30436b,#0b1029 72%)}.coach-fallback span{font:700 108px 'Barlow Condensed',Impact,sans-serif;color:#bce5ff;text-shadow:0 10px 48px #4e93dc55}.coach-fallback small{font-size:10px;letter-spacing:3px;color:#97acce}
