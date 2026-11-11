@@ -202,3 +202,10 @@
 .generator-result-star-svg{display:block;width:21px;height:21px;flex:none;overflow:visible}
 @media(max-width:760px){.generator-five-star{font-size:initial}.generator-result-star-svg{width:17px;height:17px}}
 @media(prefers-reduced-motion:reduce){.generator-star-svg path{transition:none}}
+
+/* Animate only the vector's interior: a sequential left-to-right fill wave.
+   The SVG path stays stationary, with no hover glow on the surrounding div. */
+.generator-star-wipe{transform-origin:0 50%;transform-box:view-box;transition:transform 460ms cubic-bezier(.22,.8,.22,1);will-change:transform}
+.generator-result-star-wipe{transform-origin:0 50%;transform-box:view-box}
+.generator-five-star,.generator-five-star:hover,.generator-five-star:focus-within{transform:none;filter:none}
+@media(prefers-reduced-motion:reduce){.generator-star-wipe{transition:none!important;transition-delay:0ms!important}}

@@ -27,8 +27,8 @@ export function clubsForMinimumRating(catalog: ClubCatalog, leagueId: string, mi
   if (!Number.isInteger(minRating * 2) || minRating < 1 || minRating > 5) return [];
   return catalog.clubs.filter(club => (leagueId === 'all' || club.leagueId === leagueId) && club.rating >= minRating);
 }
-/** Shuffle-independent pairing: prefer same number of stars, then closest Elo.
- * Eligible pairs come from the selected pool, and never include the same club twice.
+/** Builds random matchups with at most one star of difference (including half stars).
+ * The minimum-rating filter is applied before calling this function.
  * Randomizer is injected for deterministic tests.
  */
 export function pickBalancedMatch(clubs: Club[], random: () => number = Math.random): Pair | null {
@@ -38,7 +38,7 @@ export function pickBalancedMatch(clubs: Club[], random: () => number = Math.ran
     for (let j = i + 1; j < clubs.length; j++) {
       if (clubs[i].id === clubs[j].id) continue;
       const starDifference = Math.abs(clubs[i].rating - clubs[j].rating);
-      if (starDifference !== 0) continue;
+      if (starDifference > 1) continue;
       const eloA = clubs[i].elo;
       const eloB = clubs[j].elo;
       const eloDifference = eloA !== null && eloB !== null ? Math.abs(eloA - eloB) : 0;

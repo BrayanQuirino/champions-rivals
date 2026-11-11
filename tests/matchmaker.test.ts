@@ -7,8 +7,8 @@ const clubs:Club[]=[
 {id:'b',name:'B',leagueId:'l',country:'X',rating:4,elo:1795,logoUrl:null},
 {id:'c',name:'C',leagueId:'l',country:'X',rating:3,elo:1600,logoUrl:null}
 ];
-test('selection always yields distinct clubs of equal star level',()=>{
- for(const random of [()=>0,()=>0.3,()=>0.99]){const match=pickBalancedMatch(clubs,random);assert.ok(match);assert.notEqual(match.home.id,match.away.id);assert.equal(match.home.rating,match.away.rating);}
+test('selection always yields distinct clubs within one star',()=>{
+ for(const random of [()=>0,()=>0.3,()=>0.99]){const match=pickBalancedMatch(clubs,random);assert.ok(match);assert.notEqual(match.home.id,match.away.id);assert.ok(Math.abs(match.home.rating-match.away.rating)<=1);}
 });
 test('filters honor league and star level',()=>{assert.equal(clubsForDraw({schemaVersion:1,updatedAt:'',ratingMethod:'',source:'',leagues:[],clubs},'l',4).length,2);});
 test('single eligible club cannot be drawn',()=>assert.equal(pickBalancedMatch([clubs[0]]),null));
@@ -43,4 +43,21 @@ test('half-star selection is inclusive and keeps balanced draws',()=>{
  assert.equal(clubsForMinimumRating(fixture,'l',3.25).length,0);
  assert.doesNotThrow(()=>parseClubCatalog({...fixture,leagues:[{id:'l',name:'L',country:'X',clubCount:4}]}));
  assert.throws(()=>parseClubCatalog({...fixture,leagues:[{id:'l',name:'L',country:'X',clubCount:4}],clubs:[{...clubs[0],rating:3.25}]}));
+});
+
+test('one-star difference is allowed, larger differences are excluded',()=>{
+ const a={...clubs[0],rating:3};
+ const b={...clubs[1],rating:4};
+ const c={...clubs[2],rating:5};
+ const valid=pickBalancedMatch([a,b],()=>0);
+ assert.ok(valid);
+ assert.equal(valid.starDifference,1);
+ assert.equal(pickBalancedMatch([a,c],()=>0),null);
+});
+test('half-star gap and full one-star gap are both eligible',()=>{
+ const a={...clubs[0],rating:3.5};
+ const half={...clubs[1],rating:4};
+ const full={...clubs[2],rating:4.5};
+ assert.equal(pickBalancedMatch([a,half],()=>0)?.starDifference,0.5);
+ assert.equal(pickBalancedMatch([a,full],()=>0)?.starDifference,1);
 });

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useState } from 'react';
 import { ArrowLeftRight, Dices, RotateCcw, Shield } from 'lucide-react';
 import { clubsForMinimumRating, parseClubCatalog, pickBalancedMatch } from '../domain/matchmaker';
 import type { Club, ClubCatalog, Pair } from '../domain/matchmaker';
@@ -12,10 +12,16 @@ function ClubLogo({club}:{club:Club}){
     : club.flag ? <span className="draw-flag" role="img" aria-label={`Bandera de ${club.name}`}>{club.flag}</span> : <Shield size={39} aria-label="Escudo no disponible" />}</div>;
 }
 function StarShape({coverage,index,variant='filter'}:{coverage:number;index:number;variant?:'filter'|'result'}){
-  // SVG clipping is based on the actual vector bounds, not text glyph width or the containing div.
-  const clipId=`star-${variant}-${index}`;
+  // Stable, unique clip IDs prevent the two result rows from referencing each other's stars.
+  const clipId=useId();
+  const fill=Math.max(0,Math.min(1,coverage/100));
   return <svg className={variant==='filter'?'generator-star-svg':'generator-result-star-svg'} viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-    <defs><clipPath id={clipId}><rect x="0" y="0" width={Math.max(0,Math.min(48,coverage*0.48))} height="48"/></clipPath></defs>
+    <defs>
+      <clipPath id={clipId} clipPathUnits="userSpaceOnUse">
+        <rect className={variant==='filter'?'generator-star-wipe':'generator-result-star-wipe'} x="0" y="0" width="48" height="48"
+          style={{transform:`scaleX(${fill})`,transitionDelay:variant==='filter'?`${index*65}ms`:undefined}}/>
+      </clipPath>
+    </defs>
     <path d="M24 3L30.8 16.7L46 18.9L35 29.6L37.7 44.7L24 37.5L10.3 44.7L13 29.6L2 18.9L17.2 16.7Z" fill="#344d70" stroke="#6e92ad" strokeWidth="1.2" strokeLinejoin="round"/>
     <path d="M24 3L30.8 16.7L46 18.9L35 29.6L37.7 44.7L24 37.5L10.3 44.7L13 29.6L2 18.9L17.2 16.7Z" fill={variant==='filter'?'#68dff4':'#ffd274'} clipPath={`url(#${clipId})`}/>
   </svg>;
@@ -43,10 +49,9 @@ export function MatchGenerator(){
     return ()=>controller.abort();
   },[]);
   const clubs=useMemo(()=>catalog?clubsForMinimumRating(catalog,leagueId,minRating):[],[catalog,leagueId,minRating]);
-  const eligible=useMemo(()=>{
-    const counts=new Map<number,number>();clubs.forEach(c=>counts.set(c.rating,(counts.get(c.rating)??0)+1));
-    return [...counts.values()].some(n=>n>=2);
-  },[clubs]);
+  const eligible=useMemo(()=>clubs.some((club,index)=>clubs.some((other,otherIndex)=>
+    index!==otherIndex && club.id!==other.id && Math.abs(club.rating-other.rating)<=1
+  )),[clubs]);
   function draw(){
     // Prefer a new pairing if more than one is possible, without changing the selected filters.
     let next:Pair|null=null;
@@ -63,7 +68,7 @@ export function MatchGenerator(){
   return <section id="generador" className="match-generator" aria-labelledby="generator-title">
     <div className="generator-head"><div><span className="eyebrow">RIVALS · MATCH LAB</span>
       <h2 id="generator-title">El próximo desafío se decide al azar.</h2>
-      <p>Elige desde cuántas estrellas quieres jugar. Cada sorteo mantiene rivales del mismo nivel. No se registran resultados.</p>
+      <p>Elige desde cuántas estrellas quieres jugar. Cada sorteo permite hasta una estrella de diferencia. No se registran resultados.</p>
     </div><Dices size={37} aria-hidden="true"/></div>
     {error?<p className="generator-error" role="alert">{error}</p>:!catalog?<p className="generator-loading" role="status">Cargando equipos y ligas…</p>:
     <>
@@ -105,13 +110,13 @@ export function MatchGenerator(){
           </div>
         </div>
       </div>
-      <p className="generator-filter-summary" aria-live="polite">{clubs.length} equipos disponibles · {minRating===1?'Sin límite mínimo':`Desde ${minRating} estrellas`} · Rivales del mismo nivel</p>
+      <p className="generator-filter-summary" aria-live="polite">{clubs.length} equipos disponibles · {minRating===1?'Sin límite mínimo':`Desde ${minRating} estrellas`} · Máximo 1★ de diferencia</p>
       <div className="generator-versus">
         {pair?<>
           <div className="generator-team"><ClubLogo club={pair.home}/><span className="eyebrow">RIVAL 1</span><h3>{pair.home.name}</h3><StarRating rating={pair.home.rating}/><small>{catalog.leagues.find(l=>l.id===pair.home.leagueId)?.name}</small></div>
           <strong className="generator-vs">VS</strong>
           <div className="generator-team"><ClubLogo club={pair.away}/><span className="eyebrow">RIVAL 2</span><h3>{pair.away.name}</h3><StarRating rating={pair.away.rating}/><small>{catalog.leagues.find(l=>l.id===pair.away.leagueId)?.name}</small></div>
-        </>:<p className="generator-placeholder">{eligible?'Dos equipos. Un solo desafío. Presiona «Sortear enfrentamiento».':'No hay dos equipos del mismo nivel con estos filtros.'}</p>}
+        </>:<p className="generator-placeholder">{eligible?'Dos equipos. Un solo desafío. Presiona «Sortear enfrentamiento».':'No hay dos equipos con una diferencia máxima de 1 estrella con estos filtros.'}</p>}
       </div>
       <div className="generator-actions">
         <button className="generator-primary" onClick={draw} disabled={!eligible}><Dices size={19}/>{pair?'Volver a sortear':'Sortear enfrentamiento'}</button>
