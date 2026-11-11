@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Player } from '../domain/schema';
 
 const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
@@ -39,6 +40,15 @@ function CoachPortrait({ image, name, initials }: { image?: string; name: string
     : <div className="coach-fallback" role="img" aria-label={`Fotografía de ${name} pendiente de publicación`}><span>{initials}</span><small>DIRECTOR TÉCNICO</small></div>;
 }
 export function Coaches({ players }: { players: Player[] }) {
+  const trackRef = useRef<HTMLDivElement>(null);
+  function move(direction: -1 | 1) {
+    const track = trackRef.current;
+    if (!track) return;
+    const card = track.querySelector<HTMLElement>('.coach-card');
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 20;
+    const width = card ? card.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+    track.scrollBy({ left: direction * width, behavior: 'smooth' });
+  }
   return (
     <section id="directores-tecnicos" className="coaches-section" aria-labelledby="coaches-title">
       <div className="coaches-heading">
@@ -46,7 +56,12 @@ export function Coaches({ players }: { players: Player[] }) {
         <h2 id="coaches-title">Nuestros directores técnicos</h2>
         <p>Cuatro estrategas, una rivalidad que sigue creciendo.</p>
       </div>
-      <div className="coaches-grid">
+      <div className="coaches-carousel-controls" aria-label="Controles del carrusel de directores técnicos">
+        <span className="coaches-carousel-hint">DESLIZA PARA DESCUBRIR A LOS DTs</span>
+        <button type="button" className="coaches-carousel-arrow" onClick={() => move(-1)} aria-label="Ver director técnico anterior"><ChevronLeft size={22} /></button>
+        <button type="button" className="coaches-carousel-arrow" onClick={() => move(1)} aria-label="Ver director técnico siguiente"><ChevronRight size={22} /></button>
+      </div>
+      <div className="coaches-grid" ref={trackRef} role="region" aria-roledescription="carrusel" aria-label="Directores técnicos" tabIndex={0}>
         {[...players, { id: 'peter', name: 'Peter Quirino', initials: 'PQ' }, { id: 'axel', name: 'Axel Quirino', initials: 'AQ' }].map((player, index) => {
           const coach = coaches[player.id];
           return (
