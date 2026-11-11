@@ -1,0 +1,1000 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-11",
+  "ratingMethod": "Estimación editorial propia desde Elo de clubes, no ratings oficiales de videojuegos.",
+  "source": "https://github.com/Hicruben/theopenmodel/blob/main/data/leagues-2026.json",
+  "leagues": [
+    {
+      "id": "premier-league",
+      "name": "Premier League",
+      "country": "Inglaterra",
+      "clubCount": 20
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "country": "España",
+      "clubCount": 20
+    },
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "country": "Italia",
+      "clubCount": 20
+    },
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "country": "Alemania",
+      "clubCount": 18
+    },
+    {
+      "id": "ligue-1",
+      "name": "Ligue 1",
+      "country": "Francia",
+      "clubCount": 18
+    }
+  ],
+  "clubs": [
+    {
+      "id": "premier-league-arsenal",
+      "name": "Arsenal",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 5,
+      "elo": 2063.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/42.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-man-city",
+      "name": "Manchester City",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 5,
+      "elo": 1970.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/50.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-aston-villa",
+      "name": "Aston Villa",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1921,
+      "logoUrl": "https://media.api-sports.io/football/teams/66.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-man-united",
+      "name": "Manchester United",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1915.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/33.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-liverpool",
+      "name": "Liverpool",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1910.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/40.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-bournemouth",
+      "name": "Bournemouth",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1872,
+      "logoUrl": "https://media.api-sports.io/football/teams/35.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-brighton",
+      "name": "Brighton",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1842,
+      "logoUrl": "https://media.api-sports.io/football/teams/51.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-newcastle",
+      "name": "Newcastle",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1837.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/34.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-brentford",
+      "name": "Brentford",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1836.6,
+      "logoUrl": "https://media.api-sports.io/football/teams/55.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-chelsea",
+      "name": "Chelsea",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 4,
+      "elo": 1831.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/49.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-forest",
+      "name": "Forest",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1822.2,
+      "logoUrl": "https://media.api-sports.io/football/teams/65.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-fulham",
+      "name": "Fulham",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1813.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/36.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-crystal-palace",
+      "name": "Crystal Palace",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1803.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/52.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-everton",
+      "name": "Everton",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1803.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/45.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-leeds",
+      "name": "Leeds",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1797.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/63.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-tottenham",
+      "name": "Tottenham",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1777.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/47.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-sunderland",
+      "name": "Sunderland",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 3,
+      "elo": 1735.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/746.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-coventry",
+      "name": "Coventry",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 2,
+      "elo": 1661.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/1346.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-ipswich",
+      "name": "Ipswich",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 2,
+      "elo": 1640,
+      "logoUrl": "https://media.api-sports.io/football/teams/57.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "premier-league-hull",
+      "name": "Hull",
+      "leagueId": "premier-league",
+      "country": "ENG",
+      "rating": 1,
+      "elo": 1532.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/64.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-barcelona",
+      "name": "FC Barcelona",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 5,
+      "elo": 1951.6,
+      "logoUrl": "https://media.api-sports.io/football/teams/529.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-real-madrid",
+      "name": "Real Madrid",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 4,
+      "elo": 1922.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/541.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-atletico",
+      "name": "Atletico",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 4,
+      "elo": 1827.7,
+      "logoUrl": "https://media.api-sports.io/football/teams/530.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-villarreal",
+      "name": "Villarreal",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 3,
+      "elo": 1759.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/533.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-betis",
+      "name": "Betis",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 3,
+      "elo": 1747.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/543.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 3,
+      "elo": 1707.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/728.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-celta",
+      "name": "Celta",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 3,
+      "elo": 1700.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/538.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-valencia",
+      "name": "Valencia",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 3,
+      "elo": 1697.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/532.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-bilbao",
+      "name": "Bilbao",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1677.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/531.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-sociedad",
+      "name": "Sociedad",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1669.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/548.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-getafe",
+      "name": "Getafe",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1664.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/546.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-osasuna",
+      "name": "Osasuna",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1650.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/727.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-levante",
+      "name": "Levante",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1638.7,
+      "logoUrl": "https://media.api-sports.io/football/teams/539.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-alaves",
+      "name": "Alaves",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1635,
+      "logoUrl": "https://media.api-sports.io/football/teams/542.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-espanyol",
+      "name": "Espanyol",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1629.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/540.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-sevilla",
+      "name": "Sevilla",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1625.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/536.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-elche",
+      "name": "Elche",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1623.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/797.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-santander",
+      "name": "Santander",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1581.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/4665.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-malaga",
+      "name": "Malaga",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 2,
+      "elo": 1568.6,
+      "logoUrl": "https://media.api-sports.io/football/teams/535.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "la-liga-depor",
+      "name": "Depor",
+      "leagueId": "la-liga",
+      "country": "ESP",
+      "rating": 1,
+      "elo": 1546.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/544.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-inter",
+      "name": "Inter",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 4,
+      "elo": 1888.6,
+      "logoUrl": "https://media.api-sports.io/football/teams/505.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-roma",
+      "name": "Roma",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1793.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/497.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-napoli",
+      "name": "Napoli",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1780.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/492.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-juventus",
+      "name": "Juventus",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1772.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/496.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-atalanta",
+      "name": "Atalanta",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1763.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/499.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-como",
+      "name": "Como",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1760,
+      "logoUrl": "https://media.api-sports.io/football/teams/895.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-milan",
+      "name": "Milan",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1750,
+      "logoUrl": "https://media.api-sports.io/football/teams/489.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-lazio",
+      "name": "Lazio",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1703.2,
+      "logoUrl": "https://media.api-sports.io/football/teams/487.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-bologna",
+      "name": "Bologna",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 3,
+      "elo": 1701.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/500.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-fiorentina",
+      "name": "Fiorentina",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1670.2,
+      "logoUrl": "https://media.api-sports.io/football/teams/502.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-udinese",
+      "name": "Udinese",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1645.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/494.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-torino",
+      "name": "Torino",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1624.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/503.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-sassuolo",
+      "name": "Sassuolo",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1622,
+      "logoUrl": "https://media.api-sports.io/football/teams/488.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-genoa",
+      "name": "Genoa",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1618.2,
+      "logoUrl": "https://media.api-sports.io/football/teams/495.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-parma",
+      "name": "Parma",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1599.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/523.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-venezia",
+      "name": "Venezia",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1598.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/517.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-cagliari",
+      "name": "Cagliari",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1594.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/490.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-lecce",
+      "name": "Lecce",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1568,
+      "logoUrl": "https://media.api-sports.io/football/teams/867.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-frosinone",
+      "name": "Frosinone",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 2,
+      "elo": 1564.7,
+      "logoUrl": "https://media.api-sports.io/football/teams/512.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "serie-a-monza",
+      "name": "Monza",
+      "leagueId": "serie-a",
+      "country": "ITA",
+      "rating": 1,
+      "elo": 1544,
+      "logoUrl": "https://media.api-sports.io/football/teams/1579.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-bayern",
+      "name": "Bayern München",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 5,
+      "elo": 2000.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/157.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-dortmund",
+      "name": "Borussia Dortmund",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 4,
+      "elo": 1834.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/165.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-leverkusen",
+      "name": "Leverkusen",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 3,
+      "elo": 1804,
+      "logoUrl": "https://media.api-sports.io/football/teams/168.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-stuttgart",
+      "name": "Stuttgart",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 3,
+      "elo": 1763.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/172.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-rb-leipzig",
+      "name": "RB Leipzig",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 3,
+      "elo": 1761.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/173.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-freiburg",
+      "name": "Freiburg",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 3,
+      "elo": 1724.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/160.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-hoffenheim",
+      "name": "Hoffenheim",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 3,
+      "elo": 1700.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/167.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-mainz",
+      "name": "Mainz",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1671.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/164.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-frankfurt",
+      "name": "Frankfurt",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1663.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/169.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-gladbach",
+      "name": "Gladbach",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1640.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/163.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-augsburg",
+      "name": "Augsburg",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1636.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/170.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-union-berlin",
+      "name": "Union Berlin",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1619.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/182.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-werder",
+      "name": "Werder",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1606,
+      "logoUrl": "https://media.api-sports.io/football/teams/162.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-hamburg",
+      "name": "Hamburg",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1602.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/175.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-koeln",
+      "name": "Koeln",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 2,
+      "elo": 1568.2,
+      "logoUrl": "https://media.api-sports.io/football/teams/192.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-paderborn",
+      "name": "Paderborn",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 1,
+      "elo": 1525.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/185.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-elversberg",
+      "name": "Elversberg",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 1,
+      "elo": 1523.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/1660.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "bundesliga-schalke",
+      "name": "Schalke",
+      "leagueId": "bundesliga",
+      "country": "GER",
+      "rating": 1,
+      "elo": 1519.7,
+      "logoUrl": "https://media.api-sports.io/football/teams/174.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-paris-sg",
+      "name": "Paris Saint-Germain",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 5,
+      "elo": 1967.9,
+      "logoUrl": "https://media.api-sports.io/football/teams/85.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-lens",
+      "name": "Lens",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1767,
+      "logoUrl": "https://media.api-sports.io/football/teams/116.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-lille",
+      "name": "Lille",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1743.7,
+      "logoUrl": "https://media.api-sports.io/football/teams/79.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-lyon",
+      "name": "Lyon",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1731.6,
+      "logoUrl": "https://media.api-sports.io/football/teams/80.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-monaco",
+      "name": "Monaco",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1717.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/91.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-marseille",
+      "name": "Marseille",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1716.7,
+      "logoUrl": "https://media.api-sports.io/football/teams/81.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-rennes",
+      "name": "Rennes",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1716.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/94.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-strasbourg",
+      "name": "Strasbourg",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 3,
+      "elo": 1710.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/95.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-toulouse",
+      "name": "Toulouse",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1652.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/96.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-lorient",
+      "name": "Lorient",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1639.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/97.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-paris-fc",
+      "name": "Paris FC",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1629.3,
+      "logoUrl": "https://media.api-sports.io/football/teams/114.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-auxerre",
+      "name": "Auxerre",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1624.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/108.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-brest",
+      "name": "Brest",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1620.8,
+      "logoUrl": "https://media.api-sports.io/football/teams/106.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-nice",
+      "name": "Nice",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1582.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/84.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-le-havre",
+      "name": "Le Havre",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 2,
+      "elo": 1580.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/111.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-angers",
+      "name": "Angers",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 1,
+      "elo": 1547.5,
+      "logoUrl": "https://media.api-sports.io/football/teams/77.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-troyes",
+      "name": "Troyes",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 1,
+      "elo": 1521.1,
+      "logoUrl": "https://media.api-sports.io/football/teams/110.png",
+      "logoSource": "API-Sports CDN"
+    },
+    {
+      "id": "ligue-1-le-mans",
+      "name": "Le Mans",
+      "leagueId": "ligue-1",
+      "country": "FRA",
+      "rating": 1,
+      "elo": 1492.4,
+      "logoUrl": "https://media.api-sports.io/football/teams/1298.png",
+      "logoSource": "API-Sports CDN"
+    }
+  ]
+}

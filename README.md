@@ -62,3 +62,13 @@ Resumen, clasificación, historial, búsqueda, filtros de temporada y resultado,
 - `main`: versión estable ejecutable publicada en GitHub Pages.
 
 Flujo: develop_brayan → test → main. Las tres ramas ejecutan verificaciones; solo main despliega. La publicación inicial está autorizada por el propietario. No crear ramas adicionales sin necesidad.
+
+## Generador de enfrentamientos (v1)
+
+El sorteo de `#generador` es **independiente del historial**, no escribe ningún resultado ni requiere servidor. El catálogo vive en `public/data/club-catalog.json` y contiene ligas, ID estable, club, nivel entero de 1–5 estrellas, Elo y enlace al escudo. El generador cruza equipos de **idéntico número de estrellas** y asigna Brayan/Joni al azar. Permite filtrar liga o estrellas y cambiar los lados.
+
+Cobertura inicial: 96 clubes de Premier League, La Liga, Serie A, Bundesliga y Ligue 1; **no equivale a todas las ligas del mundo**. Fuente de clubes, Elo y URLs de escudos: https://github.com/Hicruben/theopenmodel/blob/main/data/leagues-2026.json . Las estrellas son una estimación editorial no oficial, con esta tabla: 5 ≥1950 Elo, 4 ≥1825, 3 ≥1690, 2 ≥1550, 1 <1550. No representan puntuaciones de un videojuego.
+
+El campo `logoUrl` utiliza enlaces HTTPS al CDN externo identificado por el proyecto fuente. Su disponibilidad y derechos de reutilización deben verificarse antes de cualquier explotación comercial; los nombres y escudos siguen perteneciendo a sus titulares. En errores de imagen se muestra un marcador genérico. No hay afiliación oficial con clubes, competiciones ni desarrolladores de videojuegos.
+
+**Ampliación:** adjuntar nuevas ligas al array `leagues` y nuevos equipos al array `clubs`; IDs únicos, ligas válidas y estrellas 1–5. Mantener fuente y fecha actualizadas. La vista se actualizará al desplegar el JSON, sin cambiar React.

@@ -58,3 +58,33 @@
 .venue-visual{aspect-ratio:16/9;min-height:0}
 .venue-visual img{min-height:0;object-fit:cover;object-position:50% 52%}
 @media(max-width:760px){.venue-visual{min-height:0}.venue-visual img{min-height:0}}
+
+/* Sorteos equilibrados: identidad independiente, responsive y legible. */
+.match-generator{margin:38px 0 30px;border:1px solid #5483bd77;border-radius:16px;background:radial-gradient(ellipse at 75% 5%,#1b39638a,transparent 60%),#0e1730;padding:29px;scroll-margin-top:90px}
+.generator-head{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.generator-head svg{flex:none;color:var(--cyan)}
+.generator-head h2{font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(31px,4.4vw,48px);line-height:1.06;margin:12px 0}
+.generator-head p,.generator-disclaimer{color:#a2b7d5;font-size:12px;line-height:1.7}
+.generator-filters{display:flex;gap:14px;align-items:end;flex-wrap:wrap;margin-top:22px}
+.generator-filters label{display:grid;gap:8px;color:#a8bfe6;font-size:11px;min-width:190px;flex:1}
+.generator-filters select{width:100%;font-size:12px;padding:12px}
+.generator-count{font-size:11px;color:#b5d8ec;padding:12px 0}
+.generator-versus{margin:21px 0;padding:26px 15px;min-height:235px;background:linear-gradient(130deg,#111c38,#10132d);border:1px solid #ffffff1c;border-radius:11px;display:grid;grid-template-columns:minmax(0,1fr) 75px minmax(0,1fr);gap:10px;align-items:center}
+.generator-team{text-align:center;min-width:0}
+.generator-team h3{font:700 clamp(23px,3vw,34px) 'Barlow Condensed',Impact,sans-serif;margin:9px auto;overflow-wrap:anywhere}
+.generator-team small{font-size:11px;color:#93aacf}
+.draw-logo{height:80px;display:grid;place-items:center;margin:auto;color:#a5cbef}
+.draw-logo img{display:block;max-height:77px;max-width:92px;width:auto;height:auto;object-fit:contain}
+.generator-stars{color:#ffcc6c;letter-spacing:3px;font-size:20px}
+.generator-stars span{color:#4b5c7e}
+.generator-vs{font:800 40px 'Barlow Condensed',sans-serif;color:#80e8f6;text-align:center}
+.generator-placeholder{grid-column:1/-1;text-align:center;font-size:14px;color:#a9c5e1;line-height:1.6;padding:20px}
+.generator-actions{display:flex;gap:12px;flex-wrap:wrap}
+.generator-actions button{display:inline-flex;gap:8px;align-items:center;justify-content:center;border-radius:6px;padding:13px 17px;font-size:12px;font-weight:700}
+.generator-primary{background:var(--cyan);color:#07152b;border:1px solid var(--cyan)}
+.generator-primary:disabled{opacity:.45;cursor:not-allowed}
+.generator-secondary{background:#1c2a47;border:1px solid #b2ddfa40;color:#c8eaff}
+.generator-disclaimer{margin:18px 0 0;font-size:10px}
+.generator-error{color:#ffb4b4;font-size:12px}
+.generator-loading{color:#b6e5f2;font-size:12px}
+@media(max-width:640px){.match-generator{padding:19px}.generator-versus{grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr);padding:24px 7px}.generator-vs{font-size:28px}.draw-logo{height:64px}.draw-logo img{max-width:60px;max-height:60px}.generator-stars{font-size:15px;letter-spacing:1px}.generator-actions button{flex:1}.generator-team h3{font-size:24px}}

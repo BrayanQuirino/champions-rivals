@@ -1,7 +1,7 @@
 {
   "name": "champions-rivals",
   "version": "1.0.0",
-  "description": "Portal FIFA entre hermanos con React, TypeScript y JSON para GitHub Pages",
+  "description": "Portal independiente de encuentros virtuales entre hermanos con generador de partidos equilibrados",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "npm run validate:data && tsc --noEmit && vite build",
