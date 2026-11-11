@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeftRight, Dices, RotateCcw, Shield } from 'lucide-react';
-import { clubsForDraw, parseClubCatalog, pickBalancedMatch } from '../domain/matchmaker';
+import { clubsForMinimumRating, parseClubCatalog, pickBalancedMatch } from '../domain/matchmaker';
 import type { Club, ClubCatalog, Pair } from '../domain/matchmaker';
 
 function ClubLogo({club}:{club:Club}){
@@ -15,7 +15,7 @@ export function MatchGenerator(){
   const [catalog,setCatalog]=useState<ClubCatalog|null>(null);
   const [error,setError]=useState('');
   const [leagueId,setLeagueId]=useState('all');
-  const [rating,setRating]=useState('all');
+  const [minRating,setMinRating]=useState(1);
   const [pair,setPair]=useState<Pair|null>(null);
   const [previous,setPrevious]=useState('');
   useEffect(()=>{
@@ -26,7 +26,7 @@ export function MatchGenerator(){
       .catch(reason=>{if(!controller.signal.aborted)setError(reason instanceof Error?reason.message:'No se pudo leer el catálogo.');});
     return ()=>controller.abort();
   },[]);
-  const clubs=useMemo(()=>catalog?clubsForDraw(catalog,leagueId,rating==='all'?null:Number(rating)):[],[catalog,leagueId,rating]);
+  const clubs=useMemo(()=>catalog?clubsForMinimumRating(catalog,leagueId,minRating):[],[catalog,leagueId,minRating]);
   const eligible=useMemo(()=>{
     const counts=new Map<number,number>();clubs.forEach(c=>counts.set(c.rating,(counts.get(c.rating)??0)+1));
     return [...counts.values()].some(n=>n>=2);
@@ -43,11 +43,11 @@ export function MatchGenerator(){
     setPair(next);
   }
   function changeLeague(value:string){setLeagueId(value);setPair(null);setPrevious('');}
-  function changeRating(value:string){setRating(value);setPair(null);setPrevious('');}
+  function changeRating(value:number){setMinRating(value);setPair(null);setPrevious('');}
   return <section id="generador" className="match-generator" aria-labelledby="generator-title">
     <div className="generator-head"><div><span className="eyebrow">RIVALS · MATCH LAB</span>
       <h2 id="generator-title">El próximo desafío se decide al azar.</h2>
-      <p>Sortea dos equipos del mismo nivel, incluidos clubes y selecciones. No se registran resultados.</p>
+      <p>Elige desde cuántas estrellas quieres jugar. Cada sorteo mantiene rivales del mismo nivel. No se registran resultados.</p>
     </div><Dices size={37} aria-hidden="true"/></div>
     {error?<p className="generator-error" role="alert">{error}</p>:!catalog?<p className="generator-loading" role="status">Cargando equipos y ligas…</p>:
     <>
@@ -56,11 +56,23 @@ export function MatchGenerator(){
           <option value="all">Todas las ligas ({catalog.leagues.length})</option>
           {catalog.leagues.map(l=><option key={l.id} value={l.id}>{l.name} · {l.country}</option>)}
         </select></label>
-        <label>Nivel<select value={rating} onChange={e=>changeRating(e.target.value)}>
-          <option value="all">Todas las estrellas</option>
-          {[5,4,3,2,1].map(stars=><option key={stars} value={String(stars)}>{'★'.repeat(stars)}{'☆'.repeat(5-stars)}</option>)}
-        </select></label>
-        <span className="generator-count">{clubs.length} equipos disponibles</span>
+        <div className="generator-level-picker" role="group" aria-label="Nivel mínimo de estrellas">
+          <div className="generator-level-header"><span className="generator-level-caption">NIVEL MÍNIMO</span>
+            <span className="generator-level-value" aria-live="polite">{minRating === 1 ? 'Todos los niveles' : `${minRating}★ en adelante`}</span>
+          </div>
+          <div className="generator-star-track">
+            {[1,2,3,4,5].map(star=>(
+              <button type="button" className={`generator-star-step ${star>=minRating?'generator-star-step--included':''} ${star===minRating?'generator-star-step--selected':''}`}
+                key={star} aria-pressed={star===minRating} aria-label={star===1?'Permitir todos los equipos, desde 1 estrella':`Equipos de ${star} estrellas en adelante`}
+                onClick={()=>changeRating(star)}>
+                <span className="generator-star-glyph" aria-hidden="true">★</span>
+                <span className="generator-star-digit">{star}{star===minRating?'+':''}</span>
+              </button>
+            ))}
+          </div>
+          <div className="generator-level-foot"><span>Desde 1★</span><span>Solo élite 5★</span></div>
+        </div>
+        <span className="generator-count" aria-live="polite">{clubs.length} equipos disponibles</span>
       </div>
       <div className="generator-versus">
         {pair?<>
@@ -72,7 +84,7 @@ export function MatchGenerator(){
       <div className="generator-actions">
         <button className="generator-primary" onClick={draw} disabled={!eligible}><Dices size={19}/>{pair?'Volver a sortear':'Sortear enfrentamiento'}</button>
         {pair&&<button className="generator-secondary" onClick={()=>setPair({...pair,home:pair.away,away:pair.home})}><ArrowLeftRight size={17}/>Intercambiar</button>}
-        <button className="generator-secondary" onClick={()=>{changeLeague('all');changeRating('all');setPair(null)}}><RotateCcw size={16}/>Restablecer</button>
+        <button className="generator-secondary" onClick={()=>{changeLeague('all');changeRating(1);setPair(null)}}><RotateCcw size={16}/>Restablecer</button>
       </div>
       <p className="generator-disclaimer">{catalog.clubs.length} equipos · {catalog.leagues.length} ligas · Estrellas orientativas no oficiales: basadas en Elo en las cinco grandes ligas y estimaciones provisionales en las demás. Los escudos y banderas se muestran cuando están disponibles. No se guardan resultados.</p>
     </>}

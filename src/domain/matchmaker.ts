@@ -22,6 +22,11 @@ export interface Pair { home: Club; away: Club; starDifference: number; eloDiffe
 export function clubsForDraw(catalog: ClubCatalog, leagueId: string, rating: number | null): Club[] {
   return catalog.clubs.filter(club => (leagueId === 'all' || club.leagueId === leagueId) && (rating === null || club.rating === rating));
 }
+/** Inclusive minimum tier, independent of the exact-tier filter kept for compatibility. */
+export function clubsForMinimumRating(catalog: ClubCatalog, leagueId: string, minRating: number): Club[] {
+  if (!Number.isInteger(minRating) || minRating < 1 || minRating > 5) return [];
+  return catalog.clubs.filter(club => (leagueId === 'all' || club.leagueId === leagueId) && club.rating >= minRating);
+}
 /** Shuffle-independent pairing: prefer same number of stars, then closest Elo.
  * Eligible pairs come from the selected pool, and never include the same club twice.
  * Randomizer is injected for deterministic tests.
