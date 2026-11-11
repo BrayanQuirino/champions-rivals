@@ -4,3 +4,26 @@
 @media(max-width:1000px){.nav-inner{padding:20px 24px}.hero{padding:55px 24px;gap:25px}.hero h1{font-size:62px}.big-score{font-size:48px;gap:9px}.content{padding:30px 24px}.lower-grid{grid-template-columns:1fr}.h2h{display:grid;grid-template-columns:1fr 1fr;column-gap:35px}.h2h>.eyebrow,.h2h>h2{grid-column:1}.h2h-numbers{grid-column:2;grid-row:1/4;margin:0}.photo-note{grid-column:1/3}.export-button{grid-column:1/3}.metric{padding:17px}}
 @media(max-width:640px){.nav-inner{flex-wrap:wrap;gap:18px;padding:18px 20px}.brand{font-size:22px}.brand-icon{width:37px;height:37px}nav{order:3;width:100%;justify-content:space-between;gap:12px;font-size:12px;padding-top:14px;border-top:1px solid var(--line)}.demo-button{font-size:11px;padding:10px 13px}.hero{grid-template-columns:1fr;padding:35px 20px;gap:30px}.hero h1{font-size:64px;margin-top:21px}.hero-copy>p{font-size:13px}.hero-signature{font-size:8px}.scoreboard-top{padding:17px}.versus{padding:27px 10px}.big-score{font-size:62px}.content{padding:30px 16px}.overview-heading{align-items:flex-start;flex-direction:column;gap:12px}.overview-heading h2{font-size:20px}.season-label{width:100%}.metrics{grid-template-columns:repeat(2,1fr);gap:10px}.metric{padding:17px 14px}.metric>div{font-size:10px}.metric strong{font-size:32px}.metric small{font-size:9px}.section-heading{padding:20px;align-items:flex-start}.section-heading .muted{max-width:100px;font-size:9px;line-height:1.7}h2{font-size:18px}.eyebrow{font-size:8px;letter-spacing:1.6px}.filters{padding:0 16px 18px;flex-direction:column}.search input{font-size:12px}.match-row{grid-template-columns:1fr 58px 1fr;gap:9px;padding:16px}.match-date{grid-column:1/4;display:flex;justify-content:space-between;font-size:9px}.match-date small{display:inline;margin:0}.row-arrow{display:none}.team b{font-size:10px}.score-small{font-size:18px}.score-small i{margin:0 6px}.h2h{padding:22px;column-gap:15px}.h2h h2{font-size:21px}.h2h-numbers{gap:20px}.h2h-numbers strong{font-size:37px}.h2h-numbers>div>span:last-child{font-size:10px}footer{gap:15px}footer p{font-size:9px;text-align:right}.empty{padding:45px 20px}.demo-banner{font-size:10px;line-height:1.6}th,td{padding:14px 11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Directors: portrait-driven cards with responsive editorial layout */
+.coaches-section{margin:32px 0 28px;scroll-margin-top:30px}
+.coaches-heading{margin-bottom:22px}
+.coaches-heading h2{font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(30px,4vw,44px);letter-spacing:.2px;margin:9px 0}
+.coaches-heading p{font-size:12px;color:#99a9cb;margin:0;line-height:1.7}
+.coaches-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.coach-card{position:relative;overflow:hidden;border-radius:13px;border:1px solid #ffffff1c;background:#10182f;isolation:isolate;transition:transform .25s ease,border-color .25s ease}
+.coach-card:hover{transform:translateY(-4px);border-color:#65e6fc60}
+.coach-photo{height:clamp(270px,35vw,400px);background:radial-gradient(circle at 50% 40%,#253658,#090f26 75%);position:relative;overflow:hidden}
+.coach-photo::after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(0deg,#0b1129,transparent);pointer-events:none}
+.coach-photo img{width:100%;height:100%;object-fit:cover;object-position:center 26%;display:block;transition:transform .5s ease}
+.coach-card:hover .coach-photo img{transform:scale(1.035)}
+.coach-number{position:absolute;z-index:1;top:18px;left:19px;border:1px solid #ffffff50;border-radius:4px;padding:7px 10px;color:#fff;background:#06112a88;backdrop-filter:blur(8px);font-size:10px;letter-spacing:2px}
+.coach-content{padding:23px 26px 26px}
+.coach-role{font-size:9px;font-weight:700;letter-spacing:2px;color:#69e5fa}
+.coach-card--sky .coach-role{color:#96caff}
+.coach-content h3{font-family:'Barlow Condensed',Impact,sans-serif;font-size:42px;letter-spacing:.4px;font-weight:700;margin:6px 0 3px}
+.coach-club{font-size:10px;letter-spacing:1.8px;font-weight:700;color:#a8b9e2}
+.coach-content p{font-size:12px;color:#98a8c9;line-height:1.7;margin:17px 0 0}
+@media(max-width:640px){.coaches-grid{grid-template-columns:1fr;gap:16px}.coach-photo{height:340px}.coach-content{padding:19px 22px 23px}.coach-content h3{font-size:36px}}
+@media(prefers-reduced-motion:reduce){.coach-card,.coach-photo img{transition:none}}
