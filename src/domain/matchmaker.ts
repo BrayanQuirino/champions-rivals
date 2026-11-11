@@ -6,6 +6,7 @@ export interface Club {
   rating: number;
   elo: number | null;
   logoUrl: string | null;
+  flag?: string | null;
 }
 export interface League { id: string; name: string; country: string; clubCount: number }
 export interface ClubCatalog {

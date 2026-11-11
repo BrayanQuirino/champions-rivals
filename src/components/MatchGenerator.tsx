@@ -8,7 +8,7 @@ function ClubLogo({club}:{club:Club}){
   useEffect(()=>setBroken(false),[club.id]);
   return <div className="draw-logo">{club.logoUrl&&!broken
     ? <img src={club.logoUrl} alt={`Escudo de ${club.name}`} loading="lazy" referrerPolicy="no-referrer" onError={()=>setBroken(true)}/>
-    : <Shield size={39} aria-label="Escudo no disponible" />}</div>;
+    : club.flag ? <span className="draw-flag" role="img" aria-label={`Bandera de ${club.name}`}>{club.flag}</span> : <Shield size={39} aria-label="Escudo no disponible" />}</div>;
 }
 export function MatchGenerator(){
   const [catalog,setCatalog]=useState<ClubCatalog|null>(null);
@@ -46,7 +46,7 @@ export function MatchGenerator(){
   return <section id="generador" className="match-generator" aria-labelledby="generator-title">
     <div className="generator-head"><div><span className="eyebrow">RIVALS · MATCH LAB</span>
       <h2 id="generator-title">El próximo desafío se decide al azar.</h2>
-      <p>Sortea dos clubes de las mismas estrellas. Sin ventaja predeterminada, sin registrar partidos.</p>
+      <p>Sortea dos equipos del mismo nivel, incluidos clubes y selecciones. No se registran resultados.</p>
     </div><Dices size={37} aria-hidden="true"/></div>
     {error?<p className="generator-error" role="alert">{error}</p>:!catalog?<p className="generator-loading" role="status">Cargando equipos y ligas…</p>:
     <>
@@ -59,21 +59,21 @@ export function MatchGenerator(){
           <option value="all">Todas las estrellas</option>
           {[5,4,3,2,1].map(stars=><option key={stars} value={String(stars)}>{'★'.repeat(stars)}{'☆'.repeat(5-stars)}</option>)}
         </select></label>
-        <span className="generator-count">{clubs.length} clubes disponibles</span>
+        <span className="generator-count">{clubs.length} equipos disponibles</span>
       </div>
       <div className="generator-versus">
         {pair?<>
-          <div className="generator-team"><ClubLogo club={pair.home}/><span className="eyebrow">BRAYAN</span><h3>{pair.home.name}</h3><div className="generator-stars" aria-label={`${pair.home.rating} de 5 estrellas`}>{'★'.repeat(pair.home.rating)}<span>{'☆'.repeat(5-pair.home.rating)}</span></div><small>{catalog.leagues.find(l=>l.id===pair.home.leagueId)?.name}</small></div>
+          <div className="generator-team"><ClubLogo club={pair.home}/><span className="eyebrow">RIVAL 1</span><h3>{pair.home.name}</h3><div className="generator-stars" aria-label={`${pair.home.rating} de 5 estrellas`}>{'★'.repeat(pair.home.rating)}<span>{'☆'.repeat(5-pair.home.rating)}</span></div><small>{catalog.leagues.find(l=>l.id===pair.home.leagueId)?.name}</small></div>
           <strong className="generator-vs">VS</strong>
-          <div className="generator-team"><ClubLogo club={pair.away}/><span className="eyebrow">JONI</span><h3>{pair.away.name}</h3><div className="generator-stars" aria-label={`${pair.away.rating} de 5 estrellas`}>{'★'.repeat(pair.away.rating)}<span>{'☆'.repeat(5-pair.away.rating)}</span></div><small>{catalog.leagues.find(l=>l.id===pair.away.leagueId)?.name}</small></div>
-        </>:<p className="generator-placeholder">{eligible?'Dos equipos. Un solo desafío. Presiona «Sortear enfrentamiento».':'No hay dos clubes del mismo nivel con estos filtros.'}</p>}
+          <div className="generator-team"><ClubLogo club={pair.away}/><span className="eyebrow">RIVAL 2</span><h3>{pair.away.name}</h3><div className="generator-stars" aria-label={`${pair.away.rating} de 5 estrellas`}>{'★'.repeat(pair.away.rating)}<span>{'☆'.repeat(5-pair.away.rating)}</span></div><small>{catalog.leagues.find(l=>l.id===pair.away.leagueId)?.name}</small></div>
+        </>:<p className="generator-placeholder">{eligible?'Dos equipos. Un solo desafío. Presiona «Sortear enfrentamiento».':'No hay dos equipos del mismo nivel con estos filtros.'}</p>}
       </div>
       <div className="generator-actions">
         <button className="generator-primary" onClick={draw} disabled={!eligible}><Dices size={19}/>{pair?'Volver a sortear':'Sortear enfrentamiento'}</button>
         {pair&&<button className="generator-secondary" onClick={()=>setPair({...pair,home:pair.away,away:pair.home})}><ArrowLeftRight size={17}/>Intercambiar</button>}
         <button className="generator-secondary" onClick={()=>{changeLeague('all');changeRating('all');setPair(null)}}><RotateCcw size={16}/>Restablecer</button>
       </div>
-      <p className="generator-disclaimer">{catalog.clubs.length} clubes · {catalog.leagues.length} ligas · Estrellas orientativas no oficiales: basadas en Elo en las cinco grandes ligas y estimaciones provisionales en las demás. Los escudos aparecen solo cuando existe una URL verificada. No se guardan resultados.</p>
+      <p className="generator-disclaimer">{catalog.clubs.length} equipos · {catalog.leagues.length} ligas · Estrellas orientativas no oficiales: basadas en Elo en las cinco grandes ligas y estimaciones provisionales en las demás. Los escudos y banderas se muestran cuando están disponibles. No se guardan resultados.</p>
     </>}
   </section>;
 }

@@ -1,14 +1,19 @@
 import { useState } from 'react';
 import type { Database, Match } from '../domain/schema';
+
 function VenuePhoto() {
-  const [useFallback, setUseFallback] = useState(false);
-  return <img
-    src={`${import.meta.env.BASE_URL}images/venues/${useFallback ? 'winterfell-arena.webp' : 'winterfell-arena-hd.png'}`}
-    alt="Winterfell Arena: gran cúpula acristalada iluminada y fachada de piedra, en una ciudad al anochecer"
-    loading="lazy"
-    decoding="async"
-    onError={() => setUseFallback(true)}
-  />;
+  const [failed, setFailed] = useState(false);
+  return failed
+    ? <div className="venue-image-error" role="img" aria-label="Fotografía de Winterfell Arena no disponible">Winterfell Arena · Fotografía no disponible</div>
+    : <img
+        src={`${import.meta.env.BASE_URL}images/venues/winterfell-arena-hd.png`}
+        alt="Fachada de Winterfell Arena con su gran cúpula acristalada, iluminada durante la noche"
+        loading="lazy"
+        decoding="async"
+        width={1672}
+        height={941}
+        onError={() => setFailed(true)}
+      />;
 }
 export function Venues({venues,matches}:{venues:NonNullable<Database['venues']>;matches:Match[]}) {
   if (!venues.length) return null;

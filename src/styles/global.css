@@ -88,3 +88,12 @@
 .generator-error{color:#ffb4b4;font-size:12px}
 .generator-loading{color:#b6e5f2;font-size:12px}
 @media(max-width:640px){.match-generator{padding:19px}.generator-versus{grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr);padding:24px 7px}.generator-vs{font-size:28px}.draw-logo{height:64px}.draw-logo img{max-width:60px;max-height:60px}.generator-stars{font-size:15px;letter-spacing:1px}.generator-actions button{flex:1}.generator-team h3{font-size:24px}}
+
+/* Fotografía editorial de la sede: mostrar la imagen completa, nunca ampliarla desde una miniatura. */
+.venue-card{display:flex;flex-direction:column}
+.venue-visual{display:block;aspect-ratio:auto;min-height:0}
+.venue-visual img{display:block;position:relative;inset:auto;width:100%;height:auto;min-height:0;max-height:none;object-fit:contain;object-position:center}
+.venue-details{padding:25px 32px 29px}
+.venue-image-error{min-height:270px;display:grid;place-items:center;color:#afc4e5;font-size:13px}
+.draw-flag{font-size:54px;line-height:1}
+@media(max-width:760px){.venue-visual img{min-height:0}.venue-details{padding:22px}.draw-flag{font-size:44px}}

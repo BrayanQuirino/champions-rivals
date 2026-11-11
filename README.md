@@ -72,3 +72,9 @@ Cobertura: **419 clubes de 23 ligas** (incluidas Liga MX, MLS, Brasil y las prin
 El campo `logoUrl` utiliza enlaces HTTPS al CDN externo identificado por el proyecto fuente cuando estén disponibles. 96 clubes tienen URL de escudo; el resto utiliza `logoUrl: null` y un marcador visual alternativo, sin inventar enlaces. Su disponibilidad y derechos de reutilización deben verificarse antes de cualquier explotación comercial; los nombres y escudos siguen perteneciendo a sus titulares. En errores de imagen se muestra un marcador genérico. No hay afiliación oficial con clubes, competiciones ni desarrolladores de videojuegos.
 
 **Ampliación:** adjuntar nuevas ligas al array `leagues` y nuevos equipos al array `clubs`; IDs únicos, ligas válidas y estrellas 1–5. Mantener fuente y fecha actualizadas. La vista se actualizará al desplegar el JSON, sin cambiar React.
+
+## Ligas destacadas y selecciones internacionales
+
+**Liga MX** figura al principio del selector y tiene 18 equipos del catálogo existente. El filtro **Internacional · Selecciones** incluye 25 selecciones nacionales de una fuente histórica (no una lista completa del juego), cada una con un nivel estimado entre 1 y 5 estrellas. Los niveles internacionales no son oficiales ni clasificación actual; muestran un emoji de bandera si no hay escudo con URL verificada.
+
+El sorteo muestra **Rival 1** y **Rival 2**, sin asociar la propuesta a ninguno de los jugadores. Winterfell Arena muestra el PNG original en su proporción panorámica, evitando la miniatura de reserva y el recorte forzado.
