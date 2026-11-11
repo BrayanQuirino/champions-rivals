@@ -7,8 +7,9 @@ export function Venues({venues,matches}:{venues:NonNullable<Database['venues']>;
     {venues.map(venue => {
       const count=matches.filter(match=>match.venueId===venue.id).length;
       return <article className="venue-card" key={venue.id}>
-        <div className="venue-visual" role="img" aria-label="Representación gráfica original de una cancha de fútbol dentro de una arena">
-          <div className="venue-pitch"/><span className="venue-visual-label">ESTADIO LOCAL · WINTERFELL</span>
+        <div className="venue-visual">
+          <img src={`${import.meta.env.BASE_URL}images/venues/winterfell-arena.webp`} alt="Vista exterior de Winterfell Arena, estadio con cúpula moderna y detalles de piedra al anochecer" loading="lazy" decoding="async" />
+          <span className="venue-visual-label">WINTERFELL ARENA · NUESTRA SEDE</span>
         </div>
         <div className="venue-details">
           <span className="eyebrow">SEDE OFICIAL · NUESTRA HISTORIA</span>
