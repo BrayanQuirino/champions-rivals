@@ -33,7 +33,9 @@ export function pickBalancedMatch(clubs: Club[], random: () => number = Math.ran
       if (clubs[i].id === clubs[j].id) continue;
       const starDifference = Math.abs(clubs[i].rating - clubs[j].rating);
       if (starDifference !== 0) continue;
-      const eloDifference = clubs[i].elo !== null && clubs[j].elo !== null ? Math.abs(clubs[i].elo - clubs[j].elo) : 0;
+      const eloA = clubs[i].elo;
+      const eloB = clubs[j].elo;
+      const eloDifference = eloA !== null && eloB !== null ? Math.abs(eloA - eloB) : 0;
       pairs.push({home:clubs[i],away:clubs[j],starDifference,eloDifference});
     }
   }
