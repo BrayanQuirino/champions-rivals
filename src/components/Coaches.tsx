@@ -16,6 +16,13 @@ const coaches: Record<string, { image: string; club: string; role: string; quote
     quote: 'El fútbol se vive con intensidad, pasión y carácter.',
     accent: 'gold',
   },
+  axel: {
+    image: 'B3B85BF3-4C91-4D6C-93E8-45F8698A8BEF.png',
+    club: 'FC BARCELONA',
+    role: 'DIRECTOR TÉCNICO',
+    quote: 'La intensidad se vive desde la banda hasta el último minuto.',
+    accent: 'cyan',
+  },
   hermano: {
     image: 'joni-dt.png',
     club: 'MANCHESTER CITY',
@@ -37,10 +44,10 @@ export function Coaches({ players }: { players: Player[] }) {
       <div className="coaches-heading">
         <span className="eyebrow">LOS CEREBROS DETRÁS DEL PARTIDO</span>
         <h2 id="coaches-title">Nuestros directores técnicos</h2>
-        <p>Tres estrategas, una rivalidad que sigue creciendo.</p>
+        <p>Cuatro estrategas, una rivalidad que sigue creciendo.</p>
       </div>
       <div className="coaches-grid">
-        {[...players, { id: 'peter', name: 'Peter Quirino', initials: 'PQ' }].map((player, index) => {
+        {[...players, { id: 'peter', name: 'Peter Quirino', initials: 'PQ' }, { id: 'axel', name: 'Axel Quirino', initials: 'AQ' }].map((player, index) => {
           const coach = coaches[player.id];
           return (
             <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id}>
