@@ -8,8 +8,13 @@
     },
     {
       "id": "hermano",
-      "name": "Joni",
-      "initials": "J"
+      "name": "Joni Quirino",
+      "initials": "JQ"
+    },
+    {
+      "id": "peter",
+      "name": "Peter Quirino",
+      "initials": "PQ"
     }
   ],
   "matches": [

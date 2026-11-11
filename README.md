@@ -38,7 +38,7 @@ La página no incluye OCR ni escribe directamente en GitHub. No requiere tokens 
 
 ## Datos y reglas
 
-Dos jugadores configurables en `players`; el segundo aparece como «Hermano» hasta conocer su nombre. Marcador incluye tiempo extra si lo hubo; tanda de penales va aparte. Victoria: 3 puntos (incluidos penales), empate: 1. Desempates por diferencia de goles y goles a favor. Si todo coincide, se conserva orden de jugadores. La forma muestra hasta cinco partidos, del más antiguo al más reciente. Para partidos del mismo día se ordena por ID, por lo que utiliza IDs de ancho fijo secuenciales (ejemplo `2026-11-10-001`). El selector de temporada afecta todas las estadísticas; búsqueda y filtro de resultado afectan solo el historial.
+Mínimo dos jugadores, con posibilidad de agregar tantos participantes y directores técnicos como se necesiten. Los partidos existentes conservan sus IDs originales. Marcador incluye tiempo extra si lo hubo; tanda de penales va aparte. Victoria: 3 puntos (incluidos penales), empate: 1. Desempates por diferencia de goles y goles a favor. Si todo coincide, se conserva orden de jugadores. La forma muestra hasta cinco partidos, del más antiguo al más reciente. Para partidos del mismo día se ordena por ID, por lo que utiliza IDs de ancho fijo secuenciales (ejemplo `2026-11-10-001`). El selector de temporada afecta todas las estadísticas; búsqueda y filtro de resultado afectan solo el historial.
 
 El esquema ejecutable está en `src/domain/schema.ts`. No añadas estadísticas que no figuren en la captura. `date` usa YYYY-MM-DD; `source.type` admite photo/manual/demo. `penalties` y `stats` pueden ser null. Las estadísticas individuales también admiten null.
 

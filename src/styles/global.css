@@ -97,3 +97,12 @@
 .venue-image-error{min-height:270px;display:grid;place-items:center;color:#afc4e5;font-size:13px}
 .draw-flag{font-size:54px;line-height:1}
 @media(max-width:760px){.venue-visual img{min-height:0}.venue-details{padding:22px}.draw-flag{font-size:44px}}
+
+/* Multiple directors and player comparison scale to 3+ participants. */
+.coaches-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr))}
+.coach-card--gold .coach-role{color:#f8d95a}
+.coach-card--gold:hover{border-color:#f5d75f85}
+.h2h-numbers{flex-wrap:wrap;gap:18px;justify-content:space-around}
+.h2h-numbers>div{min-width:75px;flex:1}
+@media(max-width:1000px){.h2h{display:block}.h2h-numbers{margin:24px 0 18px}.photo-note,.export-button{grid-column:auto}}
+@media(max-width:640px){.coaches-grid{grid-template-columns:1fr}.h2h-numbers>div{min-width:70px}}
