@@ -42,7 +42,7 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "brayan",
-        "team": "Cheese",
+        "team": "Chelsea",
         "goals": 1
       },
       "away": {
@@ -56,7 +56,7 @@
       "source": {
         "type": "manual",
         "reference": "Resultados proporcionados por Brayan en el chat",
-        "notes": "Fecha asignada al día del registro. Nombre Cheese conservado tal como fue proporcionado."
+        "notes": "Fecha asignada al día del registro. Equipo Chelsea confirmado por Brayan."
       }
     },
     {
