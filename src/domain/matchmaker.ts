@@ -24,7 +24,7 @@ export function clubsForDraw(catalog: ClubCatalog, leagueId: string, rating: num
 }
 /** Inclusive minimum tier, independent of the exact-tier filter kept for compatibility. */
 export function clubsForMinimumRating(catalog: ClubCatalog, leagueId: string, minRating: number): Club[] {
-  if (!Number.isInteger(minRating) || minRating < 1 || minRating > 5) return [];
+  if (!Number.isInteger(minRating * 2) || minRating < 1 || minRating > 5) return [];
   return catalog.clubs.filter(club => (leagueId === 'all' || club.leagueId === leagueId) && club.rating >= minRating);
 }
 /** Shuffle-independent pairing: prefer same number of stars, then closest Elo.
@@ -61,7 +61,7 @@ export function parseClubCatalog(value: unknown): ClubCatalog {
   }
   const seen=new Set<string>();
   for(const club of data.clubs) {
-    if(!club || typeof club.id!=='string' || !club.id || seen.has(club.id) || typeof club.name!=='string' || !leagueIds.has(club.leagueId) || !Number.isInteger(club.rating) || club.rating<1 || club.rating>5 || (club.elo!==null && (typeof club.elo!=='number' || !Number.isFinite(club.elo))) || (club.logoUrl!==null && (typeof club.logoUrl!=='string' || !club.logoUrl.startsWith('https://'))) || (club.logoFallbackUrl!=null && (typeof club.logoFallbackUrl!=='string' || !club.logoFallbackUrl.startsWith('https://')))) throw Error('Equipo inválido en el catálogo.');
+    if(!club || typeof club.id!=='string' || !club.id || seen.has(club.id) || typeof club.name!=='string' || !leagueIds.has(club.leagueId) || !Number.isInteger(club.rating*2) || club.rating<1 || club.rating>5 || (club.elo!==null && (typeof club.elo!=='number' || !Number.isFinite(club.elo))) || (club.logoUrl!==null && (typeof club.logoUrl!=='string' || !club.logoUrl.startsWith('https://'))) || (club.logoFallbackUrl!=null && (typeof club.logoFallbackUrl!=='string' || !club.logoFallbackUrl.startsWith('https://')))) throw Error('Equipo inválido en el catálogo.');
     seen.add(club.id);
   }
   return data as ClubCatalog;

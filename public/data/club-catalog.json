@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-11",
-  "ratingMethod": "Cinco ligas con estrellas derivadas de Elo; otras ligas con categorías estimadas de forma provisional, no oficiales. Selecciones internacionales: estrellas orientativas basadas en clasificación histórica de la fuente; no son rankings actuales ni puntuaciones oficiales.",
+  "ratingMethod": "Escala editorial 1–5 en pasos de 0.5. En las cinco grandes ligas, umbrales Elo: 5≥1950; 4.5≥1887.5; 4≥1825; 3.5≥1757.5; 3≥1690; 2.5≥1620; 2≥1550; 1.5≥1480; 1 por debajo. Los demás clubes y selecciones conservan su evaluación provisional entera por falta de Elo comparable. Calificaciones no oficiales de EA FC.",
   "source": "https://github.com/Hicruben/theopenmodel/blob/main/data/leagues-2026.json",
   "leagues": [
     {
@@ -159,7 +159,8 @@
       "elo": 2063.8,
       "logoUrl": "https://media.api-sports.io/football/teams/42.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Arsenal/arsenal_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Arsenal/arsenal_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-man-city",
@@ -170,40 +171,44 @@
       "elo": 1970.9,
       "logoUrl": "https://media.api-sports.io/football/teams/50.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Manchester%20City/manchester-city_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Manchester%20City/manchester-city_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-aston-villa",
       "name": "Aston Villa",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 4,
+      "rating": 4.5,
       "elo": 1921,
       "logoUrl": "https://media.api-sports.io/football/teams/66.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Aston%20Villa/aston-villa_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Aston%20Villa/aston-villa_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-man-united",
       "name": "Manchester United",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 4,
+      "rating": 4.5,
       "elo": 1915.3,
       "logoUrl": "https://media.api-sports.io/football/teams/33.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Manchester%20United/manchester-united_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Manchester%20United/manchester-united_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-liverpool",
       "name": "Liverpool",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 4,
+      "rating": 4.5,
       "elo": 1910.8,
       "logoUrl": "https://media.api-sports.io/football/teams/40.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Liverpool/liverpool_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Liverpool/liverpool_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-bournemouth",
@@ -214,7 +219,8 @@
       "elo": 1872,
       "logoUrl": "https://media.api-sports.io/football/teams/35.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Bournemouth/bournemouth_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Bournemouth/bournemouth_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-brighton",
@@ -225,7 +231,8 @@
       "elo": 1842,
       "logoUrl": "https://media.api-sports.io/football/teams/51.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Brighton/brighton_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Brighton/brighton_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-newcastle",
@@ -236,7 +243,8 @@
       "elo": 1837.5,
       "logoUrl": "https://media.api-sports.io/football/teams/34.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Newcastle/newcastle_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Newcastle/newcastle_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-brentford",
@@ -247,7 +255,8 @@
       "elo": 1836.6,
       "logoUrl": "https://media.api-sports.io/football/teams/55.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Brentford/brentford_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Brentford/brentford_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-chelsea",
@@ -258,73 +267,80 @@
       "elo": 1831.1,
       "logoUrl": "https://media.api-sports.io/football/teams/49.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Chelsea/chelsea_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Chelsea/chelsea_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-forest",
       "name": "Forest",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1822.2,
       "logoUrl": "https://media.api-sports.io/football/teams/65.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Nottingham%20Forest/nottingham-forest_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Nottingham%20Forest/nottingham-forest_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-fulham",
       "name": "Fulham",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1813.1,
       "logoUrl": "https://media.api-sports.io/football/teams/36.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Fulham/fulham_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Fulham/fulham_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-crystal-palace",
       "name": "Crystal Palace",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1803.8,
       "logoUrl": "https://media.api-sports.io/football/teams/52.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Crystal%20Palace/crystal-palace_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Crystal%20Palace/crystal-palace_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-everton",
       "name": "Everton",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1803.4,
       "logoUrl": "https://media.api-sports.io/football/teams/45.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Everton/everton_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Everton/everton_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-leeds",
       "name": "Leeds",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1797.4,
       "logoUrl": "https://media.api-sports.io/football/teams/63.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Leeds/leeds_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Leeds/leeds_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-tottenham",
       "name": "Tottenham",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1777.3,
       "logoUrl": "https://media.api-sports.io/football/teams/47.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Tottenham/tottenham_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Tottenham/tottenham_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-sunderland",
@@ -335,39 +351,43 @@
       "elo": 1735.9,
       "logoUrl": "https://media.api-sports.io/football/teams/746.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Sunderland/sunderland_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Sunderland/sunderland_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-coventry",
       "name": "Coventry",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1661.5,
       "logoUrl": "https://media.api-sports.io/football/teams/1346.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Coventry/coventry_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Coventry/coventry_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-ipswich",
       "name": "Ipswich",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1640,
       "logoUrl": "https://media.api-sports.io/football/teams/57.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Ipswich/ipswich_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Premier%20League/Ipswich/ipswich_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "premier-league-hull",
       "name": "Hull",
       "leagueId": "premier-league",
       "country": "ENG",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1532.9,
       "logoUrl": "https://media.api-sports.io/football/teams/64.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-barcelona",
@@ -377,18 +397,20 @@
       "rating": 5,
       "elo": 1951.6,
       "logoUrl": "https://media.api-sports.io/football/teams/529.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-real-madrid",
       "name": "Real Madrid",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 4,
+      "rating": 4.5,
       "elo": 1922.9,
       "logoUrl": "https://media.api-sports.io/football/teams/541.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Real%20Madrid/real-madrid_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Real%20Madrid/real-madrid_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-atletico",
@@ -399,18 +421,20 @@
       "elo": 1827.7,
       "logoUrl": "https://media.api-sports.io/football/teams/530.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Atletico%20Madrid/atletico-madrid_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Atletico%20Madrid/atletico-madrid_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-villarreal",
       "name": "Villarreal",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1759.3,
       "logoUrl": "https://media.api-sports.io/football/teams/533.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Villarreal/villarreal_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Villarreal/villarreal_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-betis",
@@ -420,7 +444,8 @@
       "rating": 3,
       "elo": 1747.1,
       "logoUrl": "https://media.api-sports.io/football/teams/543.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-rayo-vallecano",
@@ -431,7 +456,8 @@
       "elo": 1707.3,
       "logoUrl": "https://media.api-sports.io/football/teams/728.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Rayo%20Vallecano/rayo-vallecano_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Rayo%20Vallecano/rayo-vallecano_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-celta",
@@ -441,7 +467,8 @@
       "rating": 3,
       "elo": 1700.8,
       "logoUrl": "https://media.api-sports.io/football/teams/538.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-valencia",
@@ -452,105 +479,115 @@
       "elo": 1697.4,
       "logoUrl": "https://media.api-sports.io/football/teams/532.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Valencia/valencia_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Valencia/valencia_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-bilbao",
       "name": "Bilbao",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1677.9,
       "logoUrl": "https://media.api-sports.io/football/teams/531.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-sociedad",
       "name": "Sociedad",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1669.5,
       "logoUrl": "https://media.api-sports.io/football/teams/548.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Real%20Sociedad/real-sociedad_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Real%20Sociedad/real-sociedad_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-getafe",
       "name": "Getafe",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1664.1,
       "logoUrl": "https://media.api-sports.io/football/teams/546.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Getafe/getafe_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Getafe/getafe_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-osasuna",
       "name": "Osasuna",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1650.3,
       "logoUrl": "https://media.api-sports.io/football/teams/727.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Osasuna/osasuna_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Osasuna/osasuna_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-levante",
       "name": "Levante",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1638.7,
       "logoUrl": "https://media.api-sports.io/football/teams/539.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Levante/levante_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Levante/levante_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-alaves",
       "name": "Alaves",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1635,
       "logoUrl": "https://media.api-sports.io/football/teams/542.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Alaves/alaves_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Alaves/alaves_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-espanyol",
       "name": "Espanyol",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1629.5,
       "logoUrl": "https://media.api-sports.io/football/teams/540.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Espanyol/espanyol_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Espanyol/espanyol_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-sevilla",
       "name": "Sevilla",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1625.9,
       "logoUrl": "https://media.api-sports.io/football/teams/536.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Sevilla/sevilla_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Sevilla/sevilla_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-elche",
       "name": "Elche",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1623.4,
       "logoUrl": "https://media.api-sports.io/football/teams/797.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Elche/elche_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Elche/elche_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-santander",
@@ -561,7 +598,8 @@
       "elo": 1581.9,
       "logoUrl": "https://media.api-sports.io/football/teams/4665.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Racing%20Santander/racing-santander_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Racing%20Santander/racing-santander_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-malaga",
@@ -572,82 +610,90 @@
       "elo": 1568.6,
       "logoUrl": "https://media.api-sports.io/football/teams/535.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Malaga/malaga_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/La%20Liga/Malaga/malaga_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "la-liga-depor",
       "name": "Depor",
       "leagueId": "la-liga",
       "country": "ESP",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1546.3,
       "logoUrl": "https://media.api-sports.io/football/teams/544.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-inter",
       "name": "Inter",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 4,
+      "rating": 4.5,
       "elo": 1888.6,
       "logoUrl": "https://media.api-sports.io/football/teams/505.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Inter/inter_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Inter/inter_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-roma",
       "name": "Roma",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1793.5,
       "logoUrl": "https://media.api-sports.io/football/teams/497.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-napoli",
       "name": "Napoli",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1780.3,
       "logoUrl": "https://media.api-sports.io/football/teams/492.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Napoli/napoli_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Napoli/napoli_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-juventus",
       "name": "Juventus",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1772.3,
       "logoUrl": "https://media.api-sports.io/football/teams/496.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Juventus/juventus_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Juventus/juventus_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-atalanta",
       "name": "Atalanta",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1763.5,
       "logoUrl": "https://media.api-sports.io/football/teams/499.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Atalanta/atalanta_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Atalanta/atalanta_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-como",
       "name": "Como",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1760,
       "logoUrl": "https://media.api-sports.io/football/teams/895.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Como/como_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Como/como_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-milan",
@@ -657,7 +703,8 @@
       "rating": 3,
       "elo": 1750,
       "logoUrl": "https://media.api-sports.io/football/teams/489.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-lazio",
@@ -668,7 +715,8 @@
       "elo": 1703.2,
       "logoUrl": "https://media.api-sports.io/football/teams/487.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Lazio/lazio_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Lazio/lazio_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-bologna",
@@ -679,51 +727,56 @@
       "elo": 1701.3,
       "logoUrl": "https://media.api-sports.io/football/teams/500.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Bologna/bologna_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Bologna/bologna_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-fiorentina",
       "name": "Fiorentina",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1670.2,
       "logoUrl": "https://media.api-sports.io/football/teams/502.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Fiorentina/fiorentina_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Fiorentina/fiorentina_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-udinese",
       "name": "Udinese",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1645.9,
       "logoUrl": "https://media.api-sports.io/football/teams/494.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Udinese/udinese_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Udinese/udinese_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-torino",
       "name": "Torino",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1624.1,
       "logoUrl": "https://media.api-sports.io/football/teams/503.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Torino/torino_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Torino/torino_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-sassuolo",
       "name": "Sassuolo",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1622,
       "logoUrl": "https://media.api-sports.io/football/teams/488.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Sassuolo/sassuolo_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Sassuolo/sassuolo_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-genoa",
@@ -734,7 +787,8 @@
       "elo": 1618.2,
       "logoUrl": "https://media.api-sports.io/football/teams/495.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Genoa/genoa_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Genoa/genoa_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-parma",
@@ -745,7 +799,8 @@
       "elo": 1599.9,
       "logoUrl": "https://media.api-sports.io/football/teams/523.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Parma/parma_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Parma/parma_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-venezia",
@@ -756,7 +811,8 @@
       "elo": 1598.8,
       "logoUrl": "https://media.api-sports.io/football/teams/517.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Venezia/venezia_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Venezia/venezia_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-cagliari",
@@ -767,7 +823,8 @@
       "elo": 1594.3,
       "logoUrl": "https://media.api-sports.io/football/teams/490.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Cagliari/cagliari_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Cagliari/cagliari_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-lecce",
@@ -778,7 +835,8 @@
       "elo": 1568,
       "logoUrl": "https://media.api-sports.io/football/teams/867.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Lecce/lecce_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Lecce/lecce_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-frosinone",
@@ -789,18 +847,20 @@
       "elo": 1564.7,
       "logoUrl": "https://media.api-sports.io/football/teams/512.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Frosinone/frosinone_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Frosinone/frosinone_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "serie-a-monza",
       "name": "Monza",
       "leagueId": "serie-a",
       "country": "ITA",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1544,
       "logoUrl": "https://media.api-sports.io/football/teams/1579.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Monza/monza_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Serie%20A/Monza/monza_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-bayern",
@@ -811,7 +871,8 @@
       "elo": 2000.9,
       "logoUrl": "https://media.api-sports.io/football/teams/157.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Bayern%20M%C3%BCnchen/bayern-munchen_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Bayern%20M%C3%BCnchen/bayern-munchen_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-dortmund",
@@ -822,40 +883,44 @@
       "elo": 1834.8,
       "logoUrl": "https://media.api-sports.io/football/teams/165.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Borussia%20Dortmund/borussia-dortmund_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Borussia%20Dortmund/borussia-dortmund_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-leverkusen",
       "name": "Leverkusen",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1804,
       "logoUrl": "https://media.api-sports.io/football/teams/168.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Bayer%20Leverkusen/bayer-leverkusen_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Bayer%20Leverkusen/bayer-leverkusen_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-stuttgart",
       "name": "Stuttgart",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1763.8,
       "logoUrl": "https://media.api-sports.io/football/teams/172.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/VfB%20Stuttgart/vfb-stuttgart_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/VfB%20Stuttgart/vfb-stuttgart_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-rb-leipzig",
       "name": "RB Leipzig",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1761.9,
       "logoUrl": "https://media.api-sports.io/football/teams/173.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/RB%20Leipzig/rb-leipzig_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/RB%20Leipzig/rb-leipzig_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-freiburg",
@@ -866,7 +931,8 @@
       "elo": 1724.9,
       "logoUrl": "https://media.api-sports.io/football/teams/160.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/SC%20Freiburg/sc-freiburg_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/SC%20Freiburg/sc-freiburg_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-hoffenheim",
@@ -877,50 +943,55 @@
       "elo": 1700.4,
       "logoUrl": "https://media.api-sports.io/football/teams/167.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/1899%20Hoffenheim/1899-hoffenheim_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/1899%20Hoffenheim/1899-hoffenheim_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-mainz",
       "name": "Mainz",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1671.9,
       "logoUrl": "https://media.api-sports.io/football/teams/164.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-frankfurt",
       "name": "Frankfurt",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1663.8,
       "logoUrl": "https://media.api-sports.io/football/teams/169.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Eintracht%20Frankfurt/eintracht-frankfurt_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Eintracht%20Frankfurt/eintracht-frankfurt_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-gladbach",
       "name": "Gladbach",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1640.8,
       "logoUrl": "https://media.api-sports.io/football/teams/163.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Borussia%20M%C3%B6nchengladbach/borussia-monchengladbach_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Borussia%20M%C3%B6nchengladbach/borussia-monchengladbach_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-augsburg",
       "name": "Augsburg",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1636.4,
       "logoUrl": "https://media.api-sports.io/football/teams/170.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/FC%20Augsburg/fc-augsburg_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/FC%20Augsburg/fc-augsburg_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-union-berlin",
@@ -931,7 +1002,8 @@
       "elo": 1619.4,
       "logoUrl": "https://media.api-sports.io/football/teams/182.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Union%20Berlin/union-berlin_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Union%20Berlin/union-berlin_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-werder",
@@ -942,7 +1014,8 @@
       "elo": 1606,
       "logoUrl": "https://media.api-sports.io/football/teams/162.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Werder%20Bremen/werder-bremen_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Werder%20Bremen/werder-bremen_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-hamburg",
@@ -953,7 +1026,8 @@
       "elo": 1602.1,
       "logoUrl": "https://media.api-sports.io/football/teams/175.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Hamburger%20SV/hamburger-sv_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/Hamburger%20SV/hamburger-sv_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-koeln",
@@ -963,40 +1037,44 @@
       "rating": 2,
       "elo": 1568.2,
       "logoUrl": "https://media.api-sports.io/football/teams/192.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-paderborn",
       "name": "Paderborn",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1525.4,
       "logoUrl": "https://media.api-sports.io/football/teams/185.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/SC%20Paderborn%2007/sc-paderborn-07_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/SC%20Paderborn%2007/sc-paderborn-07_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-elversberg",
       "name": "Elversberg",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1523.4,
       "logoUrl": "https://media.api-sports.io/football/teams/1660.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/SV%20Elversberg/sv-elversberg_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/SV%20Elversberg/sv-elversberg_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "bundesliga-schalke",
       "name": "Schalke",
       "leagueId": "bundesliga",
       "country": "GER",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1519.7,
       "logoUrl": "https://media.api-sports.io/football/teams/174.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/FC%20Schalke%2004/fc-schalke-04_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Bundesliga/FC%20Schalke%2004/fc-schalke-04_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-paris-sg",
@@ -1007,18 +1085,20 @@
       "elo": 1967.9,
       "logoUrl": "https://media.api-sports.io/football/teams/85.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Paris%20Saint%20Germain/paris-saint-germain_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Paris%20Saint%20Germain/paris-saint-germain_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-lens",
       "name": "Lens",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 3,
+      "rating": 3.5,
       "elo": 1767,
       "logoUrl": "https://media.api-sports.io/football/teams/116.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lens/lens_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lens/lens_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-lille",
@@ -1029,7 +1109,8 @@
       "elo": 1743.7,
       "logoUrl": "https://media.api-sports.io/football/teams/79.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lille/lille_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lille/lille_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-lyon",
@@ -1040,7 +1121,8 @@
       "elo": 1731.6,
       "logoUrl": "https://media.api-sports.io/football/teams/80.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lyon/lyon_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lyon/lyon_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-monaco",
@@ -1051,7 +1133,8 @@
       "elo": 1717.5,
       "logoUrl": "https://media.api-sports.io/football/teams/91.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Monaco/monaco_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Monaco/monaco_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-marseille",
@@ -1062,7 +1145,8 @@
       "elo": 1716.7,
       "logoUrl": "https://media.api-sports.io/football/teams/81.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Marseille/marseille_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Marseille/marseille_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-rennes",
@@ -1073,7 +1157,8 @@
       "elo": 1716.1,
       "logoUrl": "https://media.api-sports.io/football/teams/94.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Rennes/rennes_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Rennes/rennes_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-strasbourg",
@@ -1084,61 +1169,67 @@
       "elo": 1710.8,
       "logoUrl": "https://media.api-sports.io/football/teams/95.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Strasbourg/strasbourg_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Strasbourg/strasbourg_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-toulouse",
       "name": "Toulouse",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1652.3,
       "logoUrl": "https://media.api-sports.io/football/teams/96.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Toulouse/toulouse_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Toulouse/toulouse_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-lorient",
       "name": "Lorient",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1639.1,
       "logoUrl": "https://media.api-sports.io/football/teams/97.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lorient/lorient_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Lorient/lorient_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-paris-fc",
       "name": "Paris FC",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1629.3,
       "logoUrl": "https://media.api-sports.io/football/teams/114.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Paris%20FC/paris-fc_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Paris%20FC/paris-fc_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-auxerre",
       "name": "Auxerre",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1624.1,
       "logoUrl": "https://media.api-sports.io/football/teams/108.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Auxerre/auxerre_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Auxerre/auxerre_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-brest",
       "name": "Brest",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 2,
+      "rating": 2.5,
       "elo": 1620.8,
       "logoUrl": "https://media.api-sports.io/football/teams/106.png",
-      "logoSource": "API-Sports CDN"
+      "logoSource": "API-Sports CDN",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-nice",
@@ -1149,7 +1240,8 @@
       "elo": 1582.4,
       "logoUrl": "https://media.api-sports.io/football/teams/84.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Nice/nice_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Nice/nice_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-le-havre",
@@ -1160,40 +1252,44 @@
       "elo": 1580.1,
       "logoUrl": "https://media.api-sports.io/football/teams/111.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Le%20Havre/le-havre_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Le%20Havre/le-havre_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-angers",
       "name": "Angers",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1547.5,
       "logoUrl": "https://media.api-sports.io/football/teams/77.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Angers/angers_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Angers/angers_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-troyes",
       "name": "Troyes",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1521.1,
       "logoUrl": "https://media.api-sports.io/football/teams/110.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Estac%20Troyes/estac-troyes_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Estac%20Troyes/estac-troyes_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "ligue-1-le-mans",
       "name": "Le Mans",
       "leagueId": "ligue-1",
       "country": "FRA",
-      "rating": 1,
+      "rating": 1.5,
       "elo": 1492.4,
       "logoUrl": "https://media.api-sports.io/football/teams/1298.png",
       "logoSource": "API-Sports CDN",
-      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Le%20Mans/le-mans_small_square.png"
+      "logoFallbackUrl": "https://raw.githubusercontent.com/frertommy/team-logos/main/MSI2026/Ligue%201/Le%20Mans/le-mans_small_square.png",
+      "ratingSource": "Estimación editorial por intervalos Elo de medio punto; no clasificación oficial"
     },
     {
       "id": "championship-blackburn-rovers",

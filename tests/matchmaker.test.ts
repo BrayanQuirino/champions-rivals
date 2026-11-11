@@ -26,3 +26,21 @@ test('minimum-rating filter rejects out-of-range tier values',()=>{
  assert.deepEqual(clubsForMinimumRating(fixture,'all',0),[]);
  assert.deepEqual(clubsForMinimumRating(fixture,'all',6),[]);
 });
+
+test('half-star selection is inclusive and keeps balanced draws',()=>{
+ const fixture={schemaVersion:1,updatedAt:'',ratingMethod:'',source:'',leagues:[],clubs:[
+ {...clubs[0],id:'3half-a',rating:3.5},
+ {...clubs[1],id:'3half-b',rating:3.5},
+ {...clubs[2],id:'4stars',rating:4},
+ {...clubs[2],id:'3stars',rating:3},
+ ]};
+ const eligible=clubsForMinimumRating(fixture,'l',3.5);
+ assert.deepEqual(eligible.map(c=>c.id),['3half-a','3half-b','4stars']);
+ const pair=pickBalancedMatch(eligible,()=>0);
+ assert.ok(pair);
+ assert.equal(pair.home.rating,3.5);
+ assert.equal(pair.away.rating,3.5);
+ assert.equal(clubsForMinimumRating(fixture,'l',3.25).length,0);
+ assert.doesNotThrow(()=>parseClubCatalog({...fixture,leagues:[{id:'l',name:'L',country:'X',clubCount:4}]}));
+ assert.throws(()=>parseClubCatalog({...fixture,leagues:[{id:'l',name:'L',country:'X',clubCount:4}],clubs:[{...clubs[0],rating:3.25}]}));
+});
