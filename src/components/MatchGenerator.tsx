@@ -4,10 +4,11 @@ import { clubsForDraw, parseClubCatalog, pickBalancedMatch } from '../domain/mat
 import type { Club, ClubCatalog, Pair } from '../domain/matchmaker';
 
 function ClubLogo({club}:{club:Club}){
-  const [broken,setBroken]=useState(false);
-  useEffect(()=>setBroken(false),[club.id]);
-  return <div className="draw-logo">{club.logoUrl&&!broken
-    ? <img src={club.logoUrl} alt={`Escudo de ${club.name}`} loading="lazy" referrerPolicy="no-referrer" onError={()=>setBroken(true)}/>
+  const [imageIndex,setImageIndex]=useState(0);
+  useEffect(()=>setImageIndex(0),[club.id]);
+  const urls=[club.logoUrl,club.logoFallbackUrl].filter((url):url is string=>Boolean(url));
+  return <div className="draw-logo">{imageIndex<urls.length
+    ? <img key={urls[imageIndex]} src={urls[imageIndex]} alt={`Escudo de ${club.name}`} loading="lazy" decoding="async" onError={()=>setImageIndex(i=>i+1)}/>
     : club.flag ? <span className="draw-flag" role="img" aria-label={`Bandera de ${club.name}`}>{club.flag}</span> : <Shield size={39} aria-label="Escudo no disponible" />}</div>;
 }
 export function MatchGenerator(){
