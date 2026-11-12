@@ -8,7 +8,7 @@ export const matchSchema = z.object({
   extraTime: z.boolean().default(false),
   penalties: z.object({ home: goals, away: goals }).nullable().default(null),
   stats: z.object({ home: statistics, away: statistics }).nullable().default(null),
-  source: z.object({ type: z.enum(['photo', 'manual', 'demo']), reference: z.string().max(200).nullable(), notes: z.string().max(500).nullable() }),
+  source: z.object({ type: z.enum(['photo', 'manual']), reference: z.string().max(200).nullable(), notes: z.string().max(500).nullable() }),
 }).superRefine((m, ctx) => {
   const issue = (message: string) => ctx.addIssue({ code: 'custom', message });
   if (m.home.playerId === m.away.playerId) issue('Los jugadores deben ser distintos.');

@@ -23,7 +23,6 @@ npm run preview
 - `src/components/`: presentación encapsulada; sin acceso directo a datos remotos.
 - `src/styles/`: diseño adaptable, estados de foco y reducción de movimiento.
 - `public/data/matches.json`: único historial real (inicialmente vacío).
-- `public/data/demo.json`: datos ficticios, activados solo con «Ver demo».
 - `scripts/`: validación previa a construcción.
 - `tests/`: reglas de negocio y consistencia de datos.
 
@@ -40,7 +39,7 @@ La página no incluye OCR ni escribe directamente en GitHub. No requiere tokens 
 
 Dos jugadores configurables en `players`; el segundo aparece como «Hermano» hasta conocer su nombre. Marcador incluye tiempo extra si lo hubo; tanda de penales va aparte. Victoria: 3 puntos (incluidos penales), empate: 1. Desempates por diferencia de goles y goles a favor. Si todo coincide, se conserva orden de jugadores. La forma muestra hasta cinco partidos, del más antiguo al más reciente. Para partidos del mismo día se ordena por ID, por lo que utiliza IDs de ancho fijo secuenciales (ejemplo `2026-11-10-001`). El selector de temporada afecta todas las estadísticas; búsqueda y filtro de resultado afectan solo el historial.
 
-El esquema ejecutable está en `src/domain/schema.ts`. No añadas estadísticas que no figuren en la captura. `date` usa YYYY-MM-DD; `source.type` admite photo/manual/demo. `penalties` y `stats` pueden ser null. Las estadísticas individuales también admiten null.
+El esquema ejecutable está en `src/domain/schema.ts`. No añadas estadísticas que no figuren en la captura. `date` usa YYYY-MM-DD; `source.type` admite photo/manual. `penalties` y `stats` pueden ser null. Las estadísticas individuales también admiten null.
 
 ## GitHub Pages
 
@@ -53,7 +52,7 @@ El workflow publica solo desde `main` después de validar tipos, JSON, pruebas y
 
 ## Alcance de la primera versión
 
-Resumen, clasificación, historial, búsqueda, filtros de temporada y resultado, comparación directa, detalles de estadísticas y exportación JSON. Estado vacío real y demo aislada. No hay autenticación ni backend; el historial publicado es visible a los visitantes. La tipografía carga desde Google Fonts con fuentes locales de respaldo.
+Resumen, clasificación, historial, búsqueda, filtros de temporada y resultado, comparación directa, detalles de estadísticas y exportación JSON. Estado vacío para un historial sin partidos. No hay autenticación ni backend; el historial publicado es visible a los visitantes. La tipografía carga desde Google Fonts con fuentes locales de respaldo.
 
 ## Ramas
 
