@@ -67,7 +67,7 @@ export function Coaches({ players, matches }: { players: Player[]; matches: Matc
         {[...players, { id: 'peter', name: 'Peter Quirino', initials: 'PQ' }, { id: 'axel', name: 'Axel Quirino', initials: 'AQ' }].map((player, index) => {
           const coach = coaches[player.id];
           return (
-            <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id}>
+            <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id} role="button" tabIndex={0} aria-label={`Ver estadísticas de ${player.name}`} onClick={()=>setChosen(player)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setChosen(player);}}}>
               <div className="coach-photo">
                 <CoachPortrait image={coach?.image} name={player.name} initials={player.initials} />
                 <span className="coach-number">DT / {String(index + 1).padStart(2, '0')}</span>
@@ -77,7 +77,7 @@ export function Coaches({ players, matches }: { players: Player[]; matches: Matc
                 <h3>{player.name}</h3>
                 <div className="coach-club">{coach?.club ?? 'CLUB POR DEFINIR'}</div>
                 <p>“{coach?.quote ?? 'La pasión se demuestra en la cancha.'}”</p>
-                <button type="button" className="coach-stat-trigger" onClick={()=>setChosen(player)}>Ver estadísticas y evolución <span aria-hidden="true">↗</span></button>
+                <span className="coach-stat-trigger">Ver estadísticas y evolución <span aria-hidden="true">↗</span></span>
               </div>
             </article>
           );
