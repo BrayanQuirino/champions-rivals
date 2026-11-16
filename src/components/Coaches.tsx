@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import type { Player } from '../domain/schema';
+import type { Match, Player } from '../domain/schema';
+import { CoachStats } from './CoachStats';
 
 const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
   brayan: {
@@ -39,7 +40,8 @@ function CoachPortrait({ image, name, initials }: { image?: string; name: string
     ? <img src={`${import.meta.env.BASE_URL}images/coaches/${image}`} alt={`Retrato de ${name} como director técnico`} loading="lazy" decoding="async" onError={() => setFailed(true)} />
     : <div className="coach-fallback" role="img" aria-label={`Fotografía de ${name} pendiente de publicación`}><span>{initials}</span><small>DIRECTOR TÉCNICO</small></div>;
 }
-export function Coaches({ players }: { players: Player[] }) {
+export function Coaches({ players, matches }: { players: Player[]; matches: Match[] }) {
+  const [chosen,setChosen]=useState<Player|null>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   function move(direction: -1 | 1) {
     const track = trackRef.current;
@@ -75,11 +77,13 @@ export function Coaches({ players }: { players: Player[] }) {
                 <h3>{player.name}</h3>
                 <div className="coach-club">{coach?.club ?? 'CLUB POR DEFINIR'}</div>
                 <p>“{coach?.quote ?? 'La pasión se demuestra en la cancha.'}”</p>
+                <button type="button" className="coach-stat-trigger" onClick={()=>setChosen(player)}>Ver estadísticas y evolución <span aria-hidden="true">↗</span></button>
               </div>
             </article>
           );
         })}
       </div>
+      {chosen&&<CoachStats player={chosen} matches={matches} onClose={()=>setChosen(null)}/>}
     </section>
   );
 }
