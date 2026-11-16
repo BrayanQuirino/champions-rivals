@@ -2,7 +2,21 @@ import { z } from 'zod';
 const id = z.string().min(1).max(80);
 const goals = z.number().int().min(0).max(99);
 const side = z.object({ playerId: id, team: z.string().min(1).max(80), goals });
-const statistics = z.object({ possession: z.number().min(0).max(100).nullable(), shots: z.number().int().nonnegative().nullable(), shotsOnTarget: z.number().int().nonnegative().nullable() });
+const optionalCount = z.number().int().nonnegative().nullable().optional();
+const optionalRate = z.number().min(0).max(100).nullable().optional();
+const statistics = z.object({
+  possession: z.number().min(0).max(100).nullable(),
+  shots: z.number().int().nonnegative().nullable(),
+  shotsOnTarget: z.number().int().nonnegative().nullable(),
+  expectedGoals: z.number().nonnegative().nullable().optional(),
+  passes: optionalCount, tackles: optionalCount, successfulTackles: optionalCount,
+  recoveries: optionalCount, saves: optionalCount, fouls: optionalCount,
+  offsides: optionalCount, corners: optionalCount, freeKicks: optionalCount,
+  penalties: optionalCount, yellowCards: optionalCount, redCards: optionalCount,
+  dribbleSuccessRate: optionalRate, shotAccuracy: optionalRate, passAccuracy: optionalRate,
+  lineBreaksMiddle: optionalCount, lineBreaksWide: optionalCount,
+  lineBreaksOver: optionalCount, lineBreakAttempts: optionalCount,
+});
 export const matchSchema = z.object({
   id, date: z.iso.date(), season: id, venueId: id.optional(), home: side, away: side,
   extraTime: z.boolean().default(false),
