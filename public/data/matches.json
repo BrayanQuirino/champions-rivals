@@ -19,12 +19,12 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "brayan",
-        "team": "Ajax",
+        "team": "AFC Ajax",
         "goals": 1
       },
       "away": {
         "playerId": "hermano",
-        "team": "Brujas",
+        "team": "Club Brugge KV",
         "goals": 0
       },
       "extraTime": false,
@@ -43,12 +43,12 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "brayan",
-        "team": "Chelsea",
+        "team": "Chelsea FC",
         "goals": 1
       },
       "away": {
         "playerId": "hermano",
-        "team": "Barça",
+        "team": "FC Barcelona",
         "goals": 2
       },
       "extraTime": false,
@@ -67,12 +67,12 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "brayan",
-        "team": "Atlético de Madrid",
+        "team": "Club Atlético de Madrid",
         "goals": 0
       },
       "away": {
         "playerId": "hermano",
-        "team": "Tottenham",
+        "team": "Tottenham Hotspur FC",
         "goals": 3
       },
       "extraTime": false,
@@ -91,12 +91,12 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "hermano",
-        "team": "Real Madrid",
+        "team": "Real Madrid CF",
         "goals": 0
       },
       "away": {
         "playerId": "brayan",
-        "team": "Inter",
+        "team": "FC Internazionale Milano",
         "goals": 1
       },
       "extraTime": false,
@@ -115,12 +115,12 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "hermano",
-        "team": "Bayer",
+        "team": "Bayer 04 Leverkusen",
         "goals": 0
       },
       "away": {
         "playerId": "brayan",
-        "team": "Arsenal",
+        "team": "Arsenal FC",
         "goals": 1
       },
       "extraTime": false,
@@ -139,21 +139,72 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "hermano",
-        "team": "Inglaterra",
+        "team": "Selección de Inglaterra",
         "goals": 2
       },
       "away": {
         "playerId": "brayan",
-        "team": "Brasil",
+        "team": "Selección de Brasil",
         "goals": 3
       },
       "extraTime": false,
       "penalties": null,
-      "stats": null,
+      "stats": {
+        "home": {
+          "possession": 42,
+          "shots": 7,
+          "shotsOnTarget": null,
+          "expectedGoals": 2.3,
+          "passes": 77,
+          "tackles": 20,
+          "successfulTackles": 6,
+          "recoveries": 10,
+          "saves": 7,
+          "fouls": 1,
+          "offsides": 0,
+          "corners": 2,
+          "freeKicks": 0,
+          "penalties": 0,
+          "yellowCards": 1,
+          "redCards": 0,
+          "dribbleSuccessRate": 89,
+          "shotAccuracy": 57,
+          "passAccuracy": 81,
+          "lineBreaksMiddle": 2,
+          "lineBreaksWide": 3,
+          "lineBreaksOver": 2,
+          "lineBreakAttempts": 12
+        },
+        "away": {
+          "possession": 58,
+          "shots": 12,
+          "shotsOnTarget": null,
+          "expectedGoals": 3.4,
+          "passes": 106,
+          "tackles": 34,
+          "successfulTackles": 7,
+          "recoveries": 11,
+          "saves": 2,
+          "fouls": 0,
+          "offsides": 0,
+          "corners": 5,
+          "freeKicks": 0,
+          "penalties": 0,
+          "yellowCards": 0,
+          "redCards": 0,
+          "dribbleSuccessRate": 89,
+          "shotAccuracy": 83,
+          "passAccuracy": 88,
+          "lineBreaksMiddle": 2,
+          "lineBreaksWide": 4,
+          "lineBreaksOver": 0,
+          "lineBreakAttempts": 8
+        }
+      },
       "source": {
-        "type": "manual",
-        "reference": "Resultados proporcionados por Brayan en el chat",
-        "notes": "Fecha de registro asignada al 16 de noviembre de 2026; fecha real del partido no especificada. Equipos conservados tal como fueron proporcionados."
+        "type": "photo",
+        "reference": "Dos capturas de las pantallas Resumen y Defensa del partido Inglaterra 2-3 Brasil",
+        "notes": "Estadísticas transcritas de capturas. Tiros a puerta derivados de tiros y porcentaje de precisión redondeado (4/7, 10/12); no se registran como dato confirmado."
       },
       "venueId": "winterfell-arena"
     }
