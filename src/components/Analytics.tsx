@@ -77,7 +77,7 @@ export function Analytics({data,matches}:{data:Database;matches:Match[]}){
   const get=(side:number,key:keyof StatKey)=>getValue(sides[side].stats,key,aggregate,metrics.find(x=>x.key===key)?.kind);
   const headerCards = [
     { key:'shots',title:'Tiros totales' },{key:'expectedGoals',title:'xG acumulados'},
-    {key:'passes',title:'Pases completados / realizados*' },{key:'corners',title:'Tiros de esquina'}
+    {key:'passes',title:'Pases registrados' },{key:'corners',title:'Tiros de esquina'}
   ] as const;
   return <section className="analytics-section" id="estadisticas" aria-labelledby="analytics-title">
     <div className="analytics-heading"><div><span className="eyebrow"><Activity size={13}/> INTELIGENCIA DE PARTIDO</span><h2 id="analytics-title">El juego en números<span>.</span></h2><p>Visualiza cómo juega cada DT. Explora el encuentro o compara los datos acumulados de la rivalidad.</p></div><span className="analytics-index"><BarChart3 size={20}/> MATCH INTELLIGENCE</span></div>
@@ -90,7 +90,7 @@ export function Analytics({data,matches}:{data:Database;matches:Match[]}){
       <div className="analytics-breakdown-head"><div><span className="eyebrow">COMPARATIVA AVANZADA</span><h3>Métrica a métrica</h3></div><div className="analytics-categories">{['all',...groups.map(g=>g.label)].map(c=><button key={c} className={category===c?'active':''} onClick={()=>setCategory(c)}>{c==='all'?'Todas':c}</button>)}</div></div>
       {visibleGroups.map(group=><div className="analytics-group" key={group.label}><h4>{group.label}</h4><div className="analytics-bars">{group.keys.map(key=>{const metric=metrics.find(m=>m.key===key)!;const left=get(0,metric.key),right=get(1,metric.key);const max=Math.max(1,left??0,right??0);return <div className="analytics-bar-row" key={key}><span className="analytics-number">{format(left,metric)}</span><div className="analytics-bar-side left"><i style={{width:`${left===null?0:left/max*100}%`}}/></div><span className="analytics-bar-label">{metric.label}</span><div className="analytics-bar-side right"><i style={{width:`${right===null?0:right/max*100}%`}}/></div><span className="analytics-number">{format(right,metric)}</span></div>})}</div></div>)}
       {!available&&<div className="analytics-no-data"><Target size={24}/><p>Los gráficos se completarán con las próximas capturas de estadísticas.</p></div>}
-      <div className="analytics-footnote"><CheckCircle2 size={14}/><span>Los valores ausentes se indican con «—»; nunca se convierten en cero. *La captura indica «Pases», no pases completados. Las medias porcentuales no están ponderadas por intentos.</span></div>
+      <div className="analytics-footnote"><CheckCircle2 size={14}/><span>Los valores ausentes se indican con «—»; nunca se convierten en cero. La captura indica «Pases» sin aclarar si son completados. Las medias porcentuales no están ponderadas por intentos.</span></div>
     </div>
   </section>;
 }
