@@ -18,7 +18,7 @@ export default function App() {
             <a href="#directores-tecnicos">DTs</a>
             <a href="#sedes">Sedes</a>
             <a href="#generador">Sorteos</a>
-            <a href="#historial">Partidos</a>
+            <a href="#historial">Partidos</a><a href="#estadisticas">Estadísticas</a>
           </nav>
         </div>
       </header>
