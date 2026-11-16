@@ -84,6 +84,78 @@
         "notes": "Fecha asignada al día del registro. "
       },
       "venueId": "winterfell-arena"
+    },
+    {
+      "id": "2026-11-16-001",
+      "date": "2026-11-16",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "hermano",
+        "team": "Real Madrid",
+        "goals": 0
+      },
+      "away": {
+        "playerId": "brayan",
+        "team": "Inter",
+        "goals": 1
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": null,
+      "source": {
+        "type": "manual",
+        "reference": "Resultados proporcionados por Brayan en el chat",
+        "notes": "Fecha de registro asignada al 16 de noviembre de 2026; fecha real del partido no especificada. Equipos conservados tal como fueron proporcionados."
+      },
+      "venueId": "winterfell-arena"
+    },
+    {
+      "id": "2026-11-16-002",
+      "date": "2026-11-16",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "hermano",
+        "team": "Bayer",
+        "goals": 0
+      },
+      "away": {
+        "playerId": "brayan",
+        "team": "Arsenal",
+        "goals": 1
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": null,
+      "source": {
+        "type": "manual",
+        "reference": "Resultados proporcionados por Brayan en el chat",
+        "notes": "Fecha de registro asignada al 16 de noviembre de 2026; fecha real del partido no especificada. Equipos conservados tal como fueron proporcionados."
+      },
+      "venueId": "winterfell-arena"
+    },
+    {
+      "id": "2026-11-16-003",
+      "date": "2026-11-16",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "hermano",
+        "team": "Inglaterra",
+        "goals": 2
+      },
+      "away": {
+        "playerId": "brayan",
+        "team": "Brasil",
+        "goals": 3
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": null,
+      "source": {
+        "type": "manual",
+        "reference": "Resultados proporcionados por Brayan en el chat",
+        "notes": "Fecha de registro asignada al 16 de noviembre de 2026; fecha real del partido no especificada. Equipos conservados tal como fueron proporcionados."
+      },
+      "venueId": "winterfell-arena"
     }
   ],
   "venues": [
