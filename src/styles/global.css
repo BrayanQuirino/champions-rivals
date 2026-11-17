@@ -343,3 +343,16 @@
 @media(max-width:750px){.stat-donuts{grid-template-columns:repeat(2,minmax(0,1fr))}.stat-ring-face{width:clamp(62px,12vw,90px);height:clamp(62px,12vw,90px)}.coach-stats-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:530px){.match-stat-dialog,.coach-stats-dialog{width:calc(100% - 16px);max-height:94dvh;padding:15px;border-radius:13px}.match-stat-dialog .dialog-head,.coach-stats-dialog .dialog-head{top:-15px}.stat-match-score{gap:5px}.stat-match-score>strong{font-size:34px}.stat-match-score>strong span{margin:0 5px}.stat-match-score h2{font-size:21px}.stat-match-score small{font-size:8px}.stat-group{padding:13px 8px}.stat-compare-row{grid-template-columns:33px minmax(0,1fr) 94px minmax(0,1fr) 33px;gap:5px}.stat-compare-row strong{font-size:12px}.stat-compare-row>span{font-size:9px}.stat-donut-pair{padding:15px 5px}.stat-donut-pair h4{font-size:10px}.stat-ring-face{width:61px;height:61px}.stat-ring-face strong{font-size:17px}.stat-ring>span{font-size:8px}.coach-stats-avatar{width:58px;height:58px}.coach-stats-hero{gap:12px}.coach-stats-hero h2{font-size:33px}.goal-chart{padding:10px}}
 @media(prefers-reduced-motion:reduce){.stat-track i,.coach-stat-trigger{transition:none}}
+
+
+/* Expanded, discoverable statistics within the match/coach sections (no modal). */
+.inline-stats-panel{position:relative;display:block;width:100%;max-width:none;max-height:none;overflow:visible;margin:20px 0 24px;padding:clamp(16px,3vw,32px);box-sizing:border-box;border:1px solid #66ddf67a;background:radial-gradient(ellipse at 50% 0%,#233f73 0%,#111b38 36%,#0b122a 100%);box-shadow:0 18px 55px #02071788;scroll-margin-top:20px;animation:stats-reveal .25s ease-out}
+.inline-stats-panel .dialog-head{position:relative;top:auto;z-index:1;display:flex;align-items:center;justify-content:space-between}
+.inline-stats-panel .dialog-head button{min-height:40px;min-width:40px;display:grid;place-items:center;border:1px solid #ffffff35;border-radius:10px;background:#172b4a;color:#e9f8ff}
+.coach-stats-dialog.inline-stats-panel{margin-top:22px}
+.history .match-stat-dialog.inline-stats-panel{border-radius:12px;margin:0 0 12px;width:100%;box-shadow:inset 0 1px #63e6ff3d;padding:clamp(14px,2vw,24px)}
+.coach-card[aria-expanded="true"]{border-color:#65e6fc;box-shadow:0 0 0 1px #65e6fc55,0 18px 38px #01061688}
+.coach-card[role="button"]{cursor:pointer}
+@keyframes stats-reveal{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:640px){.inline-stats-panel{padding:12px}.history .match-stat-dialog.inline-stats-panel{padding:12px}.inline-stats-panel .stat-donuts{gap:7px}.inline-stats-panel .stat-ring>span{max-width:75px}}
+@media(prefers-reduced-motion:reduce){.inline-stats-panel{animation:none}}
