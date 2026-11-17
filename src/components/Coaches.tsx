@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Match, Player } from '../domain/schema';
 import type { ClubCatalog } from '../domain/matchmaker';
+import type {TacticalCatalog} from '../domain/tactical';
 import { CoachStats } from './CoachStats';
 
 const coaches: Record<string, { image: string; club: string; role: string; quote: string; accent: string }> = {
@@ -41,7 +42,7 @@ function CoachPortrait({ image, name, initials }: { image?: string; name: string
     ? <img src={`${import.meta.env.BASE_URL}images/coaches/${image}`} alt={`Retrato de ${name} como director técnico`} loading="lazy" decoding="async" onError={() => setFailed(true)} />
     : <div className="coach-fallback" role="img" aria-label={`Fotografía de ${name} pendiente de publicación`}><span>{initials}</span><small>DIRECTOR TÉCNICO</small></div>;
 }
-export function Coaches({ players, matches, catalog }: { players: Player[]; matches: Match[];catalog:ClubCatalog|null }) {
+export function Coaches({ players, matches, catalog, tacticalCatalog }: { players: Player[]; matches: Match[];catalog:ClubCatalog|null;tacticalCatalog:TacticalCatalog|null }) {
   const [chosen,setChosen]=useState<Player|null>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   useEffect(()=>{if(chosen) document.getElementById('coach-stats-panel')?.scrollIntoView({behavior:'smooth',block:'start'});},[chosen]);
@@ -86,7 +87,7 @@ export function Coaches({ players, matches, catalog }: { players: Player[]; matc
           );
         })}
       </div>
-      {chosen&&<CoachStats player={chosen} matches={matches} catalog={catalog} onClose={()=>setChosen(null)}/>}
+      {chosen&&<CoachStats player={chosen} matches={matches} catalog={catalog} tacticalCatalog={tacticalCatalog} onClose={()=>setChosen(null)}/>}
     </section>
   );
 }
