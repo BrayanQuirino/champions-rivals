@@ -356,3 +356,79 @@
 @keyframes stats-reveal{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:640px){.inline-stats-panel{padding:12px}.history .match-stat-dialog.inline-stats-panel{padding:12px}.inline-stats-panel .stat-donuts{gap:7px}.inline-stats-panel .stat-ring>span{max-width:75px}}
 @media(prefers-reduced-motion:reduce){.inline-stats-panel{animation:none}}
+
+
+/* Charts v3: personal DT performance, interactive timeline and resilient circles */
+.goal-chart-interactive{position:relative;min-width:560px}
+.goal-chart-interactive svg{min-width:0;width:100%;height:auto}
+.goal-hit-line{cursor:crosshair;pointer-events:stroke}
+.goal-chart-tooltip{position:absolute;top:6px;z-index:2;transform:translateX(-50%);pointer-events:none;max-width:260px;width:max-content;min-width:175px;padding:12px 14px;background:#06152af5;border:1px solid #6fdffc88;box-shadow:0 12px 38px #000b;border-radius:9px;display:grid;gap:6px;text-align:center}
+.goal-chart-tooltip small{color:#8aafca;font-size:10px}
+.goal-chart-tooltip strong{font-size:12px;color:#f1f8ff;line-height:1.5}
+.goal-chart-tooltip span{font-size:10px;color:#83e6fa}
+.coach-stats-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+.coach-star-chart,.coach-personal-group{border:1px solid #6b9bbb35;background:#0c1731;border-radius:13px;padding:18px}
+.coach-star-legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:19px;font-size:10px;color:#a9bcd9}
+.coach-star-legend span{display:flex;align-items:center;gap:7px}
+.coach-star-legend span::before{content:'';width:9px;height:9px;border-radius:3px;background:#65e6fc}
+.coach-star-legend .is-draw::before{background:#8d9eb7}
+.coach-star-legend .is-loss::before{background:#c49bff}
+.coach-star-row{display:grid;grid-template-columns:175px minmax(0,1fr) 120px;align-items:center;gap:15px;padding:12px 0;border-top:1px solid #ffffff14}
+.coach-star-label{display:grid;gap:4px}
+.coach-star-label strong{font:700 20px 'Barlow Condensed',sans-serif;color:#ffda7f}
+.coach-star-label small{font-size:10px;color:#8da9ca}
+.coach-star-track{display:flex;gap:3px;height:19px;border-radius:7px;background:#1c2d4c;overflow:hidden}
+.coach-star-track span{min-width:0}
+.coach-star-track .is-win{background:#65e6fc}
+.coach-star-track .is-draw{background:#8d9eb7}
+.coach-star-track .is-loss{background:#c49bff}
+.coach-star-results{display:flex;justify-content:space-between;gap:7px;color:#b6cdea;font-size:10px}
+.coach-personal-rings{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+.coach-personal-rings>.stat-ring{border:1px solid #7199bc2d;background:#12203c;border-radius:13px;padding:17px 5px;min-width:0}
+.coach-personal-rings .stat-ring-face{width:clamp(72px,8vw,105px);height:clamp(72px,8vw,105px)}
+.coach-personal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.coach-personal-group h4{color:#77e1f8;font-size:13px;margin:0 0 16px}
+.coach-personal-group>div{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #ffffff14;padding:12px 0;align-items:center}
+.coach-personal-group>div span{font-size:10px;color:#a9bad9}
+.coach-personal-group>div strong{font:700 20px 'Barlow Condensed',sans-serif;color:#e3f7ff}
+.team-badge{display:inline-grid;place-items:center;vertical-align:middle;flex:none;width:62px;height:62px;border:1px solid #6ea5c537;border-radius:13px;background:#e2eaf80a;overflow:hidden;color:#82b9d3;font-size:35px}
+.team-badge img{width:83%;height:83%;object-fit:contain}
+.team-badge--compact{width:38px;height:38px;font-size:23px;border-radius:9px}
+.analytics-team-logos{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-top:12px}
+.analytics-contender.right .analytics-team-logos{justify-content:flex-end}
+.stat-match-score .team-badge{display:grid;margin:0 0 10px}
+.stat-match-score>div:last-child .team-badge{margin-left:auto}
+.analytics-efficiency-card,.analytics-rings,.analytics-ring,.stat-donut-pair,.stat-donut-pair>div,.stat-ring{min-width:0;max-width:100%;box-sizing:border-box}
+.analytics-rings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;align-items:start;justify-items:center}
+.analytics-ring,.stat-ring{width:100%;display:grid;justify-items:center;align-content:start;gap:9px}
+.analytics-ring-circle,.stat-ring-face{box-sizing:border-box;width:clamp(40px,5.8vw,90px);height:auto;aspect-ratio:1;max-width:100%;min-width:0;flex:none;overflow:hidden}
+.analytics-ring-circle>div,.stat-ring-face>div{width:calc(100% - 8px);height:calc(100% - 8px);aspect-ratio:1}
+.analytics-ring-circle strong,.stat-ring-face strong{font-size:clamp(12px,1.65vw,24px);white-space:nowrap}
+.stat-donut-pair>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+.stat-ring>span,.analytics-ring>span{font-size:9px;max-width:100%;overflow-wrap:anywhere;text-align:center}
+@media(max-width:1000px){
+ .analytics-efficiency-card{padding:13px 6px}
+ .analytics-ring-circle{width:clamp(43px,7vw,76px)}
+ .stat-ring-face{width:clamp(46px,7vw,82px)}
+ .coach-personal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:640px){
+ .coach-star-chart{padding:11px}
+ .coach-star-row{grid-template-columns:86px minmax(0,1fr);gap:8px}
+ .coach-star-results{grid-column:2;justify-content:flex-start;gap:14px}
+ .coach-star-label strong{font-size:17px}
+ .coach-star-label small{font-size:9px}
+ .coach-personal-rings{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .coach-personal-grid{grid-template-columns:1fr}
+ .stat-donuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .stat-donut-pair{padding:12px 4px}
+ .stat-ring-face,.analytics-ring-circle{width:clamp(40px,11vw,66px)}
+ .stat-ring-face strong,.analytics-ring-circle strong{font-size:clamp(12px,3.1vw,18px)}
+ .analytics-efficiency{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .analytics-rings{gap:4px}
+ .analytics-efficiency-card{padding:14px 5px}
+ .goal-chart-tooltip{max-width:210px}
+ .team-badge{width:47px;height:47px}
+ .team-badge--compact{width:30px;height:30px}
+}
+@media(max-width:360px){.analytics-ring-circle,.stat-ring-face{width:39px}.analytics-ring-circle strong,.stat-ring-face strong{font-size:11px}}
