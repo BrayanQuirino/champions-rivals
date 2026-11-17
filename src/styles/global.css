@@ -546,3 +546,30 @@
 @media(max-width:860px){.analytics-coach-switcher{gap:5px}.analytics-coach-switcher button{width:30px;height:30px}.analytics-coach-switcher button svg{width:17px}.analytics-coach-switcher h3{font-size:clamp(19px,3vw,30px)}}
 @media(max-width:550px){.analytics-versus{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr)}.analytics-coach-switcher{gap:3px}.analytics-coach-switcher button{width:25px;height:29px;border-radius:6px}.analytics-coach-switcher button svg{width:15px}.analytics-coach-switcher h3{font-size:clamp(16px,4vw,22px)}.analytics-contender>small{display:block;font-size:9px;line-height:1.4}.analytics-recent-form{gap:3px}.analytics-recent-form>span:not(.analytics-form-empty){width:22px;height:24px;font-size:9px;border-radius:4px}.analytics-pair-empty{padding:35px 13px}}
 @media(prefers-reduced-motion:reduce){.analytics-coach-switcher button{transition:none}}
+
+
+/* Coach tactical DNA: accessible, adaptive hexagonal radar. */
+.tactical-panel{margin:30px 0;padding:clamp(16px,2.5vw,30px);border:1px solid #5599b24a;border-radius:15px;background:radial-gradient(ellipse at 25% 18%,#1a416254,transparent 55%),linear-gradient(135deg,#101d39,#0a1329)}
+.tactical-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:24px}
+.tactical-radar-frame{min-width:0;display:grid;justify-items:center;background:#0d1b33;border:1px solid #5486aa2c;border-radius:12px;padding:16px}
+.tactical-radar-frame svg{display:block;width:100%;height:auto;max-width:410px;overflow:visible}
+.tactical-legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;color:#9db6cc;font-size:10px}
+.tactical-legend span{display:flex;gap:7px;align-items:center}
+.tactical-legend i{width:22px;border-top:3px solid #65e6fc;display:inline-block}
+.tactical-legend i.reference{border-top:2px dashed #ad97fa}
+.tactical-insights{min-width:0}
+.tactical-insights h4{font:700 clamp(32px,4vw,50px) 'Barlow Condensed',sans-serif;margin:7px 0 12px;color:#78e5f5}
+.tactical-insights>p{color:#a6bed9;font-size:12px;line-height:1.7}
+.tactical-score{display:flex;align-items:center;gap:17px;margin:21px 0;padding:14px;border:1px solid #5d86b43e;border-radius:11px;background:#162944}
+.tactical-score strong{font:700 36px 'Barlow Condensed',sans-serif;color:#d6c2ff;white-space:nowrap}
+.tactical-score span{font-size:10px;line-height:1.6;color:#a7bfdd}
+.tactical-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tactical-values>div{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid #6384ad25;background:#132341;border-radius:8px;padding:10px}
+.tactical-values span{font-size:10px;color:#b0c6df}
+.tactical-values strong{font:700 17px 'Barlow Condensed',sans-serif;color:#7bdfed;white-space:nowrap}
+.tactical-method{color:#849dbd;font-size:10px;line-height:1.7;border-top:1px solid #5688ab24;padding-top:16px;margin-top:20px}
+.tactical-no-data{text-align:center;padding:33px 20px;border:1px dashed #5d8fb753;border-radius:11px}
+.tactical-no-data strong{font:700 28px 'Barlow Condensed',sans-serif}
+.tactical-no-data p{color:#9eb3d1;font-size:11px;line-height:1.7;max-width:460px;margin:8px auto}
+@media(max-width:750px){.tactical-layout{grid-template-columns:1fr;gap:14px}.tactical-radar-frame svg{max-width:350px}.tactical-insights h4{font-size:35px}}
+@media(max-width:400px){.tactical-panel{padding:12px}.tactical-radar-frame{padding:8px}.tactical-values{grid-template-columns:1fr}}
