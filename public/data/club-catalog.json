@@ -5253,9 +5253,9 @@
       "country": "Brazil",
       "rating": 5,
       "elo": null,
-      "logoUrl": null,
+      "logoUrl": "https://media.api-sports.io/football/teams/6.png",
       "flag": "🇧🇷",
-      "logoSource": null,
+      "logoSource": "API-Sports CDN",
       "ratingSource": "estimación provisional basada en ranking histórico de la fuente, no clasificación actual",
       "sourceUrl": "https://github.com/Ashborn-047/topbin/blob/main/data/national-teams/teams.json"
     },
@@ -5266,9 +5266,9 @@
       "country": "England",
       "rating": 5,
       "elo": null,
-      "logoUrl": null,
+      "logoUrl": "https://media.api-sports.io/football/teams/10.png",
       "flag": "🏴",
-      "logoSource": null,
+      "logoSource": "API-Sports CDN",
       "ratingSource": "estimación provisional basada en ranking histórico de la fuente, no clasificación actual",
       "sourceUrl": "https://github.com/Ashborn-047/topbin/blob/main/data/national-teams/teams.json"
     },
