@@ -454,3 +454,73 @@
 .hero-team-logo .team-badge img{display:block;width:100%;height:100%;object-fit:contain}
 .hero-team-logo .team-badge-initials{display:grid;place-items:center;width:64px;height:64px;border:1px solid #83cdea66;border-radius:50%;background:#12304f}
 @media(max-width:640px){.hero-team-logo{min-height:60px}.hero-team-logo .team-badge{width:62px;height:62px}.hero-team-logo .team-badge-initials{width:56px;height:56px}}
+
+
+/* Harmonized comparison donuts: adapt to the actual panel width, not viewport. */
+.stat-comparison{container-type:inline-size;min-width:0}
+.stat-comparison .stat-donuts{
+ display:grid;
+ grid-template-columns:repeat(4,minmax(0,1fr));
+ gap:16px;
+ align-items:stretch;
+ margin:20px 0 30px;
+}
+.stat-comparison .stat-donut-pair{
+ min-width:0;
+ padding:20px 12px 18px;
+ display:flex;
+ flex-direction:column;
+ align-items:stretch;
+ text-align:center;
+ overflow:hidden;
+}
+.stat-comparison .stat-donut-pair h4{
+ min-height:30px;
+ display:grid;
+ place-items:center;
+ margin:0 0 18px;
+ line-height:1.35;
+}
+.stat-comparison .stat-donut-pair>div{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:12px;
+ width:100%;
+ justify-items:center;
+ align-items:start;
+}
+.stat-comparison .stat-ring{min-width:0;width:100%;max-width:100%;gap:10px;justify-items:center}
+.stat-comparison .stat-ring-face{
+ width:min(76px,100%);
+ height:auto;
+ aspect-ratio:1;
+ max-width:100%;
+ display:grid;
+ place-items:center;
+ flex-shrink:1;
+}
+.stat-comparison .stat-ring-face>div{
+ width:calc(100% - 8px);
+ height:calc(100% - 8px);
+ aspect-ratio:1;
+}
+.stat-comparison .stat-ring-face strong{font-size:clamp(13px,1.8vw,21px)}
+.stat-comparison .stat-ring>span{
+ display:block;
+ width:100%;
+ max-width:100%;
+ font-size:10px;
+ line-height:1.4;
+ overflow-wrap:break-word;
+ hyphens:auto;
+}
+@container (max-width:900px){
+ .stat-comparison .stat-donuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .stat-comparison .stat-donut-pair{padding:17px 12px}
+ .stat-comparison .stat-ring-face{width:min(88px,100%)}
+}
+@container (max-width:410px){
+ .stat-comparison .stat-donuts{grid-template-columns:1fr;gap:10px}
+ .stat-comparison .stat-donut-pair>div{max-width:280px;margin:0 auto;gap:16px}
+ .stat-comparison .stat-ring-face{width:min(90px,100%)}
+}
