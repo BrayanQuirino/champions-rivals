@@ -4,11 +4,15 @@ import { join } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Precache the hashed files emitted by this build so the first visit works offline.
+// Generate a unique release marker for every GitHub Pages deployment.
 function offlineShell(): Plugin {
+  const release = process.env.GITHUB_SHA?.slice(0, 12) ?? 'local';
   return {
     name: 'rivals-offline-shell',
     apply: 'build',
+    transformIndexHtml(html) {
+      return html.replace('</head>', `<meta name="rivals-build" content="${release}"/></head>`);
+    },
     async writeBundle({ dir = 'dist' }, bundle) {
       const files = [
         'index.html',
@@ -25,6 +29,7 @@ function offlineShell(): Plugin {
       }
       const config = { version: hash.digest('hex').slice(0, 16), files };
       await writeFile(workerPath, `const offlineBuild = ${JSON.stringify(config)};\n${worker}`);
+      await writeFile(join(dir, 'release.json'), JSON.stringify({ version: release }));
     },
   };
 }
