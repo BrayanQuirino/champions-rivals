@@ -20,12 +20,14 @@
       "home": {
         "playerId": "brayan",
         "team": "AFC Ajax",
-        "goals": 1
+        "goals": 1,
+        "clubId": "eredivisie-ajax-amsterdam"
       },
       "away": {
         "playerId": "hermano",
         "team": "Club Brugge KV",
-        "goals": 0
+        "goals": 0,
+        "clubId": "belgian-pro-club-brugge"
       },
       "extraTime": false,
       "penalties": null,
@@ -44,12 +46,14 @@
       "home": {
         "playerId": "brayan",
         "team": "Chelsea FC",
-        "goals": 1
+        "goals": 1,
+        "clubId": "premier-league-chelsea"
       },
       "away": {
         "playerId": "hermano",
         "team": "FC Barcelona",
-        "goals": 2
+        "goals": 2,
+        "clubId": "la-liga-barcelona"
       },
       "extraTime": false,
       "penalties": null,
@@ -68,12 +72,14 @@
       "home": {
         "playerId": "brayan",
         "team": "Club Atlético de Madrid",
-        "goals": 0
+        "goals": 0,
+        "clubId": "la-liga-atletico"
       },
       "away": {
         "playerId": "hermano",
         "team": "Tottenham Hotspur FC",
-        "goals": 3
+        "goals": 3,
+        "clubId": "premier-league-tottenham"
       },
       "extraTime": false,
       "penalties": null,
@@ -92,12 +98,14 @@
       "home": {
         "playerId": "hermano",
         "team": "Real Madrid CF",
-        "goals": 0
+        "goals": 0,
+        "clubId": "la-liga-real-madrid"
       },
       "away": {
         "playerId": "brayan",
         "team": "FC Internazionale Milano",
-        "goals": 1
+        "goals": 1,
+        "clubId": "serie-a-inter"
       },
       "extraTime": false,
       "penalties": null,
@@ -116,12 +124,14 @@
       "home": {
         "playerId": "hermano",
         "team": "Bayer 04 Leverkusen",
-        "goals": 0
+        "goals": 0,
+        "clubId": "bundesliga-leverkusen"
       },
       "away": {
         "playerId": "brayan",
         "team": "Arsenal FC",
-        "goals": 1
+        "goals": 1,
+        "clubId": "premier-league-arsenal"
       },
       "extraTime": false,
       "penalties": null,
@@ -140,12 +150,14 @@
       "home": {
         "playerId": "hermano",
         "team": "Selección de Inglaterra",
-        "goals": 2
+        "goals": 2,
+        "clubId": "international-england"
       },
       "away": {
         "playerId": "brayan",
         "team": "Selección de Brasil",
-        "goals": 3
+        "goals": 3,
+        "clubId": "international-brazil"
       },
       "extraTime": false,
       "penalties": null,
