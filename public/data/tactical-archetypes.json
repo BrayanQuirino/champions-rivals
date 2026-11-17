@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "methodology": {
+    "origin": "Taxonomía editorial de Champions Rivals; no es una clasificación oficial de EA Sports FC o Football Manager.",
+    "scale": "0 a 100",
+    "sampleMinimumForStableArchetype": 3,
+    "requiredDimensions": 4,
+    "notes": "Los arquetipos son perfiles hipotéticos de referencia. Las comparaciones son indicativas, no causalidad táctica. No inferimos presión alta ni posición de recuperaciones a partir de totales."
+  },
+  "dimensions": [
+    {
+      "id": "posesion",
+      "label": "Posesión",
+      "source": "possession",
+      "method": "porcentaje registrado"
+    },
+    {
+      "id": "pases",
+      "label": "Precisión de pases",
+      "source": "passAccuracy",
+      "method": "porcentaje registrado"
+    },
+    {
+      "id": "finalizacion",
+      "label": "Precisión de tiros",
+      "source": "shotAccuracy",
+      "method": "porcentaje registrado"
+    },
+    {
+      "id": "entradas",
+      "label": "Intensidad en entradas",
+      "source": "tackles",
+      "method": "participación relativa de entradas contra el rival (no equivale a presión alta)"
+    },
+    {
+      "id": "recuperaciones",
+      "label": "Recuperaciones",
+      "source": "recoveries",
+      "method": "participación relativa de recuperaciones contra el rival"
+    },
+    {
+      "id": "progresion",
+      "label": "Rupturas de línea",
+      "source": "lineBreakAttempts",
+      "method": "participación relativa de intentos de ruptura contra el rival"
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "arquitecto",
+      "name": "El Arquitecto",
+      "description": "Posesión y control",
+      "radar": {
+        "posesion": 88,
+        "pases": 90,
+        "finalizacion": 67,
+        "entradas": 48,
+        "recuperaciones": 60,
+        "progresion": 67
+      }
+    },
+    {
+      "id": "cazador",
+      "name": "El Cazador",
+      "description": "Recuperación intensa",
+      "radar": {
+        "posesion": 55,
+        "pases": 71,
+        "finalizacion": 76,
+        "entradas": 88,
+        "recuperaciones": 88,
+        "progresion": 77
+      }
+    },
+    {
+      "id": "muro",
+      "name": "El Muro",
+      "description": "Bloque defensivo",
+      "radar": {
+        "posesion": 35,
+        "pases": 59,
+        "finalizacion": 58,
+        "entradas": 73,
+        "recuperaciones": 78,
+        "progresion": 41
+      }
+    },
+    {
+      "id": "estratega",
+      "name": "El Estratega",
+      "description": "Adaptabilidad",
+      "radar": {
+        "posesion": 59,
+        "pases": 74,
+        "finalizacion": 71,
+        "entradas": 63,
+        "recuperaciones": 65,
+        "progresion": 65
+      }
+    },
+    {
+      "id": "revolucionario",
+      "name": "El Revolucionario",
+      "description": "Ritmo e intensidad",
+      "radar": {
+        "posesion": 59,
+        "pases": 69,
+        "finalizacion": 76,
+        "entradas": 92,
+        "recuperaciones": 88,
+        "progresion": 85
+      }
+    },
+    {
+      "id": "pragmatico",
+      "name": "El Pragmático",
+      "description": "Eficiencia y control del riesgo",
+      "radar": {
+        "posesion": 42,
+        "pases": 66,
+        "finalizacion": 73,
+        "entradas": 68,
+        "recuperaciones": 67,
+        "progresion": 54
+      }
+    },
+    {
+      "id": "provocador",
+      "name": "El Provocador",
+      "description": "Salida elaborada",
+      "radar": {
+        "posesion": 75,
+        "pases": 86,
+        "finalizacion": 70,
+        "entradas": 55,
+        "recuperaciones": 69,
+        "progresion": 87
+      }
+    },
+    {
+      "id": "comandante",
+      "name": "El Comandante",
+      "description": "Organización colectiva",
+      "radar": {
+        "posesion": 52,
+        "pases": 72,
+        "finalizacion": 65,
+        "entradas": 78,
+        "recuperaciones": 78,
+        "progresion": 63
+      }
+    },
+    {
+      "id": "maestro",
+      "name": "El Maestro",
+      "description": "Asociación y creatividad",
+      "radar": {
+        "posesion": 75,
+        "pases": 88,
+        "finalizacion": 74,
+        "entradas": 55,
+        "recuperaciones": 63,
+        "progresion": 84
+      }
+    },
+    {
+      "id": "ingeniero",
+      "name": "El Ingeniero",
+      "description": "Organización espacial",
+      "radar": {
+        "posesion": 76,
+        "pases": 83,
+        "finalizacion": 77,
+        "entradas": 73,
+        "recuperaciones": 75,
+        "progresion": 85
+      }
+    }
+  ],
+  "styles": [
+    {
+      "id": "tiki_taka",
+      "name": "Tiki-Taka",
+      "description": "posesión y pases cortos"
+    },
+    {
+      "id": "tiki_taka_vertical",
+      "name": "Tiki-Taka vertical",
+      "description": "combinación con progresión rápida"
+    },
+    {
+      "id": "juego_posicional",
+      "name": "Juego posicional",
+      "description": "ocupación de espacios"
+    },
+    {
+      "id": "gegenpressing",
+      "name": "Gegenpressing",
+      "description": "contrapresión tras pérdida"
+    },
+    {
+      "id": "contraataque_directo",
+      "name": "Contraataque directo",
+      "description": "transiciones veloces"
+    },
+    {
+      "id": "contraataque_fluido",
+      "name": "Contraataque fluido",
+      "description": "asociaciones en transición"
+    },
+    {
+      "id": "catenaccio",
+      "name": "Catenaccio",
+      "description": "defensa estructurada"
+    },
+    {
+      "id": "bloque_bajo",
+      "name": "Bloque bajo",
+      "description": "protección de espacios propios"
+    },
+    {
+      "id": "juego_bandas",
+      "name": "Juego por bandas",
+      "description": "amplitud y centros"
+    },
+    {
+      "id": "juego_directo",
+      "name": "Juego directo",
+      "description": "progresión vertical"
+    },
+    {
+      "id": "presion_alta",
+      "name": "Presión alta",
+      "description": "recuperación en campo rival"
+    },
+    {
+      "id": "equilibrado",
+      "name": "Juego equilibrado",
+      "description": "combinación de recursos"
+    }
+  ]
+}
