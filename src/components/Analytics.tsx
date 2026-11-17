@@ -1,6 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Activity, BarChart3, CheckCircle2, Info, Target } from 'lucide-react';
 import type { Database, Match } from '../domain/schema';
+import type { ClubCatalog } from '../domain/matchmaker';
+import {getClub} from '../hooks/useClubCatalog';
+import {TeamBadge} from './TeamBadge';
 
 type StatKey = NonNullable<Match['stats']>['home'];
 type Metric = { key: keyof StatKey; label: string; unit?: string; kind?: 'rate' | 'average' };
@@ -61,7 +64,7 @@ function Radial({value,label,color}:{value:number|null;label:string;color:string
   const valid=value!==null;const progress=valid?Math.min(100,Math.max(0,value)):0;
   return <div className="analytics-ring"><div className="analytics-ring-circle" style={{background:`conic-gradient(${color} ${progress}%,#263453 ${progress}% 100%)`}}><div><strong>{valid?`${Math.round(value)}%`:'—'}</strong></div></div><span>{label}</span></div>;
 }
-export function Analytics({data,matches}:{data:Database;matches:Match[]}){
+export function Analytics({data,matches,catalog}:{data:Database;matches:Match[];catalog:ClubCatalog|null}){
   const [selected,setSelected]=useState('all');
   const [category,setCategory]=useState('all');
   const withStats=useMemo(()=>matches.filter(m=>m.stats!==null),[matches]);
@@ -75,6 +78,13 @@ export function Analytics({data,matches}:{data:Database;matches:Match[]}){
   const countStats=scope.filter(m=>m.stats!==null).length;
   const coverage=`${countStats} de ${scope.length} partidos con estadísticas detalladas`;
   const get=(side:number,key:keyof StatKey)=>getValue(sides[side].stats,key,aggregate,metrics.find(x=>x.key===key)?.kind);
+  function teamMarks(playerId:string){
+    const used=scope.flatMap(m=>{
+      const side=m.home.playerId===playerId?m.home:m.away.playerId===playerId?m.away:null;
+      return side?[side]:[];
+    }).filter((side,index,array)=>array.findIndex(c=>c.clubId===side.clubId)===index);
+    return <div className="analytics-team-logos" aria-label="Equipos utilizados">{used.map(side=><TeamBadge key={side.clubId??side.team} compact club={getClub(catalog,side.clubId)} name={side.team}/>)}</div>;
+  }
   const headerCards = [
     { key:'shots',title:'Tiros totales' },{key:'expectedGoals',title:'xG acumulados'},
     {key:'passes',title:'Pases registrados' },{key:'corners',title:'Tiros de esquina'}
@@ -84,7 +94,7 @@ export function Analytics({data,matches}:{data:Database;matches:Match[]}){
     <div className="analytics-panel">
       <div className="analytics-toolbar"><div className="analytics-toggle"><button className={selected==='all'?'active':''} onClick={()=>setSelected('all')}>Acumulado</button><button className={selected!=='all'?'active':''} onClick={()=>setSelected(withStats[0]?.id??'all')} disabled={!available}>Por partido</button></div><label>Encuentro<select aria-label="Seleccionar encuentro estadístico" value={selected} onChange={e=>setSelected(e.target.value)}><option value="all">Todos los partidos</option>{withStats.map(m=><option key={m.id} value={m.id}>{m.date} · {m.home.team} {m.home.goals}–{m.away.goals} {m.away.team}</option>)}</select></label></div>
       <div className="analytics-coverage"><Info size={15}/><span>{coverage}. {aggregate?'Las sumas solo incluyen encuentros con datos disponibles; los porcentajes son medias de los partidos registrados.':'Datos del partido seleccionado.'}</span></div>
-      <div className="analytics-versus"><div className="analytics-contender"><span>DIRECTOR TÉCNICO</span><h3>{sides[0].player.name}</h3><small>{active?(active.home.playerId===sides[0].player.id?active.home.team:active.away.team):'Rendimiento acumulado'}</small></div><div className="analytics-versus-symbol"><span>VS</span><small>{aggregate?'GENERAL':'PARTIDO'}</small></div><div className="analytics-contender right"><span>DIRECTOR TÉCNICO</span><h3>{sides[1].player.name}</h3><small>{active?(active.home.playerId===sides[1].player.id?active.home.team:active.away.team):'Rendimiento acumulado'}</small></div></div>
+      <div className="analytics-versus"><div className="analytics-contender"><span>DIRECTOR TÉCNICO</span><h3>{sides[0].player.name}</h3><small>{active?(active.home.playerId===sides[0].player.id?active.home.team:active.away.team):'Rendimiento acumulado'}</small>{teamMarks(sides[0].player.id)}</div><div className="analytics-versus-symbol"><span>VS</span><small>{aggregate?'GENERAL':'PARTIDO'}</small></div><div className="analytics-contender right"><span>DIRECTOR TÉCNICO</span><h3>{sides[1].player.name}</h3><small>{active?(active.home.playerId===sides[1].player.id?active.home.team:active.away.team):'Rendimiento acumulado'}</small>{teamMarks(sides[1].player.id)}</div></div>
       <div className="analytics-feature-grid">{headerCards.map(card=><div className="analytics-feature" key={card.key}><span>{card.title}</span><div><b>{format(get(0,card.key),metrics.find(x=>x.key===card.key)!)}</b><span>:</span><b>{format(get(1,card.key),metrics.find(x=>x.key===card.key)!)}</b></div><div className="analytics-mini-track"><i style={{width:`${((get(0,card.key)??0)/Math.max(1,(get(0,card.key)??0)+(get(1,card.key)??0)))*100}%`}}/></div></div>)}</div>
       <div className="analytics-efficiency">{(['possession','shotAccuracy','passAccuracy','dribbleSuccessRate'] as const).map(key=><div className="analytics-efficiency-card" key={key}><span>{metrics.find(m=>m.key===key)?.label}</span><div className="analytics-rings"><Radial value={get(0,key)} label={sides[0].player.initials} color="#65e6fc"/><Radial value={get(1,key)} label={sides[1].player.initials} color="#b398ff"/></div></div>)}</div>
       <div className="analytics-breakdown-head"><div><span className="eyebrow">COMPARATIVA AVANZADA</span><h3>Métrica a métrica</h3></div><div className="analytics-categories">{['all',...groups.map(g=>g.label)].map(c=><button key={c} className={category===c?'active':''} onClick={()=>setCategory(c)}>{c==='all'?'Todas':c}</button>)}</div></div>
