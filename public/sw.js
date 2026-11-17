@@ -9,7 +9,7 @@ self.addEventListener('install', (event) => {
   const requests = offlineBuild.files.map((file) =>
     new Request(new URL(file, scope), { cache: 'reload' })
   );
-  event.waitUntil(caches.open(cacheName).then((cache) => cache.addAll(requests)));
+  event.waitUntil(caches.open(cacheName).then((cache) => cache.addAll(requests)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
@@ -32,7 +32,7 @@ self.addEventListener('fetch', (event) => {
     const cached = await cache.match(navigation ? indexUrl : request);
     const isData = new URL(request.url).pathname.startsWith(dataPath);
     // Keep the page HTML and its hashed assets from the same release.
-    if (cached && !isData) return cached;
+    // Navigation must check the network first so installed PWAs receive new builds.\n    // Hashed immutable assets can still be served from the matching release cache.\n    if (cached && !navigation && !isData) return cached;
 
     try {
       const response = await fetch(request);
@@ -43,7 +43,7 @@ self.addEventListener('fetch', (event) => {
           // Storage failures must not prevent a successful network response.
         }
       }
-      return response.ok ? response : cached ?? response;
+      if (response.ok && navigation) {\n        try { await cache.put(indexUrl, response.clone()); } catch { /* Storage is optional. */ }\n      }\n      return response.ok ? response : cached ?? response;
     } catch {
       return cached ?? Response.error();
     }
