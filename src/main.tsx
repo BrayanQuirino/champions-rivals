@@ -9,8 +9,8 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', async () => {
     try {
       const registration = await navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`, { updateViaCache: 'none' });
-      // Explicitly check for a newer PWA build on every page load.
-      await registration.update();
+      // Listen BEFORE checking: a newly activated worker could otherwise
+      // take control before the listener is installed.
       let refreshing = false;
       navigator.serviceWorker.addEventListener('controllerchange', () => {
         if (!refreshing) {
@@ -18,6 +18,7 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
           window.location.reload();
         }
       });
+      await registration.update();
     } catch (error) {
       console.warn('No se pudo actualizar la PWA:', error);
     }
