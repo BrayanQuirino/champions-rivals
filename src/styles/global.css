@@ -524,3 +524,25 @@
  .stat-comparison .stat-donut-pair>div{max-width:280px;margin:0 auto;gap:16px}
  .stat-comparison .stat-ring-face{width:min(90px,100%)}
 }
+
+
+/* Match Intelligence: coach selectors and last-five form, no club badges. */
+.analytics-coach-switcher{display:flex;align-items:center;gap:12px;min-width:0;margin:12px 0 8px}
+.analytics-contender.right .analytics-coach-switcher{justify-content:flex-end}
+.analytics-coach-switcher h3{margin:0;min-width:0;overflow-wrap:anywhere;line-height:1.15}
+.analytics-coach-switcher button{display:grid;place-items:center;flex:none;width:36px;height:36px;border:1px solid #6084bc55;border-radius:10px;color:#a9e9fc;background:#132648;transition:background .2s,border-color .2s,transform .2s}
+.analytics-coach-switcher button:hover{background:#244974;border-color:#65e6fc;transform:translateY(-1px)}
+.analytics-coach-switcher button:focus-visible{outline:2px solid #76eafd;outline-offset:2px}
+.analytics-recent-form{display:flex;gap:7px;margin-top:13px;flex-wrap:wrap;min-height:34px;align-items:center}
+.analytics-contender.right .analytics-recent-form{justify-content:flex-end}
+.analytics-recent-form>span:not(.analytics-form-empty){display:grid;place-items:center;width:33px;height:33px;flex:none;border-radius:7px;font-size:11px;font-weight:800}
+.analytics-recent-form .form-V{background:#153b3e;border:1px solid #70d7bb65;color:#8df4d5}
+.analytics-recent-form .form-E{background:#2d3549;border:1px solid #a2b4d05c;color:#ccd6e8}
+.analytics-recent-form .form-D{background:#432734;border:1px solid #ef9ab055;color:#ffabc3}
+.analytics-form-empty{color:#849aba;font-size:11px;font-style:italic}
+.analytics-pair-empty{display:grid;justify-items:center;gap:11px;text-align:center;padding:54px 22px;background:#0d1a3480;border:1px dashed #7796bd48;border-radius:12px;color:#95b4d4}
+.analytics-pair-empty strong{font:700 30px 'Barlow Condensed',sans-serif;color:#e3f5ff}
+.analytics-pair-empty p{max-width:440px;margin:0;font-size:12px;line-height:1.7}
+@media(max-width:860px){.analytics-coach-switcher{gap:5px}.analytics-coach-switcher button{width:30px;height:30px}.analytics-coach-switcher button svg{width:17px}.analytics-coach-switcher h3{font-size:clamp(19px,3vw,30px)}}
+@media(max-width:550px){.analytics-versus{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr)}.analytics-coach-switcher{gap:3px}.analytics-coach-switcher button{width:25px;height:29px;border-radius:6px}.analytics-coach-switcher button svg{width:15px}.analytics-coach-switcher h3{font-size:clamp(16px,4vw,22px)}.analytics-contender>small{display:block;font-size:9px;line-height:1.4}.analytics-recent-form{gap:3px}.analytics-recent-form>span:not(.analytics-form-empty){width:22px;height:24px;font-size:9px;border-radius:4px}.analytics-pair-empty{padding:35px 13px}}
+@media(prefers-reduced-motion:reduce){.analytics-coach-switcher button{transition:none}}
