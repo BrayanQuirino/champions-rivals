@@ -1,7 +1,7 @@
 import { z } from 'zod';
 const id = z.string().min(1).max(80);
 const goals = z.number().int().min(0).max(99);
-const side = z.object({ playerId: id, team: z.string().min(1).max(80), goals });
+const side = z.object({ playerId: id, team: z.string().min(1).max(80), clubId: id.optional(), goals });
 const optionalCount = z.number().int().nonnegative().nullable().optional();
 const optionalRate = z.number().min(0).max(100).nullable().optional();
 const statistics = z.object({
