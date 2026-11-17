@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Match, Player } from '../domain/schema';
 import { CoachStats } from './CoachStats';
@@ -43,6 +43,8 @@ function CoachPortrait({ image, name, initials }: { image?: string; name: string
 export function Coaches({ players, matches }: { players: Player[]; matches: Match[] }) {
   const [chosen,setChosen]=useState<Player|null>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  useEffect(()=>{if(chosen) document.getElementById('coach-stats-panel')?.scrollIntoView({behavior:'smooth',block:'start'});},[chosen]);
+  function selectCoach(player:Player){setChosen(current=>current?.id===player.id?null:player);}
   function move(direction: -1 | 1) {
     const track = trackRef.current;
     if (!track) return;
@@ -67,7 +69,7 @@ export function Coaches({ players, matches }: { players: Player[]; matches: Matc
         {[...players, { id: 'peter', name: 'Peter Quirino', initials: 'PQ' }, { id: 'axel', name: 'Axel Quirino', initials: 'AQ' }].map((player, index) => {
           const coach = coaches[player.id];
           return (
-            <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id} role="button" tabIndex={0} aria-label={`Ver estadísticas de ${player.name}`} onClick={()=>setChosen(player)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setChosen(player);}}}>
+            <article className={`coach-card coach-card--${coach?.accent ?? 'cyan'}`} key={player.id} role="button" tabIndex={0} aria-label={`Ver estadísticas de ${player.name}`} aria-expanded={chosen?.id===player.id} aria-controls="coach-stats-panel" onClick={()=>selectCoach(player)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectCoach(player);}}}>
               <div className="coach-photo">
                 <CoachPortrait image={coach?.image} name={player.name} initials={player.initials} />
                 <span className="coach-number">DT / {String(index + 1).padStart(2, '0')}</span>
