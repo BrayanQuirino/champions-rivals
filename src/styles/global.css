@@ -446,3 +446,11 @@
 .team-badge-initials{font:700 20px 'Barlow Condensed',Impact,sans-serif;color:#8de9ff;letter-spacing:.7px}
 .team-badge--compact .team-badge-initials{font-size:15px}
 @media(max-width:640px){.match-row{grid-template-columns:minmax(0,1fr) 58px minmax(0,1fr);gap:6px}.match-team-with-badge{gap:5px}.match-row .team-badge--compact{width:27px;height:27px}.match-row .team-badge--compact .team-badge-initials{font-size:12px}.match-team-with-badge .team b{font-size:10px}.match-row .match-date{grid-column:1 / 4}}
+
+
+/* Último enfrentamiento: usar los escudos de los equipos, no emblemas de los DT. */
+.hero-team-logo{display:flex;justify-content:center;align-items:center;min-height:77px}
+.hero-team-logo .team-badge{width:78px;height:78px;border:0;border-radius:0;background:transparent;overflow:visible;box-shadow:none}
+.hero-team-logo .team-badge img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-team-logo .team-badge-initials{display:grid;place-items:center;width:64px;height:64px;border:1px solid #83cdea66;border-radius:50%;background:#12304f}
+@media(max-width:640px){.hero-team-logo{min-height:60px}.hero-team-logo .team-badge{width:62px;height:62px}.hero-team-logo .team-badge-initials{width:56px;height:56px}}
