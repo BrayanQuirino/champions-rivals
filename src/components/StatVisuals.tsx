@@ -36,7 +36,7 @@ export function StatComparison({left,right,leftName,rightName}:{left:Record<stri
  return <div className="stat-comparison">
   <div className="stat-legend"><span>{leftName}</span><span>{rightName}</span></div>
   <div className="stat-donuts">{(['dribbleSuccessRate','shotAccuracy','passAccuracy','possession'] as const).map(key=><div className="stat-donut-pair" key={key}>
-    <h4>{statGroups.flatMap(g=>g.items).find(item=>item[0]===key)?.[1]}</h4>
+    <h4>{({dribbleSuccessRate:'Éxito en regates',shotAccuracy:'Precisión en tiros',passAccuracy:'Precisión de pases',possession:'Posesión'} as Record<string,string>)[key]}</h4>
     <div><RateRing value={left[key]??null} label={leftName} color="#65e6fc"/><RateRing value={right[key]??null} label={rightName} color="#bc9cfa"/></div>
    </div>)}</div>
   {statGroups.map(group=><div className="stat-group" key={group.title}><h3>{group.title}</h3>
