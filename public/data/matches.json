@@ -123,9 +123,9 @@
       "season": "Temporada 01",
       "home": {
         "playerId": "hermano",
-        "team": "Bayer 04 Leverkusen",
+        "team": "FC Bayern München",
         "goals": 0,
-        "clubId": "bundesliga-leverkusen"
+        "clubId": "bundesliga-bayern"
       },
       "away": {
         "playerId": "brayan",
@@ -139,7 +139,7 @@
       "source": {
         "type": "manual",
         "reference": "Resultados proporcionados por Brayan en el chat",
-        "notes": "Fecha de registro asignada al 16 de noviembre de 2026; fecha real del partido no especificada. Equipos conservados tal como fueron proporcionados."
+        "notes": "Corrección confirmada por Brayan: Joni utilizó FC Bayern München (no Bayer Leverkusen). Fecha de registro asignada al 16 de noviembre de 2026; fecha real no especificada."
       },
       "venueId": "winterfell-arena"
     },
