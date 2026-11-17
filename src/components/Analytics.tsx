@@ -83,7 +83,7 @@ export function Analytics({data,matches,catalog}:{data:Database;matches:Match[];
       const side=m.home.playerId===playerId?m.home:m.away.playerId===playerId?m.away:null;
       return side?[side]:[];
     }).filter((side,index,array)=>array.findIndex(c=>c.clubId===side.clubId)===index);
-    return <div className="analytics-team-logos" aria-label="Equipos utilizados">{used.map(side=><TeamBadge key={side.clubId??side.team} compact club={getClub(catalog,side.clubId)} name={side.team}/>)}</div>;
+    return <div className="analytics-team-logos" aria-label="Equipos utilizados">{used.map(side=><TeamBadge key={side.clubId??side.team} compact club={getClub(catalog,side.clubId)} name={side.team} initials={data.players.find(p=>p.id===playerId)?.initials??"DT"}/>)}</div>;
   }
   const headerCards = [
     { key:'shots',title:'Tiros totales' },{key:'expectedGoals',title:'xG acumulados'},
