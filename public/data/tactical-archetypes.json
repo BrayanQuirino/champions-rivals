@@ -3,9 +3,9 @@
   "methodology": {
     "origin": "Taxonomía editorial de Champions Rivals; no es una clasificación oficial de EA Sports FC o Football Manager.",
     "scale": "0 a 100",
-    "sampleMinimumForStableArchetype": 3,
-    "requiredDimensions": 4,
-    "notes": "Los arquetipos son perfiles hipotéticos de referencia. Las comparaciones son indicativas, no causalidad táctica. No inferimos presión alta ni posición de recuperaciones a partir de totales."
+    "sampleMinimumForStableArchetype": 8,
+    "requiredDimensions": 6,
+    "notes": "Los arquetipos son perfiles editoriales, no diagnósticos. Se exige al menos 8 partidos detallados, 6 ejes disponibles, similitud ≥80/100 y diferencia ≥4 puntos respecto al segundo candidato. En caso contrario se muestra un perfil provisional sin atribuir un arquetipo. La adaptabilidad real y los estilos de presión no se pueden probar con los agregados disponibles."
   },
   "dimensions": [
     {
