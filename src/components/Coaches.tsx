@@ -77,21 +77,22 @@ export function Coaches({ players, matches, catalog, tacticalCatalog }: { player
               <div className="coach-photo">
                 <CoachPortrait image={coach?.image} name={player.name} initials={player.initials} />
                 <span className="coach-number">DT / {String(index + 1).padStart(2, '0')}</span>
+                <div className="coach-trophies" role="group" aria-label={`Palmarés de ${player.name}: ${trophies.champions} Champions League y ${trophies.worldCup} Mundiales`}>
+                  <div className="coach-trophy" title="Champions League">
+                    <img src={`${import.meta.env.BASE_URL}images/trophies/champions-real.png`} alt="" loading="lazy" />
+                    <strong aria-hidden="true">{trophies.champions}</strong>
+                  </div>
+                  <div className="coach-trophy" title="Copa del Mundo">
+                    <img src={`${import.meta.env.BASE_URL}images/trophies/world-cup-real.png`} alt="" loading="lazy" />
+                    <strong aria-hidden="true">{trophies.worldCup}</strong>
+                  </div>
+                </div>
               </div>
               <div className="coach-content">
                 <span className="coach-role">{coach?.role ?? 'DIRECTOR TÉCNICO'}</span>
                 <h3>{player.name}</h3>
                 <div className="coach-club">{coach?.club ?? 'CLUB POR DEFINIR'}</div>
-                <div className="coach-trophies" aria-label={`Palmarés de ${player.name}: ${trophies.champions} Champions League y ${trophies.worldCup} Mundiales`}>
-                  <div className="coach-trophy coach-trophy--champions">
-                    <img src={`${import.meta.env.BASE_URL}images/trophies/champions-real.png`} alt="" loading="lazy" />
-                    <span><strong>{trophies.champions}</strong><small>CHAMPIONS</small></span>
-                  </div>
-                  <div className="coach-trophy coach-trophy--world">
-                    <img src={`${import.meta.env.BASE_URL}images/trophies/world-cup-real.png`} alt="" loading="lazy" />
-                    <span><strong>{trophies.worldCup}</strong><small>MUNDIALES</small></span>
-                  </div>
-                </div>
+
                 <p>“{coach?.quote ?? 'La pasión se demuestra en la cancha.'}”</p>
                 <span className="coach-stat-trigger">Ver estadísticas y evolución <span aria-hidden="true">↗</span></span>
               </div>
