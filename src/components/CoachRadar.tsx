@@ -42,14 +42,15 @@ export function CoachRadar({player,matches,catalog}:{player:Player;matches:Match
      <div className="tactical-legend"><span><i className="actual"/> Datos observados</span><span><i className="reference"/> Perfil de referencia</span></div>
     </div>
     <div className="tactical-insights">
-     <span className="eyebrow">{profile.status==='provisional'?'CLASIFICACIÓN PROVISIONAL':'ARQUETIPO ESTIMADO'}</span>
-     <h4>{archetype?.name??'Sin clasificación'}</h4>
-     <p>{archetype?.description}</p>
-     <div className="tactical-score"><strong>{profile.similarity}%</strong><span>Similitud matemática con el patrón editorial, no probabilidad de acierto</span></div>
+     <span className="eyebrow">{profile.status==='provisional'?'PERFIL EN OBSERVACIÓN':'ARQUETIPO ESTIMADO'}</span>
+     <h4>{archetype?.name??'Sin arquetipo concluyente'}</h4>
+     <p>{archetype?.description??(profile.reason==='insufficient-data'?'Se necesitan más partidos con estadísticas detalladas para clasificar este DT.':profile.reason==='low-similarity'?'Ningún patrón editorial se parece lo suficiente a los datos observados.':'Los dos perfiles más cercanos son demasiado parecidos para elegir uno con fiabilidad.')}</p>
+     {archetype&&<div className="tactical-score"><strong>{profile.similarity}%</strong><span>Similitud matemática con el patrón editorial, no probabilidad de acierto</span></div>}
+     {!archetype&&profile.candidates.length>0&&<div className="tactical-candidates"><span className="eyebrow">CANDIDATOS MATEMÁTICOS · NO CONFIRMADOS</span>{profile.candidates.map(c=><p key={c.archetype.id}><strong>{c.archetype.name}</strong> · {c.similarity}% de afinidad editorial</p>)}</div>}
      <p className="tactical-coverage">{profile.detailedMatches} de {profile.totalMatches} partidos con estadísticas detalladas · {profile.completeAxes} de 6 ejes disponibles</p>
      <div className="tactical-values">{catalog.dimensions.map(d=><div key={d.id}><span>{d.label}</span><strong>{profile.values[d.id]===null?'—':`${profile.values[d.id]}/100`}</strong></div>)}</div>
     </div>
    </div>}
-   <p className="tactical-method">Nota metodológica: posesión y precisiones son porcentajes de las capturas; entradas, recuperaciones y rupturas se normalizan como participación respecto al rival del mismo partido. Estas métricas no permiten demostrar presión alta, bloque bajo o transiciones. Los perfiles de referencia son heurísticos; con menos de {catalog.methodology.sampleMinimumForStableArchetype} partidos detallados la asignación es provisional.</p>
+   <p className="tactical-method">Nota metodológica: posesión y precisiones son porcentajes de las capturas; entradas, recuperaciones y rupturas se normalizan como participación respecto al rival del mismo partido. Estas métricas no permiten demostrar presión alta, bloque bajo o transiciones. Los perfiles de referencia son heurísticos; se requieren al menos {catalog.methodology.sampleMinimumForStableArchetype} partidos detallados, seis ejes, similitud mínima de 80/100 y ventaja mínima de cuatro puntos respecto al segundo candidato para asignar un arquetipo. Si no, la clasificación permanece abierta.</p>
   </section>;
 }
