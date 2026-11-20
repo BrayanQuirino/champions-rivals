@@ -485,7 +485,15 @@
       },
       "venueId": "winterfell-arena",
       "competition": "world-cup",
-      "stage": "final"
+      "stage": "final",
+      "news": {
+        "headline": "¡URUGUAY SIN PIEDAD!",
+        "summary": "Brayan se lleva otra final: Uruguay superó 2–1 a México y levantó la Copa del Mundo de Winterfell. Joni peleó hasta el final, pero no logró evitar la caída.",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Festejo_Luis_Su%C3%A1rez_2.jpg",
+        "imageCredit": "Foto de archivo: Jimmy Baikovicius (jikatu) · CC BY-SA 2.0",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Festejo_Luis_Su%C3%A1rez_2.jpg",
+        "imageNote": "Fotografía ilustrativa de Uruguay, 2011; no corresponde al partido virtual."
+      }
     }
   ],
   "venues": [
