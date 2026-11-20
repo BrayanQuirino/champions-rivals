@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" role="img" aria-label="Trofeo de copa europea estilizado">
+<defs><linearGradient id="metal" x1="0" x2="1"><stop stop-color="#5a7994"/><stop offset=".23" stop-color="#f6feff"/><stop offset=".52" stop-color="#93a7c5"/><stop offset=".78" stop-color="#e5f8ff"/><stop offset="1" stop-color="#4e729c"/></linearGradient></defs>
+<path d="M23 25Q16 8 8 20Q1 42 24 60M77 25Q84 8 92 20Q99 42 76 60" fill="none" stroke="url(#metal)" stroke-width="7" stroke-linecap="round"/>
+<path d="M21 13Q50 6 79 13L74 62Q67 81 55 86L55 103L67 110L33 110L45 103L45 86Q33 81 26 62Z" fill="url(#metal)" stroke="#d8ecfc" stroke-width="1.6"/>
+<path d="M29 23Q50 16 71 23L68 59Q62 73 50 79Q38 73 32 59Z" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
+<rect x="29" y="110" width="42" height="7" rx="2" fill="#b5d6ed"/><rect x="22" y="117" width="56" height="9" rx="2" fill="#576f98"/>
+<path d="M38 38L50 28L62 38L57 54L43 54Z" fill="#fff" fill-opacity=".23"/>
+</svg>
