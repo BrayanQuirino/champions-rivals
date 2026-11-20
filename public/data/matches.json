@@ -21,13 +21,15 @@
         "playerId": "brayan",
         "team": "AFC Ajax",
         "goals": 1,
-        "clubId": "eredivisie-ajax-amsterdam"
+        "clubId": "eredivisie-ajax-amsterdam",
+        "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/ajax-amsterdam.png"
       },
       "away": {
         "playerId": "hermano",
         "team": "Club Brugge KV",
         "goals": 0,
-        "clubId": "belgian-pro-club-brugge"
+        "clubId": "belgian-pro-club-brugge",
+        "logoUrl": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Club_Brugge.svg"
       },
       "extraTime": false,
       "penalties": null,
@@ -47,13 +49,15 @@
         "playerId": "brayan",
         "team": "Chelsea FC",
         "goals": 1,
-        "clubId": "premier-league-chelsea"
+        "clubId": "premier-league-chelsea",
+        "logoUrl": "https://media.api-sports.io/football/teams/49.png"
       },
       "away": {
         "playerId": "hermano",
         "team": "FC Barcelona",
         "goals": 2,
-        "clubId": "la-liga-barcelona"
+        "clubId": "la-liga-barcelona",
+        "logoUrl": "https://media.api-sports.io/football/teams/529.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -73,13 +77,15 @@
         "playerId": "brayan",
         "team": "Club Atlético de Madrid",
         "goals": 0,
-        "clubId": "la-liga-atletico"
+        "clubId": "la-liga-atletico",
+        "logoUrl": "https://media.api-sports.io/football/teams/530.png"
       },
       "away": {
         "playerId": "hermano",
         "team": "Tottenham Hotspur FC",
         "goals": 3,
-        "clubId": "premier-league-tottenham"
+        "clubId": "premier-league-tottenham",
+        "logoUrl": "https://media.api-sports.io/football/teams/47.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -99,13 +105,15 @@
         "playerId": "hermano",
         "team": "Real Madrid CF",
         "goals": 0,
-        "clubId": "la-liga-real-madrid"
+        "clubId": "la-liga-real-madrid",
+        "logoUrl": "https://media.api-sports.io/football/teams/541.png"
       },
       "away": {
         "playerId": "brayan",
         "team": "FC Internazionale Milano",
         "goals": 1,
-        "clubId": "serie-a-inter"
+        "clubId": "serie-a-inter",
+        "logoUrl": "https://media.api-sports.io/football/teams/505.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -125,13 +133,15 @@
         "playerId": "hermano",
         "team": "FC Bayern München",
         "goals": 0,
-        "clubId": "bundesliga-bayern"
+        "clubId": "bundesliga-bayern",
+        "logoUrl": "https://media.api-sports.io/football/teams/157.png"
       },
       "away": {
         "playerId": "brayan",
         "team": "Arsenal FC",
         "goals": 1,
-        "clubId": "premier-league-arsenal"
+        "clubId": "premier-league-arsenal",
+        "logoUrl": "https://media.api-sports.io/football/teams/42.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -151,13 +161,15 @@
         "playerId": "hermano",
         "team": "Selección de Inglaterra",
         "goals": 2,
-        "clubId": "international-england"
+        "clubId": "international-england",
+        "logoUrl": "https://flagcdn.com/w80/gb-eng.png"
       },
       "away": {
         "playerId": "brayan",
         "team": "Selección de Brasil",
         "goals": 3,
-        "clubId": "international-brazil"
+        "clubId": "international-brazil",
+        "logoUrl": "https://flagcdn.com/w80/br.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -228,13 +240,15 @@
         "playerId": "hermano",
         "team": "Selección de Bélgica",
         "goals": 1,
-        "clubId": "international-belgium"
+        "clubId": "international-belgium",
+        "logoUrl": "https://flagcdn.com/w80/be.png"
       },
       "away": {
         "playerId": "brayan",
         "team": "Selección de Portugal",
         "goals": 2,
-        "clubId": "international-portugal"
+        "clubId": "international-portugal",
+        "logoUrl": "https://flagcdn.com/w80/pt.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -305,13 +319,15 @@
         "playerId": "hermano",
         "team": "Arsenal FC",
         "goals": 3,
-        "clubId": "premier-league-arsenal"
+        "clubId": "premier-league-arsenal",
+        "logoUrl": "https://media.api-sports.io/football/teams/42.png"
       },
       "away": {
         "playerId": "brayan",
         "team": "Feyenoord Rotterdam",
         "goals": 2,
-        "clubId": "eredivisie-feyenoord-rotterdam"
+        "clubId": "eredivisie-feyenoord-rotterdam",
+        "logoUrl": "https://raw.githubusercontent.com/leoratzlaff/football-badges/master/logos/netherlands/feyenoord-rotterdam.png"
       },
       "extraTime": false,
       "penalties": null,
@@ -382,13 +398,15 @@
         "playerId": "hermano",
         "team": "Selección de México",
         "goals": 1,
-        "clubId": "international-mexico"
+        "clubId": "international-mexico",
+        "logoUrl": "https://flagcdn.com/w80/mx.png"
       },
       "away": {
         "playerId": "brayan",
         "team": "Selección de Uruguay",
         "goals": 2,
-        "clubId": "international-uruguay"
+        "clubId": "international-uruguay",
+        "logoUrl": "https://flagcdn.com/w80/uy.png"
       },
       "extraTime": false,
       "penalties": null,
