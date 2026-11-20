@@ -39,7 +39,9 @@
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha asignada al día del registro. "
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "champions-league",
+      "stage": "final"
     },
     {
       "id": "2026-11-10-002",
@@ -67,7 +69,9 @@
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha asignada al día del registro. Equipo Chelsea confirmado por Brayan."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "champions-league",
+      "stage": "final"
     },
     {
       "id": "2026-11-10-003",
@@ -95,7 +99,9 @@
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha asignada al día del registro. "
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "champions-league",
+      "stage": "final"
     },
     {
       "id": "2026-11-16-001",
@@ -123,7 +129,9 @@
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Fecha de registro asignada al 16 de noviembre de 2026; fecha real del partido no especificada. Equipos conservados tal como fueron proporcionados."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "champions-league",
+      "stage": "final"
     },
     {
       "id": "2026-11-16-002",
@@ -151,7 +159,9 @@
         "reference": "Resultados proporcionados por Brayan en el chat",
         "notes": "Corrección confirmada por Brayan: Joni utilizó FC Bayern München (no Bayer Leverkusen). Fecha de registro asignada al 16 de noviembre de 2026; fecha real no especificada."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "champions-league",
+      "stage": "final"
     },
     {
       "id": "2026-11-16-003",
@@ -230,7 +240,9 @@
         "reference": "Dos capturas de las pantallas Resumen y Defensa del partido Inglaterra 2-3 Brasil",
         "notes": "Estadísticas transcritas de capturas. Tiros a puerta derivados de tiros y porcentaje de precisión redondeado (4/7, 10/12); no se registran como dato confirmado."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "world-cup",
+      "stage": "final"
     },
     {
       "id": "2026-11-19-001",
@@ -309,7 +321,9 @@
         "reference": "IMG_5480.jpeg e IMG_5481.jpeg, Bélgica 1-2 Portugal",
         "notes": "Fecha de registro; fecha real no especificada. Brayan Portugal, Joni Bélgica. Capturas Resumen y Defensa. Tiros a puerta no visibles: null."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "world-cup",
+      "stage": "final"
     },
     {
       "id": "2026-11-19-002",
@@ -388,7 +402,9 @@
         "reference": "IMG_5482.jpeg e IMG_5483.jpeg, Arsenal 3-2 Feyenoord",
         "notes": "Fecha de registro; fecha real no especificada. Brayan Feyenoord, Joni Arsenal. Capturas Resumen y Defensa. Tiros a puerta no visibles: null."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "champions-league",
+      "stage": "final"
     },
     {
       "id": "2026-11-19-003",
@@ -467,7 +483,9 @@
         "reference": "IMG_5484.jpeg e IMG_5485.jpeg, México 1-2 Uruguay",
         "notes": "Fecha de registro; fecha real no especificada. Brayan Uruguay, Joni México. Capturas Resumen y Defensa. Tiros a puerta no visibles: null."
       },
-      "venueId": "winterfell-arena"
+      "venueId": "winterfell-arena",
+      "competition": "world-cup",
+      "stage": "final"
     }
   ],
   "venues": [
