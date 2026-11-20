@@ -20,6 +20,7 @@ const statistics = z.object({
 export const matchSchema = z.object({
   id, date: z.iso.date(), season: id, venueId: id.optional(), home: side, away: side,
   competition: z.enum(['champions-league', 'world-cup']), stage: z.literal('final'),
+  news: z.object({headline:z.string().min(3).max(95),summary:z.string().min(3).max(280),imageUrl:z.string().url().startsWith('https://').optional(),imageCredit:z.string().max(180).optional(),imageSourceUrl:z.string().url().startsWith('https://').optional(),imageNote:z.string().max(160).optional()}).optional(),
   extraTime: z.boolean().default(false),
   penalties: z.object({ home: goals, away: goals }).nullable().default(null),
   stats: z.object({ home: statistics, away: statistics }).nullable().default(null),
