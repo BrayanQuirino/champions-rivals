@@ -16,6 +16,8 @@ export interface TacticalProfile {
  completeAxes:number;
  archetype:ArchetypeDefinition|null;
  similarity:number|null;
+ candidates:{archetype:ArchetypeDefinition;similarity:number}[];
+ reason:'insufficient-data'|'ambiguous'|'low-similarity'|null;
  status:'none'|'provisional'|'stable';
 }
 const axisIds:RadarAxisId[]=['posesion','pases','finalizacion','entradas','recuperaciones','progresion'];
@@ -58,10 +60,22 @@ export function profileFor(matches:Match[],playerId:string,definitions:TacticalC
   return {a,distance};
  }).sort((a,b)=>a.distance-b.distance):[];
  const best=ordered[0];
+ const runnerUp=ordered[1];
+ const similarity=best?Math.round(clamp(100-Math.sqrt(best.distance))):null;
+ const separation=best&&runnerUp?Math.sqrt(runnerUp.distance)-Math.sqrt(best.distance):Infinity;
+ // A nearest-neighbour result is not a reliable tactical identity by itself.
+ // Four detailed games cannot establish adaptability, pressing height or defensive block.
+ const sufficientSample=detailedMatches>=definitions.methodology.sampleMinimumForStableArchetype;
+ const clearFit=similarity!==null&&similarity>=80;
+ const distinctFit=separation>=4;
+ const classificationReady=enough&&sufficientSample&&clearFit&&distinctFit;
+ const reason: TacticalProfile['reason']=!enough||!sufficientSample?'insufficient-data':!clearFit?'low-similarity':!distinctFit?'ambiguous':null;
  return {
   values,totalMatches:played.length,detailedMatches,completeAxes,
-  archetype:best?.a??null,
-  similarity:best?Math.round(clamp(100-Math.sqrt(best.distance))):null,
-  status:!enough?'none':detailedMatches>=definitions.methodology.sampleMinimumForStableArchetype?'stable':'provisional'
+  archetype:classificationReady?best.a:null,
+  similarity:classificationReady?similarity:null,
+  candidates:ordered.slice(0,2).map(({a,distance})=>({archetype:a,similarity:Math.round(clamp(100-Math.sqrt(distance)))})),
+  reason,
+  status:!enough?'none':classificationReady?'stable':'provisional'
  };
 }
