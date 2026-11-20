@@ -17,3 +17,14 @@ export function standings(players: Player[], matches: Match[]) {
     return {...player,played:played.length,wins,draws,losses:played.length-wins-draws,goalsFor,goalsAgainst,points:wins*3+draws,form};
   }).sort((a,b)=>b.points-a.points||(b.goalsFor-b.goalsAgainst)-(a.goalsFor-a.goalsAgainst)||b.goalsFor-a.goalsFor);
 }
+
+/** Cada partido es una final; solo el ganador recibe el título correspondiente. */
+export function trophiesForCoach(matches: Match[], playerId: string) {
+  const counts = { champions: 0, worldCup: 0 };
+  for (const match of matches) {
+    if (match.stage !== 'final' || winner(match) !== playerId) continue;
+    if (match.competition === 'champions-league') counts.champions++;
+    else if (match.competition === 'world-cup') counts.worldCup++;
+  }
+  return { ...counts, total: counts.champions + counts.worldCup };
+}
