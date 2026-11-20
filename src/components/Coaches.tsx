@@ -84,11 +84,11 @@ export function Coaches({ players, matches, catalog, tacticalCatalog }: { player
                 <div className="coach-club">{coach?.club ?? 'CLUB POR DEFINIR'}</div>
                 <div className="coach-trophies" aria-label={`Palmarés de ${player.name}: ${trophies.champions} Champions League y ${trophies.worldCup} Mundiales`}>
                   <div className="coach-trophy coach-trophy--champions">
-                    <img src="https://assets.stickpng.com/images/5842fe18a6515b1e0ad75b3d.png" alt="" loading="lazy" />
+                    <img src={`${import.meta.env.BASE_URL}images/trophies/champions-real.png`} alt="" loading="lazy" />
                     <span><strong>{trophies.champions}</strong><small>CHAMPIONS</small></span>
                   </div>
                   <div className="coach-trophy coach-trophy--world">
-                    <img src="https://assets.stickpng.com/images/5842fe21a6515b1e0ad75b3e.png" alt="" loading="lazy" />
+                    <img src={`${import.meta.env.BASE_URL}images/trophies/world-cup-real.png`} alt="" loading="lazy" />
                     <span><strong>{trophies.worldCup}</strong><small>MUNDIALES</small></span>
                   </div>
                 </div>
