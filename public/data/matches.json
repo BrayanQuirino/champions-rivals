@@ -219,6 +219,237 @@
         "notes": "Estadísticas transcritas de capturas. Tiros a puerta derivados de tiros y porcentaje de precisión redondeado (4/7, 10/12); no se registran como dato confirmado."
       },
       "venueId": "winterfell-arena"
+    },
+    {
+      "id": "2026-11-19-001",
+      "date": "2026-11-19",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "hermano",
+        "team": "Selección de Bélgica",
+        "goals": 1,
+        "clubId": "international-belgium"
+      },
+      "away": {
+        "playerId": "brayan",
+        "team": "Selección de Portugal",
+        "goals": 2,
+        "clubId": "international-portugal"
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 35,
+          "shots": 4,
+          "shotsOnTarget": null,
+          "expectedGoals": 1.1,
+          "passes": 66,
+          "tackles": 31,
+          "successfulTackles": 5,
+          "recoveries": 9,
+          "saves": 5,
+          "fouls": 0,
+          "offsides": 0,
+          "corners": 0,
+          "freeKicks": 1,
+          "penalties": 0,
+          "yellowCards": 0,
+          "redCards": 0,
+          "dribbleSuccessRate": 87,
+          "shotAccuracy": 50,
+          "passAccuracy": 83,
+          "lineBreaksMiddle": 1,
+          "lineBreaksWide": 1,
+          "lineBreaksOver": 2,
+          "lineBreakAttempts": 9
+        },
+        "away": {
+          "possession": 65,
+          "shots": 10,
+          "shotsOnTarget": null,
+          "expectedGoals": 2.1,
+          "passes": 122,
+          "tackles": 30,
+          "successfulTackles": 5,
+          "recoveries": 8,
+          "saves": 1,
+          "fouls": 1,
+          "offsides": 0,
+          "corners": 5,
+          "freeKicks": 0,
+          "penalties": 0,
+          "yellowCards": 1,
+          "redCards": 0,
+          "dribbleSuccessRate": 92,
+          "shotAccuracy": 70,
+          "passAccuracy": 91,
+          "lineBreaksMiddle": 0,
+          "lineBreaksWide": 2,
+          "lineBreaksOver": 0,
+          "lineBreakAttempts": 5
+        }
+      },
+      "source": {
+        "type": "photo",
+        "reference": "IMG_5480.jpeg e IMG_5481.jpeg, Bélgica 1-2 Portugal",
+        "notes": "Fecha de registro; fecha real no especificada. Brayan Portugal, Joni Bélgica. Capturas Resumen y Defensa. Tiros a puerta no visibles: null."
+      },
+      "venueId": "winterfell-arena"
+    },
+    {
+      "id": "2026-11-19-002",
+      "date": "2026-11-19",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "hermano",
+        "team": "Arsenal FC",
+        "goals": 3,
+        "clubId": "premier-league-arsenal"
+      },
+      "away": {
+        "playerId": "brayan",
+        "team": "Feyenoord Rotterdam",
+        "goals": 2,
+        "clubId": "eredivisie-feyenoord-rotterdam"
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 45,
+          "shots": 7,
+          "shotsOnTarget": null,
+          "expectedGoals": 2,
+          "passes": 88,
+          "tackles": 21,
+          "successfulTackles": 6,
+          "recoveries": 4,
+          "saves": 2,
+          "fouls": 0,
+          "offsides": 2,
+          "corners": 0,
+          "freeKicks": 3,
+          "penalties": 0,
+          "yellowCards": 0,
+          "redCards": 0,
+          "dribbleSuccessRate": 92,
+          "shotAccuracy": 43,
+          "passAccuracy": 84,
+          "lineBreaksMiddle": 1,
+          "lineBreaksWide": 3,
+          "lineBreaksOver": 0,
+          "lineBreakAttempts": 8
+        },
+        "away": {
+          "possession": 55,
+          "shots": 5,
+          "shotsOnTarget": null,
+          "expectedGoals": 1.1,
+          "passes": 117,
+          "tackles": 31,
+          "successfulTackles": 6,
+          "recoveries": 10,
+          "saves": 0,
+          "fouls": 2,
+          "offsides": 1,
+          "corners": 1,
+          "freeKicks": 2,
+          "penalties": 0,
+          "yellowCards": 2,
+          "redCards": 0,
+          "dribbleSuccessRate": 89,
+          "shotAccuracy": 80,
+          "passAccuracy": 92,
+          "lineBreaksMiddle": 2,
+          "lineBreaksWide": 0,
+          "lineBreaksOver": 1,
+          "lineBreakAttempts": 5
+        }
+      },
+      "source": {
+        "type": "photo",
+        "reference": "IMG_5482.jpeg e IMG_5483.jpeg, Arsenal 3-2 Feyenoord",
+        "notes": "Fecha de registro; fecha real no especificada. Brayan Feyenoord, Joni Arsenal. Capturas Resumen y Defensa. Tiros a puerta no visibles: null."
+      },
+      "venueId": "winterfell-arena"
+    },
+    {
+      "id": "2026-11-19-003",
+      "date": "2026-11-19",
+      "season": "Temporada 01",
+      "home": {
+        "playerId": "hermano",
+        "team": "Selección de México",
+        "goals": 1,
+        "clubId": "international-mexico"
+      },
+      "away": {
+        "playerId": "brayan",
+        "team": "Selección de Uruguay",
+        "goals": 2,
+        "clubId": "international-uruguay"
+      },
+      "extraTime": false,
+      "penalties": null,
+      "stats": {
+        "home": {
+          "possession": 45,
+          "shots": 6,
+          "shotsOnTarget": null,
+          "expectedGoals": 3.5,
+          "passes": 113,
+          "tackles": 31,
+          "successfulTackles": 7,
+          "recoveries": 12,
+          "saves": 9,
+          "fouls": 0,
+          "offsides": 1,
+          "corners": 2,
+          "freeKicks": 0,
+          "penalties": 0,
+          "yellowCards": 0,
+          "redCards": 0,
+          "dribbleSuccessRate": 86,
+          "shotAccuracy": 50,
+          "passAccuracy": 81,
+          "lineBreaksMiddle": 6,
+          "lineBreaksWide": 1,
+          "lineBreaksOver": 1,
+          "lineBreakAttempts": 13
+        },
+        "away": {
+          "possession": 55,
+          "shots": 18,
+          "shotsOnTarget": null,
+          "expectedGoals": 3.3,
+          "passes": 132,
+          "tackles": 46,
+          "successfulTackles": 14,
+          "recoveries": 16,
+          "saves": 2,
+          "fouls": 0,
+          "offsides": 0,
+          "corners": 6,
+          "freeKicks": 1,
+          "penalties": 0,
+          "yellowCards": 0,
+          "redCards": 0,
+          "dribbleSuccessRate": 92,
+          "shotAccuracy": 61,
+          "passAccuracy": 85,
+          "lineBreaksMiddle": 1,
+          "lineBreaksWide": 4,
+          "lineBreaksOver": 2,
+          "lineBreakAttempts": 14
+        }
+      },
+      "source": {
+        "type": "photo",
+        "reference": "IMG_5484.jpeg e IMG_5485.jpeg, México 1-2 Uruguay",
+        "notes": "Fecha de registro; fecha real no especificada. Brayan Uruguay, Joni México. Capturas Resumen y Defensa. Tiros a puerta no visibles: null."
+      },
+      "venueId": "winterfell-arena"
     }
   ],
   "venues": [
