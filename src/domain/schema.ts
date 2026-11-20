@@ -19,6 +19,7 @@ const statistics = z.object({
 });
 export const matchSchema = z.object({
   id, date: z.iso.date(), season: id, venueId: id.optional(), home: side, away: side,
+  competition: z.enum(['champions-league', 'world-cup']), stage: z.literal('final'),
   extraTime: z.boolean().default(false),
   penalties: z.object({ home: goals, away: goals }).nullable().default(null),
   stats: z.object({ home: statistics, away: statistics }).nullable().default(null),
