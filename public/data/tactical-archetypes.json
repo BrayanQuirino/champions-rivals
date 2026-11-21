@@ -1,13 +1,25 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "methodology": {
     "origin": "Taxonomía editorial de Champions Rivals; no es una clasificación oficial de EA Sports FC o Football Manager.",
     "scale": "0 a 100",
     "sampleMinimumForStableArchetype": 8,
     "requiredDimensions": 6,
-    "notes": "Los arquetipos son perfiles editoriales, no diagnósticos. Se exige al menos 8 partidos detallados, 6 ejes disponibles, similitud ≥80/100 y diferencia ≥4 puntos respecto al segundo candidato. En caso contrario se muestra un perfil provisional sin atribuir un arquetipo. La adaptabilidad real y los estilos de presión no se pueden probar con los agregados disponibles."
+    "notes": "Siempre se asigna el patrón más cercano cuando hay partidos; con menos de 8 juegos detallados o ajuste ambiguo se indica provisional. Sin partidos no se infiere estilo. Cada eje proviene de estadísticas disponibles, sin imputar valores ausentes."
   },
   "dimensions": [
+    {
+      "id": "ataque",
+      "label": "Ataque",
+      "source": "shots, expectedGoals",
+      "method": "55% participación de tiros, 45% participación de xG frente al rival"
+    },
+    {
+      "id": "defensa",
+      "label": "Defensa",
+      "source": "shots, successfulTackles, recoveries",
+      "method": "45% limitación de tiros rivales, 25% entradas exitosas relativas, 30% recuperaciones relativas"
+    },
     {
       "id": "posesion",
       "label": "Posesión",
@@ -15,165 +27,153 @@
       "method": "porcentaje registrado"
     },
     {
-      "id": "pases",
-      "label": "Precisión de pases",
-      "source": "passAccuracy",
-      "method": "porcentaje registrado"
+      "id": "precision",
+      "label": "Precisión",
+      "source": "passAccuracy, shotAccuracy",
+      "method": "70% precisión de pases y 30% precisión de tiros"
     },
     {
-      "id": "finalizacion",
-      "label": "Precisión de tiros",
-      "source": "shotAccuracy",
-      "method": "porcentaje registrado"
+      "id": "creacion",
+      "label": "Creación",
+      "source": "expectedGoals, lineBreakAttempts",
+      "method": "65% participación de xG y 35% rupturas de línea relativas"
     },
     {
-      "id": "entradas",
-      "label": "Intensidad en entradas",
-      "source": "tackles",
-      "method": "participación relativa de entradas contra el rival (no equivale a presión alta)"
-    },
-    {
-      "id": "recuperaciones",
-      "label": "Recuperaciones",
-      "source": "recoveries",
-      "method": "participación relativa de recuperaciones contra el rival"
-    },
-    {
-      "id": "progresion",
-      "label": "Rupturas de línea",
-      "source": "lineBreakAttempts",
-      "method": "participación relativa de intentos de ruptura contra el rival"
+      "id": "efectividad",
+      "label": "Efectividad",
+      "source": "goals, shots, shotAccuracy",
+      "method": "65% conversión de goles/tiros normalizada al 30%, 35% precisión de tiros"
     }
   ],
   "archetypes": [
     {
       "id": "arquitecto",
       "name": "El Arquitecto",
-      "description": "Posesión y control",
+      "description": "Control del balón y circulación paciente",
       "radar": {
-        "posesion": 88,
-        "pases": 90,
-        "finalizacion": 67,
-        "entradas": 48,
-        "recuperaciones": 60,
-        "progresion": 67
+        "ataque": 60,
+        "defensa": 43,
+        "posesion": 78,
+        "precision": 84,
+        "creacion": 69,
+        "efectividad": 56
       }
     },
     {
       "id": "cazador",
       "name": "El Cazador",
-      "description": "Recuperación intensa",
+      "description": "Recuperación y agresividad en duelos",
       "radar": {
-        "posesion": 55,
-        "pases": 71,
-        "finalizacion": 76,
-        "entradas": 88,
-        "recuperaciones": 88,
-        "progresion": 77
+        "ataque": 66,
+        "defensa": 73,
+        "posesion": 43,
+        "precision": 61,
+        "creacion": 62,
+        "efectividad": 68
       }
     },
     {
       "id": "muro",
       "name": "El Muro",
-      "description": "Bloque defensivo",
+      "description": "Protección defensiva y poca concesión de tiros",
       "radar": {
-        "posesion": 35,
-        "pases": 59,
-        "finalizacion": 58,
-        "entradas": 73,
-        "recuperaciones": 78,
-        "progresion": 41
+        "ataque": 37,
+        "defensa": 81,
+        "posesion": 34,
+        "precision": 59,
+        "creacion": 40,
+        "efectividad": 65
       }
     },
     {
       "id": "estratega",
       "name": "El Estratega",
-      "description": "Adaptabilidad",
+      "description": "Perfil relativamente balanceado en varias fases",
       "radar": {
-        "posesion": 59,
-        "pases": 74,
-        "finalizacion": 71,
-        "entradas": 63,
-        "recuperaciones": 65,
-        "progresion": 65
+        "ataque": 57,
+        "defensa": 59,
+        "posesion": 54,
+        "precision": 72,
+        "creacion": 56,
+        "efectividad": 67
       }
     },
     {
       "id": "revolucionario",
       "name": "El Revolucionario",
-      "description": "Ritmo e intensidad",
+      "description": "Alto volumen de ataque y generación ofensiva",
       "radar": {
-        "posesion": 59,
-        "pases": 69,
-        "finalizacion": 76,
-        "entradas": 92,
-        "recuperaciones": 88,
-        "progresion": 85
+        "ataque": 78,
+        "defensa": 54,
+        "posesion": 44,
+        "precision": 62,
+        "creacion": 74,
+        "efectividad": 56
       }
     },
     {
       "id": "pragmatico",
       "name": "El Pragmático",
-      "description": "Eficiencia y control del riesgo",
+      "description": "Prioriza la defensa y aprovecha sus oportunidades",
       "radar": {
-        "posesion": 42,
-        "pases": 66,
-        "finalizacion": 73,
-        "entradas": 68,
-        "recuperaciones": 67,
-        "progresion": 54
+        "ataque": 42,
+        "defensa": 76,
+        "posesion": 40,
+        "precision": 70,
+        "creacion": 42,
+        "efectividad": 86
       }
     },
     {
       "id": "provocador",
       "name": "El Provocador",
-      "description": "Salida elaborada",
+      "description": "Construcción y creación con balón",
       "radar": {
-        "posesion": 75,
-        "pases": 86,
-        "finalizacion": 70,
-        "entradas": 55,
-        "recuperaciones": 69,
-        "progresion": 87
+        "ataque": 67,
+        "defensa": 45,
+        "posesion": 73,
+        "precision": 83,
+        "creacion": 81,
+        "efectividad": 61
       }
     },
     {
       "id": "comandante",
       "name": "El Comandante",
-      "description": "Organización colectiva",
+      "description": "Solidez defensiva y juego colectivo",
       "radar": {
-        "posesion": 52,
-        "pases": 72,
-        "finalizacion": 65,
-        "entradas": 78,
-        "recuperaciones": 78,
-        "progresion": 63
+        "ataque": 51,
+        "defensa": 76,
+        "posesion": 48,
+        "precision": 71,
+        "creacion": 48,
+        "efectividad": 66
       }
     },
     {
       "id": "maestro",
       "name": "El Maestro",
-      "description": "Asociación y creatividad",
+      "description": "Alta precisión y creación asociativa",
       "radar": {
-        "posesion": 75,
-        "pases": 88,
-        "finalizacion": 74,
-        "entradas": 55,
-        "recuperaciones": 63,
-        "progresion": 84
+        "ataque": 64,
+        "defensa": 49,
+        "posesion": 72,
+        "precision": 89,
+        "creacion": 76,
+        "efectividad": 71
       }
     },
     {
       "id": "ingeniero",
       "name": "El Ingeniero",
-      "description": "Organización espacial",
+      "description": "Producción ofensiva con precisión y estructura",
       "radar": {
-        "posesion": 76,
-        "pases": 83,
-        "finalizacion": 77,
-        "entradas": 73,
-        "recuperaciones": 75,
-        "progresion": 85
+        "ataque": 70,
+        "defensa": 65,
+        "posesion": 65,
+        "precision": 83,
+        "creacion": 72,
+        "efectividad": 77
       }
     }
   ],
